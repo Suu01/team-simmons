@@ -163,4 +163,19 @@ header {
     
 main {
     width: $width-wide;
+
+    section.gallery-top {
+        position: relative;
+        width: $width-wide;
+
+        h2 {
+            position: absolute;
+            color: $bg-color;
+            font-family: $font
+        }
+
+        div.img-wrap {
+            width: $width-wide;
+        }
+    }
 }

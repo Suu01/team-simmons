@@ -1,5 +1,6 @@
 @import url("https://webfontworld.github.io/SCoreDream/SCoreDream.css");
 @import url("https://webfontworld.github.io/cafe24/Cafe24Danjunghae.css");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -241,6 +242,21 @@ header div.side-menu .s-menu li:last-child a img {
 }
 
 main {
+  width: 100%;
+}
+
+main section.gallery-top {
+  position: relative;
+  width: 100%;
+}
+
+main section.gallery-top h2 {
+  position: absolute;
+  color: #fefefc;
+  font-family: "PT Serif", serif;
+}
+
+main section.gallery-top div.img-wrap {
   width: 100%;
 }
 /*# sourceMappingURL=gallery.css.map */

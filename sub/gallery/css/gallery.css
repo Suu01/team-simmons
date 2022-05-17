@@ -251,12 +251,157 @@ main section.gallery-top {
 }
 
 main section.gallery-top h2 {
+  width: 100%;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: #fefefc;
+  font-size: 28px;
   font-family: "PT Serif", serif;
+  text-align: center;
 }
 
 main section.gallery-top div.img-wrap {
   width: 100%;
+}
+
+main section.gallery-top div.img-wrap img {
+  width: 100%;
+  height: auto;
+}
+
+main section.tap {
+  width: 100%;
+  margin: 50px 0 65px 0;
+}
+
+main section.tap h2 {
+  display: none;
+}
+
+main section.tap ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.tap ul li {
+  padding: 0 25px;
+}
+
+main section.tap ul li a {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+main section.tap ul li a:hover {
+  color: #82ca9c;
+}
+
+main section.tap ul li:first-child {
+  border-right: 2px solid #333333;
+}
+
+main div.gallery {
+  width: 100%;
+}
+
+main div.gallery section.gallery-title {
+  width: 100%;
+}
+
+main div.gallery section.gallery-title h2 {
+  display: none;
+}
+
+main div.gallery section.gallery-title div.sec1-img-wrap {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+main div.gallery section.gallery-title div.sec1-img-wrap img {
+  width: 25px;
+  height: auto;
+  margin: auto;
+}
+
+main div.gallery section.gallery-title div.sec1-txt {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+main div.gallery section.gallery-title div.sec1-txt p {
+  font-size: 14px;
+  color: #999;
+}
+
+main div.gallery section.gallery-intro {
+  text-align: center;
+  width: 100%;
+  color: #333333;
+}
+
+main div.gallery section.gallery-intro div {
+  width: 100%;
+}
+
+main div.gallery section.gallery-intro div hr {
+  width: 150px;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 75px;
+}
+
+main div.gallery section.gallery-intro div h2 {
+  font-size: 30px;
+  font-family: "PT Serif", serif;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+main div.gallery section.gallery-intro div .g-des {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+main div.gallery section.gallery-intro div .g-des p {
+  width: 90%;
+  font-size: 14px;
+  margin: auto;
+  color: #999;
+}
+
+main div.gallery section.gallery-intro div div.g-img-wrap {
+  padding: 0 20px;
+}
+
+main div.gallery section.gallery-intro div div.g-img-wrap img {
+  width: 100%;
+  height: auto;
+}
+
+main div.gallery section.gallery-slide {
+  width: 100%;
+  padding: 0 20px;
+  margin: 90px 0;
+}
+
+main div.gallery section.gallery-slide .slide-img-wrap {
+  width: 100%;
+}
+
+main div.gallery section.gallery-slide .slide-img-wrap img {
+  width: 100%;
+  height: auto;
+}
+
+main div.gallery-search {
+  display: none;
 }
 /*# sourceMappingURL=gallery.css.map */

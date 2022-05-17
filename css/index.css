@@ -67,7 +67,12 @@ body {
   body {
     padding-left: 80px;
     padding-top: 0;
+    -ms-overflow-style: none;
   }
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 header {

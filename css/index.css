@@ -17,7 +17,7 @@ body {
 a {
   display: block;
   text-decoration: none;
-  color: #333333;
+  color: #fefefc;
 }
 
 ul li, ol li {
@@ -579,7 +579,7 @@ main section.section4 ul li:hover {
 }
 
 footer {
-  padding: 16.5% 20px 4% 20px;
+  padding: 16.5% 20px 10% 20px;
   width: 100%;
   background-color: #82ca9c;
 }
@@ -691,6 +691,19 @@ footer div.f-des ul li:last-child {
   margin-bottom: 0;
 }
 
+footer div.f-des ul li:nth-child(4) {
+  display: inline-block;
+  margin-right: 3%;
+}
+
+footer div.f-des ul li:nth-child(5) {
+  display: inline-block;
+}
+
+footer div.f-des ul li:nth-child(5) a {
+  color: #666666;
+}
+
 footer div.kcp {
   width: 100%;
   margin: 11.3% 0;
@@ -699,6 +712,7 @@ footer div.kcp {
 footer div.kcp .k-icon {
   width: 13%;
   margin: auto;
+  margin-bottom: 2.6%;
 }
 
 footer div.kcp .k-icon img {
@@ -708,11 +722,13 @@ footer div.kcp .k-icon img {
 
 footer div.kcp .k-des {
   text-align: center;
-  margin-top: 2.6%;
+  width: 80%;
+  margin: auto;
 }
 
 footer div.kcp .k-des p {
   font-size: 2.8vw;
+  line-height: 2;
   color: #fefefc;
 }
 

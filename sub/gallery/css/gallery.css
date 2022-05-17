@@ -1,6 +1,18 @@
 @import url("https://webfontworld.github.io/SCoreDream/SCoreDream.css");
 @import url("https://webfontworld.github.io/cafe24/Cafe24Danjunghae.css");
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+::-moz-input-placeholder, ::-moz-textarea-placeholder {
+  color: #fefefc;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+::-webkit-input-placeholder, ::-webkit-textarea-placeholder {
+  color: #fefefc;
+  font-size: 13px;
+  font-weight: 600;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -358,6 +370,7 @@ main section.tap ul li:first-child {
 
 main div.gallery {
   width: 100%;
+  display: none;
 }
 
 main div.gallery section.gallery-title {
@@ -529,6 +542,72 @@ main div.gallery section.gallery-slide div.g-wrapper .slide-img-wrap img {
 }
 
 main div.gallery-search {
-  display: none;
+  width: 100%;
+}
+
+main div.gallery-search div.search {
+  width: 100%;
+}
+
+main div.gallery-search div.search section {
+  width: 100%;
+  border-top: 1px solid #c4c4c4;
+}
+
+main div.gallery-search div.search section div.search-tap {
+  width: 100%;
+  text-align: center;
+}
+
+main div.gallery-search div.search section div.search-tap ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main div.gallery-search div.search section div.search-tap ul li {
+  width: 50%;
+  padding: 20px;
+}
+
+main div.gallery-search div.search section div.search-tap ul li:hover {
+  border-bottom: 2px solid #82ca9c;
+}
+
+main div.gallery-search div.search section div.search-tap ul li a {
+  font-size: 18px;
+}
+
+main div.gallery-search div.search section div.search-bar {
+  width: 100%;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+main div.gallery-search div.search section div.search-bar form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 23px;
+  background-color: #b9d3c2;
+}
+
+main div.gallery-search div.search section div.search-bar form input {
+  width: 75%;
+  background-color: transparent;
+  border: none;
+}
+
+main div.gallery-search div.search section div.search-bar form input:active {
+  border-bottom: 1px solid #c4c4c4;
+}
+
+main div.gallery-search div.search section div.search-bar form .search-icon-wrap img {
+  width: 16px;
+  height: auto;
+  color: #fefefc;
 }
 /*# sourceMappingURL=gallery.css.map */

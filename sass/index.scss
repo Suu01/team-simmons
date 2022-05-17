@@ -17,7 +17,6 @@ header {
     top: 0;
     left: 0;
     display: flex;
-    z-index: 1;
     justify-content: space-between;
     align-items: center;
     width: $width-wide;
@@ -25,12 +24,13 @@ header {
     padding: 0 15px;
     border-bottom: 1px solid #333;
     background-color: $bg-color;
+    z-index: 1;
 
     @include responsive(pc-size) {
         width: 80px;
         height: 100%;
         flex-direction: column;
-        // align-items: baseline;
+        align-items: center;
         padding: 60px 0;
         border-bottom: 0;
         border-right: 1px solid #333;
@@ -44,11 +44,11 @@ header {
         transform: translate(-50%, -50%);
 
         @include responsive(pc-size) {
-            // height: 20%;
             position: static;
             top: 0;
             left: 0;
             transform: translate(0, 0);
+            // height: 20%;
         }
     }
 
@@ -80,7 +80,8 @@ header {
                     display: block;
 
                     img {
-                        height: 20px;
+                        width: 100%;
+                        height: auto;
                     }
     
                     @include responsive(pc-size) {
@@ -88,22 +89,7 @@ header {
                     }
                 }
     
-                &:nth-child(2) {
-                    a {
-                        span {
-                            @include responsive(pc-size) {
-                                margin-top: 0;
-                            }
-                        }
-                    }
-                }
-    
                 a {
-                    img {
-                        width: 25px;
-                        height: auto;
-                    }
-    
                     span {
                         width: 10px;
                         height: 10px;
@@ -120,7 +106,7 @@ header {
         // background-color: pink;
 
         @include responsive(pc-size) {
-            height: 18%;
+            // height: 18%;
         }
 
             .s-menu {
@@ -138,11 +124,14 @@ header {
     
                     @include responsive(pc-size) {
                         display: block;
+                        margin-top: 35px;
                     }
     
                     &:first-child {
                         font-size: 18px;
                         transform: rotate(-90deg);
+                        margin-top: 0;
+                        // background-color: orange;
                     }
         
                     &:last-child {
@@ -252,7 +241,6 @@ main {
         @include responsive(tablet-size) {
             padding: 10% 40px 15% 40px;
         }
-        
 
         h2 {
             font-size: 6.4vw;
@@ -284,6 +272,7 @@ main {
             display: flex;
             justify-content: flex-end;
             width: $width-wide;
+            // background-color: pink;
 
             div {
                 width: 13%;
@@ -525,53 +514,51 @@ main {
 }
 
 footer {
-    padding: 80px 20px;
+    padding: 16.5% 20px 4% 20px;
+    // padding: 80px 20px 20px 20px;
     width: $width-wide;
     background-color: $point-color;
 
-    h2 {
-        width: $width-wide;
+    @include responsive(tablet-size) {
+        padding: 16.5% 30px;
+    }
 
-        a {
-            img {
+    div.footer-logo {
+        width: 45%;
+        height: auto;
 
+        h2 {
+            a {
+                img {
+                    width: $width-wide;
+                    height: auto;
+                }
             }
         }
     }
 
     div.f-top {
         display: flex;
-        width: $width-wide;
-        margin-top: 90px;
+        margin-top: 20.4%;
+        // margin-top: 90px;
+        // background-color: pink;
 
         div {
-            border-right: 2px solid $bg-color;
+            margin-right: 5%;
 
             a {
-                font-size: 17px;
+                font-size: 3.4vw;
+                // font-size: 17px;
                 color: $bg-color;
             }
-
-            &:last-child {
-                border-right: none;
-            }
         }
+        // div.f-top-fir {
+        //     // background-color: aqua;
+        // }
 
-        div.f-top-fir {
-
-            a {
-                margin-right: 13px;
-            }
-
-        }
-
-        div.f-top-sec {
-
-            a {
-                margin-left: 13px;
-            }
-        }
-        
+        // div.f-top-sec {
+        //     // background-color: aquamarine;
+        // }
     }
 
     div.sns-icon {
@@ -579,11 +566,48 @@ footer {
 
         ul {
             display: flex;
-            width: 35%;
-            justify-content: space-between;
+            width: 100%;
+            justify-content: flex-start;
             align-items: center;
             // background-color: pink;
-            margin: 30px 0;
+            margin: 9% 0;
+            // margin: 30px 0;
+
+            li {
+                width: 4.5%;
+                height: auto;
+                margin-right: 7%;
+                // background-color: skyblue;
+                a {
+                    width: $width-wide;
+
+                    img {
+                        width: $width-wide;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        .rl-icon {
+            display: flex;
+            justify-content: flex-end;
+            width: $width-wide;
+            // background-color: pink;
+
+            div {
+                width: 13%;
+                margin-left: 3.4%;
+                // margin-left: 15px;
+                a {
+                    width: $width-wide;
+
+                    img {
+                        width: $width-wide;
+                        height: auto;
+                    }
+                }
+            }
         }
     }
 
@@ -594,9 +618,11 @@ footer {
             width: $width-wide;
 
             li {
-                font-size: 15px;
+                font-size: 3vw;
+                // font-size: 15px;
                 color: $bg-color;
-                margin-bottom: 20px;
+                margin-bottom: 5%;
+                // margin-bottom: 20px;
 
                 &:last-child {
                     margin-bottom: 0;
@@ -607,30 +633,39 @@ footer {
     }
 
     div.kcp {
-        // text-align: center;
         width: $width-wide;
-        margin: 50px 0;
+        margin: 11.3% 0;
+        // margin: 50px 0;
 
         .k-icon {
-            width: $width-wide;
+            width: 13%;
+            margin: auto;
 
             img {
-                // margin: auto;
+                width: $width-wide;
+                height: auto;
             }
         }
 
-        p {
-            font-size: 14px;
-            color: $bg-color;
+        .k-des {
+            text-align: center;
+            margin-top: 2.6%;
+            // margin-top: 12px;
+
+            p {
+                font-size: 2.8vw;
+                // font-size: 14px;
+                color: $bg-color;
+            }
         }
     }
 
     div.copyright {
-        // text-align: center;
+        text-align: center;
 
         p {
-            font-size: 14px;
-            // font-size: %;
+            font-size: 2.6vw;
+            // font-size: 13px;
             color: $bg-color;
         }
     }

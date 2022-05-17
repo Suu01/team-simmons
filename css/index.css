@@ -77,7 +77,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 1;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -89,6 +88,7 @@ header {
   padding: 0 15px;
   border-bottom: 1px solid #333;
   background-color: #fefefc;
+  z-index: 1;
 }
 
 @media screen and (min-width: 1024px) {
@@ -99,6 +99,9 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 60px 0;
     border-bottom: 0;
     border-right: 1px solid #333;
@@ -163,7 +166,8 @@ header nav ul.gnb li:first-child {
 }
 
 header nav ul.gnb li:first-child img {
-  height: 20px;
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 1024px) {
@@ -172,28 +176,11 @@ header nav ul.gnb li:first-child img {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  header nav ul.gnb li:nth-child(2) a span {
-    margin-top: 0;
-  }
-}
-
-header nav ul.gnb li a img {
-  width: 25px;
-  height: auto;
-}
-
 header nav ul.gnb li a span {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #82ca9c;
-}
-
-@media screen and (min-width: 1024px) {
-  header div.side-menu {
-    height: 18%;
-  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -222,6 +209,7 @@ header div.side-menu .s-menu li {
 @media screen and (min-width: 1024px) {
   header div.side-menu .s-menu li {
     display: block;
+    margin-top: 35px;
   }
 }
 
@@ -229,6 +217,7 @@ header div.side-menu .s-menu li:first-child {
   font-size: 18px;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+  margin-top: 0;
 }
 
 header div.side-menu .s-menu li:last-child {
@@ -590,42 +579,41 @@ main section.section4 ul li:hover {
 }
 
 footer {
-  padding: 80px 20px;
+  padding: 16.5% 20px 4% 20px;
   width: 100%;
   background-color: #82ca9c;
 }
 
-footer h2 {
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 16.5% 30px;
+  }
+}
+
+footer div.footer-logo {
+  width: 45%;
+  height: auto;
+}
+
+footer div.footer-logo h2 a img {
   width: 100%;
+  height: auto;
 }
 
 footer div.f-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  margin-top: 90px;
+  margin-top: 20.4%;
 }
 
 footer div.f-top div {
-  border-right: 2px solid #fefefc;
+  margin-right: 5%;
 }
 
 footer div.f-top div a {
-  font-size: 17px;
+  font-size: 3.4vw;
   color: #fefefc;
-}
-
-footer div.f-top div:last-child {
-  border-right: none;
-}
-
-footer div.f-top div.f-top-fir a {
-  margin-right: 13px;
-}
-
-footer div.f-top div.f-top-sec a {
-  margin-left: 13px;
 }
 
 footer div.sns-icon {
@@ -636,14 +624,53 @@ footer div.sns-icon ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 35%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 30px 0;
+  margin: 9% 0;
+}
+
+footer div.sns-icon ul li {
+  width: 4.5%;
+  height: auto;
+  margin-right: 7%;
+}
+
+footer div.sns-icon ul li a {
+  width: 100%;
+}
+
+footer div.sns-icon ul li a img {
+  width: 100%;
+  height: auto;
+}
+
+footer div.sns-icon .rl-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+footer div.sns-icon .rl-icon div {
+  width: 13%;
+  margin-left: 3.4%;
+}
+
+footer div.sns-icon .rl-icon div a {
+  width: 100%;
+}
+
+footer div.sns-icon .rl-icon div a img {
+  width: 100%;
+  height: auto;
 }
 
 footer div.f-des {
@@ -655,9 +682,9 @@ footer div.f-des ul {
 }
 
 footer div.f-des ul li {
-  font-size: 15px;
+  font-size: 3vw;
   color: #fefefc;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
 }
 
 footer div.f-des ul li:last-child {
@@ -666,20 +693,35 @@ footer div.f-des ul li:last-child {
 
 footer div.kcp {
   width: 100%;
-  margin: 50px 0;
+  margin: 11.3% 0;
 }
 
 footer div.kcp .k-icon {
-  width: 100%;
+  width: 13%;
+  margin: auto;
 }
 
-footer div.kcp p {
-  font-size: 14px;
+footer div.kcp .k-icon img {
+  width: 100%;
+  height: auto;
+}
+
+footer div.kcp .k-des {
+  text-align: center;
+  margin-top: 2.6%;
+}
+
+footer div.kcp .k-des p {
+  font-size: 2.8vw;
   color: #fefefc;
 }
 
+footer div.copyright {
+  text-align: center;
+}
+
 footer div.copyright p {
-  font-size: 14px;
+  font-size: 2.6vw;
   color: #fefefc;
 }
 /*# sourceMappingURL=index.css.map */

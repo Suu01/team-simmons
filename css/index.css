@@ -225,6 +225,10 @@ header div.side-menu .s-menu li:first-child {
   margin-top: 0;
 }
 
+header div.side-menu .s-menu li:first-child a {
+  color: #333333;
+}
+
 header div.side-menu .s-menu li:last-child {
   display: block;
 }
@@ -275,6 +279,19 @@ main section.section2 {
   margin: 12% 0;
 }
 
+@media screen and (min-width: 1024px) {
+  main section.section2 {
+    padding: 0 100px;
+    margin: 120px 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.section2 h2 + .sec2-txt {
+    text-align: left;
+  }
+}
+
 main section.section2 h2 {
   display: none;
 }
@@ -285,6 +302,19 @@ main section.section2 .sec2-txt {
 
 main section.section2 .sec2-txt p {
   font-size: 3vw;
+  line-height: 1.8;
+}
+
+@media screen and (min-width: 1024px) {
+  main section.section2 .sec2-txt p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.section2 .sec2-img + .sec2-txt {
+    text-align: right;
+  }
 }
 
 main section.section2 .sec2-img {
@@ -299,7 +329,6 @@ main section.section2 .sec2-img .img {
 }
 
 main section.section2 .sec2-img .img img {
-  margin: 0 auto;
   width: 100%;
   height: auto;
 }

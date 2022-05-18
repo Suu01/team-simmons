@@ -74,6 +74,7 @@ footer {
 
 body {
   padding-top: 60px;
+  -ms-overflow-style: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -83,6 +84,10 @@ body {
   }
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -90,7 +95,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 1;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -102,6 +106,7 @@ header {
   padding: 0 15px;
   border-bottom: 1px solid #333;
   background-color: #fefefc;
+  z-index: 1;
 }
 
 @media screen and (min-width: 1024px) {
@@ -112,6 +117,9 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 60px 0;
     border-bottom: 0;
     border-right: 1px solid #333;
@@ -176,7 +184,8 @@ header nav ul.gnb li:first-child {
 }
 
 header nav ul.gnb li:first-child img {
-  height: 20px;
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 1024px) {
@@ -185,28 +194,11 @@ header nav ul.gnb li:first-child img {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  header nav ul.gnb li:nth-child(2) a span {
-    margin-top: 0;
-  }
-}
-
-header nav ul.gnb li a img {
-  width: 25px;
-  height: auto;
-}
-
 header nav ul.gnb li a span {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #82ca9c;
-}
-
-@media screen and (min-width: 1024px) {
-  header div.side-menu {
-    height: 18%;
-  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -235,6 +227,7 @@ header div.side-menu .s-menu li {
 @media screen and (min-width: 1024px) {
   header div.side-menu .s-menu li {
     display: block;
+    margin-top: 35px;
   }
 }
 
@@ -242,6 +235,11 @@ header div.side-menu .s-menu li:first-child {
   font-size: 18px;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+  margin-top: 0;
+}
+
+header div.side-menu .s-menu li:first-child a {
+  color: #333333;
 }
 
 header div.side-menu .s-menu li:last-child {
@@ -370,7 +368,6 @@ main section.tap ul li:first-child {
 
 main div.gallery {
   width: 100%;
-  display: none;
 }
 
 main div.gallery section.gallery-title {
@@ -543,48 +540,49 @@ main div.gallery section.gallery-slide div.g-wrapper .slide-img-wrap img {
 
 main div.gallery-search {
   width: 100%;
+  display: none;
 }
 
 main div.gallery-search div.search {
   width: 100%;
 }
 
-main div.gallery-search div.search section {
+main div.gallery-search div.search section.search-section {
   width: 100%;
   border-top: 1px solid #c4c4c4;
 }
 
-main div.gallery-search div.search section div.search-tap {
+main div.gallery-search div.search section.search-section div.search-tap {
   width: 100%;
   text-align: center;
 }
 
-main div.gallery-search div.search section div.search-tap ul {
+main div.gallery-search div.search section.search-section div.search-tap ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main div.gallery-search div.search section div.search-tap ul li {
+main div.gallery-search div.search section.search-section div.search-tap ul li {
   width: 50%;
   padding: 20px;
 }
 
-main div.gallery-search div.search section div.search-tap ul li:hover {
+main div.gallery-search div.search section.search-section div.search-tap ul li:hover {
   border-bottom: 2px solid #82ca9c;
 }
 
-main div.gallery-search div.search section div.search-tap ul li a {
+main div.gallery-search div.search section.search-section div.search-tap ul li a {
   font-size: 18px;
 }
 
-main div.gallery-search div.search section div.search-bar {
+main div.gallery-search div.search section.search-section div.search-bar {
   width: 100%;
   border-top: 1px solid #c4c4c4;
   border-bottom: 1px solid #c4c4c4;
 }
 
-main div.gallery-search div.search section div.search-bar form {
+main div.gallery-search div.search section.search-section div.search-bar form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -595,17 +593,17 @@ main div.gallery-search div.search section div.search-bar form {
   background-color: #b9d3c2;
 }
 
-main div.gallery-search div.search section div.search-bar form input {
+main div.gallery-search div.search section.search-section div.search-bar form input {
   width: 75%;
   background-color: transparent;
   border: none;
 }
 
-main div.gallery-search div.search section div.search-bar form input:active {
+main div.gallery-search div.search section.search-section div.search-bar form input:active {
   border-bottom: 1px solid #c4c4c4;
 }
 
-main div.gallery-search div.search section div.search-bar form .search-icon-wrap img {
+main div.gallery-search div.search section.search-section div.search-bar form .search-icon-wrap img {
   width: 16px;
   height: auto;
   color: #fefefc;

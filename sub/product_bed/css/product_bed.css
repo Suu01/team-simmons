@@ -506,6 +506,7 @@ main .wrapper .tabs-contents .all {
   display: grid;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
 }
 
 @media screen and (min-width: 768px) {

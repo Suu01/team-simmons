@@ -1,0 +1,297 @@
+//header
+@import "style.scss";
+@import "common.scss";
+@import "mixin.scss";
+
+body {
+    width: 100%;
+    padding-top: 60px;
+
+    @include responsive(tablet-size) {
+        padding-top: 0;
+        padding-left: 70px;
+    }
+
+    @include responsive(pc-size) {
+        padding-left: 80px;
+    }
+}
+
+//테스트 문장 입니다.
+// header-area
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    width: $width-wide;
+    height: 60px;
+    padding: 0 15px;
+    border-bottom: 1px solid #333;
+    background-color: $bg-color;
+
+    @include responsive(tablet-size) {
+        width: 70px;
+        height: 100%;
+        flex-direction: column;
+        // align-items: baseline;
+        padding: 60px 0;
+        border-bottom: 0;
+        border-right: 1px solid #333;
+    }
+
+    @include responsive(pc-size) {
+        width: 80px;
+    }
+
+    h1 {
+        // background-color: aqua;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @include responsive(tablet-size) {
+            // height: 20%;
+            position: static;
+            top: 0;
+            left: 0;
+            transform: translate(0, 0);
+        }
+
+        // a {
+        //     img {
+        //         @include responsive(pc-size) {
+        //             width: 62px;
+        //             height: 44px;
+        //         }
+        //     }
+        // }
+    }
+
+    nav {
+        // background-color: aquamarine;
+
+        @include responsive(tablet-size) {
+            height: 30%;
+        }
+
+        ul.gnb {
+
+            @include responsive(tablet-size) {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            li {
+                display: none;
+    
+                @include responsive(tablet-size) {
+                    display: block;
+                }
+    
+                &:first-child {
+                    display: block;
+    
+                    @include responsive(tablet-size) {
+                        display: none;
+                    }
+                }
+    
+                &:nth-child(2) {
+                    a {
+                        span {
+                            @include responsive(tablet-size) {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+    
+                a {
+                    img {
+                        width: 25px;
+                        height: auto;
+                    }
+    
+                    span {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        // margin-top: 70px;
+                        background-color: $point-color;
+                    }
+                }
+            }
+        }
+    }
+
+    div.side-menu {
+        // background-color: pink;
+
+        @include responsive(tablet-size) {
+            height: 20%;
+        }
+
+            .s-menu {
+                
+                @include responsive(tablet-size) {
+                    display: flex;
+                    height: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                li {
+                    display: none;
+    
+                    @include responsive(tablet-size) {
+                        display: block;
+                    }
+    
+                    &:first-child {
+                        font-size: 18px;
+                        transform: rotate(-90deg);
+                    }
+        
+                    &:last-child {
+                        display: block;
+        
+                        a {
+                            img {
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+h1{
+    position: absolute;
+    left: 180px; top: 15%;
+}
+
+.wrapper{   
+    margin: 0 auto;
+    display: flex;
+}
+
+.commu-btn{
+    position: fixed;
+    top: 33%;
+    margin-left: 100px;
+    ul{
+        li{
+            width: 250px;
+            height: 50px;
+            text-align: center;
+            padding-top: 12px;
+            border: 1px solid black;
+            border-top: none;
+            &:first-child{
+                background-color: $point-color;
+                color: white;
+                border: $point-color;
+            }
+        }
+    }
+}
+
+.commu-main{
+    position: absolute;
+    top: 30%;
+    width: 60%;
+    margin-left: 450px;
+}
+
+.faq-btn{
+    ul{
+        display: flex;
+        margin-bottom: 50px;
+        li{
+            width: 16.5%;
+            height: 45px;
+            text-align: center;
+            padding-top: 10px;
+            border: 1px solid black;
+            border-bottom: 3px solid $point-color;
+            border-left: none;
+            &:first-child{
+                border: 3px solid $point-color;
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.faq-member{
+    div{
+        padding: 5px;
+        div{
+            display: flex;
+            justify-content: space-between;
+            img{
+                &:last-child{
+                    display: none;
+                }
+            }
+        }
+        p{
+            display: none;
+        }
+    }
+    hr{
+        &:last-child{
+            border: 2px solid $point-color;
+        }
+    }
+    .search-box1{
+        position: absolute;
+        right: 1%;
+        input{
+            display: inline-block;
+            height: 25px;
+            
+        }
+        label{
+            display: none;
+        }
+        a{
+            background-color: $point-color;
+            border-radius: 10%;
+            padding: 5px;
+            display: inline-block;
+        }
+    }
+}
+
+.faq-product{
+    display: none;
+}
+
+.qna{
+    display: none;
+}
+
+.tel{
+    display: none;
+}
+
+.asp{
+    display: none;
+}
+
+.commu-notice{
+    display: none;
+}
+

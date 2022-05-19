@@ -12,6 +12,7 @@
 // }
 body {
     @include responsive(pc-size) {
+        padding-left: 80px;
         margin: 0 auto;
         padding: 0 auto;
     }
@@ -248,7 +249,7 @@ main {
         }
 
         @include responsive(mobile-size) {
-            width: 1024px;
+            width: 100%;
             font-size: 3em;
             font-family: $main-font;
             margin-left: 80px;

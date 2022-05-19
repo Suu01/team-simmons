@@ -72,6 +72,7 @@ footer {
 
 @media screen and (min-width: 1024px) {
   body {
+    padding-left: 80px;
     margin: 0 auto;
     padding: 0 auto;
   }
@@ -334,7 +335,7 @@ main .title-login .title-fir {
 
 @media screen and (min-width: 320px) {
   main .title-login {
-    width: 1024px;
+    width: 100%;
     font-size: 3em;
     font-family: "SCoreDream";
     margin-left: 80px;

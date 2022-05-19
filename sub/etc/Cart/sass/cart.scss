@@ -49,7 +49,6 @@ header {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
         @include responsive(pc-size) {
             // height: 20%;
             position: static;
@@ -61,8 +60,6 @@ header {
 
     nav {
         //background-color: aquamarine;
-
-
         @include responsive(pc-size) {
             height: 30%;
         }
@@ -111,7 +108,6 @@ header {
                         width: 25px;
                         height: auto;
                     }
-    
                     span {
                         width: 10px;
                         height: 10px;
@@ -186,16 +182,21 @@ header {
         
         nav {
             display: none;
-    
+
             @include responsive(pc-size) {
                 display: block;
+
             }
     
             .wrapper {
                 width: 100%;
     
-    
                 @include responsive(pc-size) {
+                    width: 1024px;
+                    margin: 0 auto;
+                }
+
+                @include responsive(tablet-size) {
                     width: 1024px;
                     margin: 0 auto;
                 }
@@ -231,62 +232,85 @@ header {
             margin-top: 36px;
             margin-left: 34px;
             
-            
             padding-top: 33px;
             font-size: 3em;
 
-            .title-fir {
-                font-size: 1.5em;
-                font-family: $title-font;
-                font-weight: 500;
-                //display: flex;
-                margin: 0 auto;
-                //padding: 0 auto;
-                margin-top: 50px;
-    
-            }
-    
-            @include responsive(pc-size) {
-                width: 1024px;
-                font-size: 3em;
-                font-family: $main-font;
-                margin-left: 80px;
-
-                padding-left: 279px;
-                padding-top: 37px;
-    
-    
                 .title {
                     margin-top: 55px;
                     padding: 0 auto;
 
-    
                     @include responsive(pc-size) {
                         display: block;
                         float: left;
-                        margin: 0 auto;
-                        padding: 0 auto;
+                        margin-top: 10px;
+                    }
     
+                    .title-fir {
+                        font-size: 1.5em;
+                        font-family: $title-font;
+                        font-weight: 500;
+                        //display: flex;
+                        margin: 0 auto;
+                        //padding: 0 auto;
+                        margin-top: 50px;
+
+                        @include responsive(pc-size) {
+                            display: block;
+                            float: left;
+                            margin: 0 auto;
+                            padding: 0 auto;
+                            margin-left: -283px;
+                            margin-top: -90px;
+                            padding-top: 5px;
+                            font-size: 90px;
+                            //background-color: aqua;
+                            
+                        }
+
+                    }
+                    .title-sub {
+                        display: none;
+                        //background-color: aquamarine;                        
+                        @include responsive(tablet-size) {
+                            display: block;
+                            width: 1024px;
+                            font-size: 22px;
+                            font-family: $main-font;
+                            margin-top: -30px;
+                            margin-left: -320px;
+                            padding-left: 279px;
+                            padding-top: 7px;
+                        }
+
+                        @include responsive(pc-size) {
+                            display: block;
+                            width: 1024px;
+                            font-size: 22px;
+                            font-family: $main-font;
+                            margin-top: -30px;
+                            margin-left: -320px;
+                            padding-left: 279px;
+                            padding-top: 7px;
+                        }
                     }
                 }
-
-            }
-            
             nav.content-menu {
-                background-color: aqua;
-                padding-top: 30px;
+                display: block;
+                padding-top: 2px;
+                margin: 0 auto;
+                text-align: center;
 
-                @include responsive(pc-size) {
-                    padding-top: 388px;
-    
-    
+                @include responsive(tablet-size) {
+                    padding-top: 88px;
+                    margin: 0 auto;
+                    width: $width-half;
                 }
     
-                // @include responsive(mobile-size) {
-                //     display: flex;
-                //     //background-color: aqua;
-                //     margin-top: 42px;
-                // }
+                @include responsive(pc-size) {
+                    padding-top: 88px;
+                    margin: 0 auto;
+                    width: 50%;
+                }
     
                 ul {
                     display: flex;
@@ -319,10 +343,71 @@ header {
                 
                 }
             }
+
+            .notice-content {
+                margin: 0 auto;
+                padding: 0 auto;
+                width: $width-wide;
+                height: 455px;
+                //background-color: aquamarine;
+                align-items: center;
+                @include responsive(tablet-size) {
+                    padding-top: 88px;
+                    margin: 0 auto;
+                    width: 50%;
+                }
+                @include responsive(pc-size) {
+                    padding-top: 38px;
+                    //background-color: aquamarine;
+                    margin: 0 auto;
+                    width: 50%;
+    
+                }
+                .notice {
+                    align-items: center;
+                    //background-color: aqua;
+                    padding-left: 17%;
+                    margin-top: -45px;
+                }
+                .notice-text {
+                    font-size: 23px;
+                    color: #666666;
+                    //background-color: aqua;
+                    padding-left: 14%;
+                    margin-top: -55px;
+                }
+
+                button {
+                    cursor: pointer;
+                    margin: 0 auto;
+                    padding: 0 auto;
+                    //width: 50%;
+                    //height: 50px;
+                    display: block;
+                    text-align: center;
+                    width: 328px;
+                    height: 46px;
+                    background-color: $point-color;
+                    border-radius: 10px;
+                    border-color: white;
+                    //background-color: aqua;
+                    padding-left: 15%;
+                    margin-top: 35px;
+                    margin-left: 40px;
+                    font-size: 25px;
+
+                    a {
+                        color: #fefefe;
+                        font-size: 1em;
+                        font-family: $main-font;
+                        margin-right: 50px;
+                        width: 80%;
+                        
+                    }
+
+                }
+
+            }
         }    
         
-        
-        
-
-
     }

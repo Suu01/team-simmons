@@ -572,6 +572,10 @@ main {
 
         section.search-table {
             display: none;
+
+            @include responsive(tablet-size) {
+                display: block;
+            }
         }
     }
 }

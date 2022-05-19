@@ -1,20 +1,8 @@
 @import url('https://webfontworld.github.io/SCoreDream/SCoreDream.css');
 @import url('https://webfontworld.github.io/cafe24/Cafe24Danjunghae.css');
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ramaraja&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
 
-::-moz-input-placeholder, ::-moz-textarea-placeholder {
-    color: #fefefc;
-    font-size: 18px;
-    font-weight: 600;
-    overflow: hidden;
-}
-
-::-webkit-input-placeholder, ::-webkit-textarea-placeholder {
-    color: #fefefc;
-    font-size: 18px;
-    font-weight: 600;
-    overflow: hidden;
-}
 
 * {
     padding: 0;
@@ -24,6 +12,7 @@
 
 body {
     font-family: $main-font;
+    word-break: keep-all;
     background-color: $bg-color;
     width: $width-wide;
     margin: 0 auto;
@@ -44,7 +33,7 @@ ul, ol {
 
 img {
     display: block;
-    // vertical-align: bottom;
+    vertical-align: bottom;
 }
 
 h1 {

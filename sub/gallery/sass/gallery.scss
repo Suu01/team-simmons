@@ -414,15 +414,18 @@ main {
 
             @include responsive(tablet-size) {
                 display: flex;
+                width: 100%;
+                max-width: 1024px;
+                margin: 0 auto;
+                // height: 755px;
             }
 
             section.search-section {
                 width: $width-wide;
-                border-top: 1px solid #c4c4c4;
+                border: 1px solid #c4c4c4;
 
                 @include responsive(tablet-size) {
-                    // display: flex;
-                    width: 600px;
+                    width: 500px;
                 }
 
                 div.search-tap {
@@ -562,10 +565,14 @@ main {
 
                 @include responsive(tablet-size) {
                     display: block;
+                    width: 100%;
+                    background-color: palegoldenrod;
+                }
 
-                    iframe {
-                        width: 100%;
-                    }
+                iframe {
+                    width: 100%;
+                    box-sizing: border-box;
+                    object-fit: cover;
                 }
             }
         }

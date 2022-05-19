@@ -181,9 +181,9 @@ main {
 
     @include responsive(pc-size) {
         flex-direction: column;
-        // align-items: center;
+        align-items: center;
         margin: 0 auto;
-        // padding: 0 auto;
+        padding: 0 auto;
     }
 
     nav {
@@ -228,77 +228,89 @@ main {
 
     .title-login{
         position: relative;
-        margin: 0 auto;
-        padding-top: 93px;
+        margin: 0 0;
+        padding: 0 0;
+        margin-top: 36px;
+        margin-left: 34px;
+        padding-top: 33px;
+        font-size: 3em;
 
-
-        // @media screen and (min-width: 1024px) {
-        //     padding-left: 279px;
-        //     padding-top: 137px;
-        // }
-
-        .title-fir {
-            font-size: 1.5em;
-            font-family: $title-font;
-            font-weight: 500;
-            //display: flex;
-            margin: 0 auto;
+        .title {
+            margin-top: 55px;
             padding: 0 auto;
 
-        }
+            @include responsive(pc-size) {
+                display: block;
+                float: left;
+                margin-top: 10px;
+            }
 
-        @include responsive(mobile-size) {
-            width: 100%;
-            font-size: 3em;
-            font-family: $main-font;
-            margin-left: 80px;
-
-
-            .title {
-                margin-top: 55px;
-                padding: 0 auto;
-                background-color: aquamarine;
+            .title-fir {
+                font-size: 1.5em;
+                font-family: $title-font;
+                font-weight: 500;
+                //display: flex;
+                margin: 0 auto;
+                //padding: 0 auto;
+                margin-top: 50px;
 
                 @include responsive(pc-size) {
                     display: block;
                     float: left;
                     margin: 0 auto;
                     padding: 0 auto;
-
+                    margin-left: -283px;
+                    margin-top: -90px;
+                    padding-top: 5px;
+                    font-size: 90px;
+                    //background-color: aqua;
+                    
                 }
+
             }
             .title-sub {
                 display: none;
-                font-size: 22px;
-                font-family: "SCoreDream";
-                font-weight: 500;
-                margin: 0 auto;
-                
-                @include responsive(pc-size) {
+                //background-color: aquamarine;                        
+                @include responsive(tablet-size) {
                     display: block;
-                    float: left;
-                    padding-top: 13px;
-                    //padding-left: 220px;
-                    margin-top: -57px;
-                    margin-left: 200px;
-                    background-color: orange;
-
+                    width: 1024px;
+                    font-size: 22px;
+                    font-family: $main-font;
+                    margin-top: -30px;
+                    margin-left: -320px;
+                    padding-left: 279px;
+                    padding-top: 7px;
                 }
 
+                @include responsive(pc-size) {
+                    display: block;
+                    width: 1024px;
+                    font-size: 22px;
+                    font-family: $main-font;
+                    margin-top: -30px;
+                    margin-left: -320px;
+                    padding-left: 279px;
+                    padding-top: 7px;
+                }
             }
         }
-        
+
         nav.content-menu {
-            @include responsive(pc-size) {
-                padding-top: 388px;
+            display: block;
+            padding-top: 2px;
+            margin: 0 auto;
+            text-align: center;
 
-
+            @include responsive(tablet-size) {
+                padding-top: 88px;
+                margin: 0 auto;
+                width: $width-half;
             }
 
-            @include responsive(mobile-size) {
-                display: flex;
-                //background-color: aqua;
-                margin-top: 42px;
+            @include responsive(pc-size) {
+                padding-top: 88px;
+                margin: 0 auto;
+                width: 50%;
             }
 
             ul {
@@ -332,6 +344,7 @@ main {
             
             }
         }
+
         
         .loginform {
             
@@ -366,38 +379,73 @@ main {
                     overflow-x: hidden;
                     overflow-y: hidden;
                     
-                    section .loginform-input-area {
-                        .loginform-id .loginform-pw {
-                            font-size: 15px;
-                            width: 328px;
-                            height: 48px;
-                            border: 1px solid #e1dedf;
-                            padding-left: 14px;
-                            font-size: 14px;
-                            margin-top: 8px;
-                        } 
-                        
-                    }
+                
+                    .loginform-id .loginform-pw  {
+                        font-size: 15px;
+                        width: 328px;
+                        height: 48px;
+                        border: 1px solid #e1dedf;
+                        padding-left: 14px;
+                        font-size: 14px;
+                        margin-top: 8px;
+                    } 
+    
+                }
+                .login-button {
+                    margin: 0 auto;
+                    padding: 0 auto;
 
-                    .loginform-input-submit {
-                        background-color: $point-color;
-                    }
-                    
-                }
-                button {
                     cursor: pointer;
-                    margin: 0;
-                    padding: 0;
+                    margin: 0 auto;
+                    padding: 0 auto;
+                    //width: 50%;
+                    //height: 50px;
+                    display: block;
+                    text-align: center;
                     width: 328px;
-                    height: 48px;
+                    height: 46px;
                     background-color: $point-color;
-                    border-color: $bg-color;
-                    color: $bg-color;
                     border-radius: 30px;
+                    border-color: white;
+                    //background-color: aqua;
+                    padding-left: 15%;
+                    margin-top: 35px;
+                    margin-left: 40px;
                     font-size: 25px;
-                    font-family: 'SCoreDream';
+
+
+                    button {
+                        cursor: pointer;
+                        margin: 0 auto;
+                        padding: 0 auto;
+                        //width: 50%;
+                        //height: 50px;
+                        display: block;
+                        text-align: center;
+                        width: 328px;
+                        height: 46px;
+                        background-color: $point-color;
+                        border-radius: 30px;
+                        border-color: white;
+                        //background-color: aqua;
+                        padding-left: 15%;
+                        margin-top: 35px;
+                        margin-left: 40px;
+                        font-size: 25px;
+    
+                        a {
+                            color: #fefefe;
+                            font-size: 1em;
+                            font-family: $main-font;
+                            margin-right: 50px;
+                            width: 80%;
+                            
+                        }
+    
+                    }
                 }
-            }
+
+                }
 
         }
 
@@ -410,14 +458,18 @@ main {
 
                 @include responsive(pc-size) {
                     display: block;
-
+                    //display: flex;
                     width: 380px;
                     background-color: aquamarine;
+                    margin-bottom: 500px;
+                    margin-top: 400px;
+
                 }
 
                 #log .login-id ul {
                     cursor: pointer;
                     color: #333333;
+                    display: flex; /**/
                 }
     
                 .find-login section

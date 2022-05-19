@@ -12,7 +12,6 @@
 // }
 body {
     @include responsive(pc-size) {
-        padding-left: 80px;
         margin: 0 auto;
         padding: 0 auto;
     }

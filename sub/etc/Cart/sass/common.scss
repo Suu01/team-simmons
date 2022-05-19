@@ -1,5 +1,6 @@
 @import url('https://webfontworld.github.io/SCoreDream/SCoreDream.css');
 @import url('https://webfontworld.github.io/cafe24/Cafe24Danjunghae.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 
 * {
     padding: 0;
@@ -8,11 +9,10 @@
 }
 
 body {
-    font-family: 'SCoreDream';
+    font-family: $main-font;
     background-color: $bg-color;
     width: $width-wide;
     margin: 0 auto;
-
 }
 
 .wrapper {
@@ -46,5 +46,24 @@ span {
     display: block;
     font-size: 1em;
 }
+article {
+    display: block;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
 
+body, button, input {
+    margin: 0;
+    padding: 0;
+}
 
+header,
+nav,
+main,
+aside,
+article,
+footer {
+    display: block;
+}

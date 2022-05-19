@@ -258,6 +258,8 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -267,7 +269,11 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0 auto;
+    padding: 0 auto;
   }
 }
 
@@ -318,80 +324,60 @@ main nav .wrapper .gnb li a {
   font-family: "SCoreDream";
 }
 
-main .title-login {
+main .title-cart {
   position: relative;
-  margin: 0 auto;
-  padding-top: 93px;
+  margin: 0 0;
+  padding: 0 0;
+  margin-top: 36px;
+  margin-left: 34px;
+  padding-top: 33px;
+  font-size: 3em;
 }
 
-main .title-login .title-fir {
+main .title-cart .title-fir {
   font-size: 1.5em;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   margin: 0 auto;
-  padding: 0 auto;
-}
-
-@media screen and (min-width: 320px) {
-  main .title-login {
-    width: 100%;
-    font-size: 3em;
-    font-family: "SCoreDream";
-    margin-left: 80px;
-  }
-  main .title-login .title {
-    margin-top: 55px;
-    padding: 0 auto;
-    background-color: aquamarine;
-  }
-}
-
-@media screen and (min-width: 320px) and (min-width: 1024px) {
-  main .title-login .title {
-    display: block;
-    float: left;
-    margin: 0 auto;
-    padding: 0 auto;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  main .title-login .title-sub {
-    display: none;
-    font-size: 22px;
-    font-family: "SCoreDream";
-    font-weight: 500;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 320px) and (min-width: 1024px) {
-  main .title-login .title-sub {
-    display: block;
-    float: left;
-    padding-top: 13px;
-    margin-top: -57px;
-    margin-left: 200px;
-    background-color: orange;
-  }
+  margin-top: 50px;
 }
 
 @media screen and (min-width: 1024px) {
-  main .title-login nav.content-menu {
+  main .title-cart {
+    width: 1024px;
+    font-size: 3em;
+    font-family: "SCoreDream";
+    margin-left: 80px;
+    padding-left: 279px;
+    padding-top: 37px;
+  }
+  main .title-cart .title {
+    margin-top: 55px;
+    padding: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-width: 1024px) {
+  main .title-cart .title {
+    display: block;
+    float: left;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+}
+
+main .title-cart nav.content-menu {
+  background-color: aqua;
+  padding-top: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .title-cart nav.content-menu {
     padding-top: 388px;
   }
 }
 
-@media screen and (min-width: 320px) {
-  main .title-login nav.content-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 42px;
-  }
-}
-
-main .title-login nav.content-menu ul {
+main .title-cart nav.content-menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,12 +386,12 @@ main .title-login nav.content-menu ul {
   font-size: 30px;
 }
 
-main .title-login nav.content-menu ul li:first-child a {
+main .title-cart nav.content-menu ul li:first-child a {
   border-right: 0;
   border-bottom: 0;
 }
 
-main .title-login nav.content-menu ul li a {
+main .title-cart nav.content-menu ul li a {
   color: #333333;
   width: 200px;
   text-align: center;
@@ -413,168 +399,11 @@ main .title-login nav.content-menu ul li a {
   padding: 10px;
 }
 
-main .title-login nav.content-menu ul li a:hover {
+main .title-cart nav.content-menu ul li a:hover {
   color: #82ca9c;
   border-left: 2px solid #82ca9c;
   border-top: 2px solid #82ca9c;
   border-right: 2px solid #82ca9c;
   font-size: 29px;
 }
-
-@media screen and (min-width: 320px) {
-  main .title-login .loginform {
-    margin: 0 auto;
-    padding: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  main .title-login .loginform {
-    margin: 0 auto;
-    padding: 0 auto;
-    margin-top: 70px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    margin-top: 42px;
-  }
-}
-
-main .title-login .loginform .loginform-box {
-  width: 328px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-main .title-login .loginform .loginform-box .loginform-input-form {
-  width: 328px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
-main .title-login .loginform .loginform-box .loginform-input-form section .loginform-input-area .loginform-id .loginform-pw {
-  font-size: 15px;
-  width: 328px;
-  height: 48px;
-  border: 1px solid #e1dedf;
-  padding-left: 14px;
-  font-size: 14px;
-  margin-top: 8px;
-}
-
-main .title-login .loginform .loginform-box .loginform-input-form .loginform-input-submit {
-  background-color: #82ca9c;
-}
-
-main .title-login .loginform .loginform-box button {
-  cursor: pointer;
-  margin: 0;
-  padding: 0;
-  width: 328px;
-  height: 48px;
-  background-color: #82ca9c;
-  border-color: #fefefc;
-  color: #fefefc;
-  border-radius: 30px;
-  font-size: 25px;
-  font-family: 'SCoreDream';
-}
-
-main .title-login .find-login {
-  display: none;
-  margin-top: 20px;
-  font-size: 16px;
-  text-align: center;
-}
-
-@media screen and (min-width: 1024px) {
-  main .title-login .find-login {
-    display: block;
-    width: 380px;
-    background-color: aquamarine;
-  }
-}
-
-main .title-login .find-login #log .login-id ul {
-  cursor: pointer;
-  color: #333333;
-}
-
-main .title-login .find-login .find-login section
-.login-id li a:hover {
-  color: #82ca9c;
-}
-
-main .title-login .find-login .login-id ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  display: block;
-  -webkit-margin-before: 1em;
-          margin-block-start: 1em;
-  -webkit-margin-after: 1em;
-          margin-block-end: 1em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
-}
-
-main .title-login .find-login .login-id ul li:hover {
-  color: #82ca9c;
-}
-
-main .title-login .find-login .find-login
-.login-align li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-main .title-login .find-login .login-id {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main .title-login .find-login .login-id ul li {
-  border-right: 1px solid #333333;
-  padding-right: 25px;
-  margin-left: 14.5px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-main .title-login .find-login .login-id ul li:last-child {
-  border-right: 0;
-}
-
-main .title-login .find-login .login-id ul li a:hover {
-  color: #82ca9c;
-}
-/*# sourceMappingURL=login_member.css.map */
+/*# sourceMappingURL=cart.css.map */

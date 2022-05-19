@@ -176,14 +176,14 @@ main {
     @include responsive(tablet-size) {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
     }
 
     @include responsive(pc-size) {
         flex-direction: column;
-        align-items: center;
+        // align-items: center;
         margin: 0 auto;
-        padding: 0 auto;
+        // padding: 0 auto;
     }
 
     nav {
@@ -232,10 +232,10 @@ main {
         padding-top: 93px;
 
 
-        @media screen and (min-width: 1024px) {
-            padding-left: 279px;
-            padding-top: 137px;
-        }
+        // @media screen and (min-width: 1024px) {
+        //     padding-left: 279px;
+        //     padding-top: 137px;
+        // }
 
         .title-fir {
             font-size: 1.5em;
@@ -248,7 +248,7 @@ main {
         }
 
         @include responsive(mobile-size) {
-            width: 1024px;
+            width: 100%;
             font-size: 3em;
             font-family: $main-font;
             margin-left: 80px;
@@ -443,7 +443,7 @@ main {
                 }
     
                 .find-login
-                .login-align {
+                .login-align li {
                     display: flex;
                     margin: 0;
                     padding: 0;

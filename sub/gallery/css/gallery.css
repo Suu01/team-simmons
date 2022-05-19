@@ -617,8 +617,6 @@ main div.gallery-search div.search section.search-section div.search-bar form .s
 
 main div.gallery-search div.search section.search-section div.gallery-info {
   width: 100%;
-  border-bottom: 1px solid #c4c4c4;
-  padding: 25px 20px;
 }
 
 main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des {
@@ -626,26 +624,49 @@ main div.gallery-search div.search section.search-section div.gallery-info .gall
 }
 
 main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address {
+  position: relative;
   width: 100%;
+  border-bottom: 1px solid #c4c4c4;
+  padding: 25px 20px;
 }
 
-main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a p.gal-add-title {
+main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a:first-child p.gal-add-title {
   font-size: 16px;
   font-weight: 600;
 }
 
-main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a p.gal-add-add {
+main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a:first-child p.gal-add-add {
   font-size: 14px;
   color: #555;
   margin: 18px 0;
 }
 
-main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a .gal-number {
+main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a:nth-child(2) .gal-number {
   font-size: 14px;
   color: #999;
 }
 
-main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a .gal-popup {
+main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a:nth-child(3) {
+  position: absolute;
+}
+
+main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a:nth-child(3) .gal-copy {
+  border-radius: 50px;
+  display: inline-block;
+  background-color: #b9d3c2;
+}
+
+main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a:nth-child(3) .gal-copy p {
+  padding: 2px 7px;
+  font-size: 12px;
+  color: #fefefc;
+}
+
+main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a:nth-child(4) {
+  position: absolute;
+}
+
+main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a:nth-child(4) .gal-popup {
   font-size: 12px;
   color: #555;
 }

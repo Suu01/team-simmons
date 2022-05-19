@@ -60,7 +60,8 @@ header {
     }
 
     nav {
-        // background-color: aquamarine;
+        //background-color: aquamarine;
+
 
         @include responsive(pc-size) {
             height: 30%;
@@ -223,17 +224,17 @@ header {
      
         }
 
-        .title-login{
+        .title-cart{
             position: relative;
-            margin: 0 auto;
+            margin: 0 0;
+            padding: 0 0;
+            margin-top: 36px;
+            margin-left: 34px;
+            
+            
             padding-top: 33px;
-    
-    
-            @media screen and (min-width: 1024px) {
-                padding-left: 279px;
-                padding-top: 137px;
-            }
-    
+            font-size: 3em;
+
             .title-fir {
                 font-size: 1.5em;
                 font-family: $title-font;
@@ -245,11 +246,14 @@ header {
     
             }
     
-            @include responsive(mobile-size) {
+            @include responsive(pc-size) {
                 width: 1024px;
                 font-size: 3em;
                 font-family: $main-font;
                 margin-left: 80px;
+
+                padding-left: 279px;
+                padding-top: 37px;
     
     
                 .title {
@@ -269,17 +273,20 @@ header {
             }
             
             nav.content-menu {
+                background-color: aqua;
+                padding-top: 30px;
+
                 @include responsive(pc-size) {
                     padding-top: 388px;
     
     
                 }
     
-                @include responsive(mobile-size) {
-                    display: flex;
-                    //background-color: aqua;
-                    margin-top: 42px;
-                }
+                // @include responsive(mobile-size) {
+                //     display: flex;
+                //     //background-color: aqua;
+                //     margin-top: 42px;
+                // }
     
                 ul {
                     display: flex;

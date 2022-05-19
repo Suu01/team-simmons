@@ -324,20 +324,17 @@ main nav .wrapper .gnb li a {
   font-family: "SCoreDream";
 }
 
-main .title-login {
+main .title-cart {
   position: relative;
-  margin: 0 auto;
+  margin: 0 0;
+  padding: 0 0;
+  margin-top: 36px;
+  margin-left: 34px;
   padding-top: 33px;
+  font-size: 3em;
 }
 
-@media screen and (min-width: 1024px) {
-  main .title-login {
-    padding-left: 279px;
-    padding-top: 137px;
-  }
-}
-
-main .title-login .title-fir {
+main .title-cart .title-fir {
   font-size: 1.5em;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -345,21 +342,23 @@ main .title-login .title-fir {
   margin-top: 50px;
 }
 
-@media screen and (min-width: 320px) {
-  main .title-login {
+@media screen and (min-width: 1024px) {
+  main .title-cart {
     width: 1024px;
     font-size: 3em;
     font-family: "SCoreDream";
     margin-left: 80px;
+    padding-left: 279px;
+    padding-top: 37px;
   }
-  main .title-login .title {
+  main .title-cart .title {
     margin-top: 55px;
     padding: 0 auto;
   }
 }
 
-@media screen and (min-width: 320px) and (min-width: 1024px) {
-  main .title-login .title {
+@media screen and (min-width: 1024px) and (min-width: 1024px) {
+  main .title-cart .title {
     display: block;
     float: left;
     margin: 0 auto;
@@ -367,22 +366,18 @@ main .title-login .title-fir {
   }
 }
 
+main .title-cart nav.content-menu {
+  background-color: aqua;
+  padding-top: 30px;
+}
+
 @media screen and (min-width: 1024px) {
-  main .title-login nav.content-menu {
+  main .title-cart nav.content-menu {
     padding-top: 388px;
   }
 }
 
-@media screen and (min-width: 320px) {
-  main .title-login nav.content-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 42px;
-  }
-}
-
-main .title-login nav.content-menu ul {
+main .title-cart nav.content-menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -391,12 +386,12 @@ main .title-login nav.content-menu ul {
   font-size: 30px;
 }
 
-main .title-login nav.content-menu ul li:first-child a {
+main .title-cart nav.content-menu ul li:first-child a {
   border-right: 0;
   border-bottom: 0;
 }
 
-main .title-login nav.content-menu ul li a {
+main .title-cart nav.content-menu ul li a {
   color: #333333;
   width: 200px;
   text-align: center;
@@ -404,7 +399,7 @@ main .title-login nav.content-menu ul li a {
   padding: 10px;
 }
 
-main .title-login nav.content-menu ul li a:hover {
+main .title-cart nav.content-menu ul li a:hover {
   color: #82ca9c;
   border-left: 2px solid #82ca9c;
   border-top: 2px solid #82ca9c;

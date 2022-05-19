@@ -254,11 +254,37 @@ header div.side-menu .s-menu li:last-child a img {
 
 main .slide {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  main .slide {
+    width: 100%;
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .slide {
+    width: 100%;
+    margin-top: 110px;
+    margin-bottom: 40px;
+  }
 }
 
 main .slide img {
   width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  main .slide img {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 main .wrapper {
@@ -268,26 +294,404 @@ main .wrapper {
   margin: 0 auto;
 }
 
-main .wrapper .left .description {
+@media screen and (min-width: 1024px) {
+  main .wrapper {
+    width: 80%;
+  }
+}
+
+main .wrapper .right {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .right {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .right {
+    float: right;
+    width: 35%;
+    margin-left: 3%;
+  }
+}
+
+main .wrapper .right h1 {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .right h1 {
+    font-size: 1.7em;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .right h1 {
+    font-size: 1.3em;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 0.04em;
+    margin-top: 20px;
+    margin-bottom: 1px;
+  }
+}
+
+main .wrapper .right hr {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .right hr {
+    display: block;
+    width: 75px;
+    border: 1.5px solid #82ca9c;
+    margin-bottom: 40px;
+  }
+}
+
+main .wrapper .right form {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .right form {
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+
+main .wrapper .right form p {
+  font-size: 0.9em;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 0.04em;
+  margin-top: 25px;
+}
+
+main .wrapper .right form p select {
+  float: right;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 60%;
+  height: 30px;
+  color: #333333;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+}
+
+main .wrapper .right .price {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .right .price {
+    display: block;
+    height: 25px;
+  }
+}
+
+main .wrapper .right .price p {
+  float: left;
+  font-size: 0.9em;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 0.04em;
+}
+
+main .wrapper .right .price .won {
+  width: 60%;
+  float: right;
+  font-weight: 500;
+}
+
+main .wrapper .right .hr_2 {
+  width: 100%;
+  border: 0.5px solid #cecece;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+main .wrapper .right .point {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .right .point {
+    display: block;
+    width: 100%;
+    height: 160px;
+  }
+}
+
+main .wrapper .right .point p {
+  font-size: 0.9em;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 0.04em;
+}
+
+main .wrapper .right .point .acc_box {
+  height: 30px;
+}
+
+main .wrapper .right .point .acc_box .acc {
+  float: left;
+}
+
+main .wrapper .right .point .acc_box .acc_p {
+  width: 60%;
+  float: right;
+  font-weight: 500;
+}
+
+main .wrapper .right .point .simon_pay_box .simon_pay {
+  float: left;
+}
+
+main .wrapper .right .point .simon_pay_box .simon_pay_p {
+  width: 60%;
+  height: 25px;
+  float: right;
+  font-weight: 500;
+  text-decoration: line-through;
+  color: #cecece;
+}
+
+main .wrapper .right .point .simon_pay_box .simon_pay_p_sale {
+  width: 60%;
+  float: right;
+  font-size: 0.7em;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+main .wrapper .right .point .simon_pay_box .simon_pay_p_sale .red {
+  display: inline;
+  color: #f05252;
+}
+
+main .wrapper .right .point .simon_pay_box .simon_pay_p_sale .underscore {
+  font-size: 0.55em;
+  letter-spacing: 0.03em;
+  text-decoration: underline;
+}
+
+main .wrapper .right .icon {
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .right .icon {
+    text-align: left;
+  }
+}
+
+main .wrapper .right .icon button {
+  width: 160px;
+  height: 45px;
+  font-family: "SCoreDream";
+  font-size: 1em;
+  font-weight: 600;
+  color: #fefefc;
+  letter-spacing: 0.1em;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #82ca9c;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .right .icon button {
+    width: 220px;
+    height: 50px;
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .right .icon button {
+    width: 140px;
+    height: 40px;
+    font-family: "SCoreDream";
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+}
+
+main .wrapper .right .icon img {
+  width: 45px;
+  height: 45px;
+  display: inline;
+  padding: 10px;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .right .icon img {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .right .icon img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+}
+
+main .wrapper .tabs {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .tabs {
+    width: 350px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .tabs {
+    display: none;
+  }
+}
+
+main .wrapper .tabs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 3%;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .tabs ul {
+    padding: 2% 4%;
+  }
+}
+
+main .wrapper .tabs ul li {
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .tabs ul li {
+    margin-right: 35px;
+  }
+}
+
+main .wrapper .tabs ul li a {
+  font-size: 0.7em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 15px;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .tabs ul li a {
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 15px;
+    margin-bottom: 0;
+  }
+}
+
+main .wrapper .tabs ul li:last-child {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .left {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left {
+    width: 60%;
+    float: left;
+  }
+}
+
+main .wrapper .left #pay img {
   width: 100%;
 }
 
-main .wrapper .left .description .pay img {
+main .wrapper .left #description {
   width: 100%;
 }
 
-main .wrapper .left .description .description-text {
+main .wrapper .left #description .description-text {
   margin-top: 30px;
   margin-bottom: 60px;
 }
 
-main .wrapper .left .description .description-text .lookbook {
+@media screen and (min-width: 768px) {
+  main .wrapper .left #description .description-text {
+    margin-top: 60px;
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #description .description-text {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+}
+
+main .wrapper .left #description .description-text .lookbook {
   width: 100%;
   margin-top: 30px;
   margin-bottom: 60px;
 }
 
-main .wrapper .left .description .description-text h1 {
+@media screen and (min-width: 768px) {
+  main .wrapper .left #description .description-text .lookbook {
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #description .description-text .lookbook {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+}
+
+main .wrapper .left #description .description-text h1 {
   font-size: 1.1em;
   font-weight: 700;
   text-transform: uppercase;
@@ -295,14 +699,32 @@ main .wrapper .left .description .description-text h1 {
   margin-bottom: 15px;
 }
 
-main .wrapper .left .description .description-text h2 {
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #description .description-text h1 {
+    font-size: 1.3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    margin-bottom: 15px;
+  }
+}
+
+main .wrapper .left #description .description-text h2 {
   font-size: 1em;
   font-weight: 500;
   letter-spacing: -0.03em;
   margin-bottom: 5px;
 }
 
-main .wrapper .left .description .description-text p {
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #description .description-text h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+}
+
+main .wrapper .left #description .description-text p {
   font-size: 0.7em;
   font-weight: 400;
   line-height: 1.25em;
@@ -310,15 +732,33 @@ main .wrapper .left .description .description-text p {
   margin-bottom: 15px;
 }
 
-main .wrapper .left .description .description-text img {
+@media screen and (min-width: 768px) {
+  main .wrapper .left #description .description-text p {
+    font-size: 0.75em;
+    line-height: 1.4em;
+    letter-spacing: -0.02em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #description .description-text p {
+    font-size: 0.75em;
+    font-weight: 400;
+    line-height: 1.4em;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+  }
+}
+
+main .wrapper .left #description .description-text img {
   width: 100%;
 }
 
-main .wrapper .left .details {
+main .wrapper .left #details {
   margin-bottom: 60px;
 }
 
-main .wrapper .left .details h1 {
+main .wrapper .left #details h1 {
   font-size: 1.1em;
   font-weight: 700;
   text-transform: uppercase;
@@ -326,38 +766,114 @@ main .wrapper .left .details h1 {
   margin-bottom: 15px;
 }
 
-main .wrapper .left .details table {
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #details h1 {
+    font-size: 1.3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    margin-bottom: 15px;
+  }
+}
+
+main .wrapper .left #details table {
   width: 100%;
   border-top: 1px solid #000;
   border-collapse: collapse;
 }
 
-main .wrapper .left .details table th, main .wrapper .left .details table td {
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #details table {
+    border-top: 2px solid #000;
+  }
+}
+
+main .wrapper .left #details table th, main .wrapper .left #details table td {
   border-bottom: 1px solid #000;
   padding: 10px;
   vertical-align: top;
 }
 
-main .wrapper .left .details table th {
+@media screen and (min-width: 768px) {
+  main .wrapper .left #details table th, main .wrapper .left #details table td {
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #details table th, main .wrapper .left #details table td {
+    border-bottom: 2px solid #000;
+  }
+}
+
+main .wrapper .left #details table th {
+  width: 30%;
   font-size: 0.7em;
   font-weight: 600;
   text-align: right;
   letter-spacing: -0.09em;
 }
 
-main .wrapper .left .details table td {
+@media screen and (min-width: 768px) {
+  main .wrapper .left #details table th {
+    width: 20%;
+    font-size: 0.8em;
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #details table th {
+    width: 20%;
+    font-size: 0.5em;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+}
+
+main .wrapper .left #details table td {
   font-size: 0.5em;
   font-weight: 400;
   text-align: left;
-  line-height: 2em;
 }
 
-main .wrapper .left .details table p {
+@media screen and (min-width: 768px) {
+  main .wrapper .left #details table td {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #details table td {
+    font-size: 0.7em;
+    font-weight: 400;
+  }
+}
+
+main .wrapper .left #details table p {
   line-height: 2.5em;
 }
 
-main .wrapper .left .details table .type_img {
-  width: 85%;
+@media screen and (min-width: 768px) {
+  main .wrapper .left #details table p {
+    line-height: 2em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #details table p {
+    line-height: 1.8em;
+  }
+}
+
+main .wrapper .left #details table .type_img {
+  width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .left #details table .type_img {
+    width: 30%;
+  }
 }
 
 main .wrapper .left .delivery_return h1 {
@@ -366,6 +882,16 @@ main .wrapper .left .delivery_return h1 {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left .delivery_return h1 {
+    font-size: 1.3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    margin-bottom: 15px;
+  }
 }
 
 main .wrapper .left .delivery_return div {
@@ -377,6 +903,13 @@ main .wrapper .left .delivery_return p {
   font-weight: 600;
   letter-spacing: -0.09em;
   margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left .delivery_return p {
+    font-size: 0.85em;
+    letter-spacing: -0.03em;
+  }
 }
 
 main .wrapper .left .delivery_return li {
@@ -391,18 +924,37 @@ main .wrapper .left .delivery_return li {
   margin-bottom: 5px;
 }
 
+@media screen and (min-width: 1024px) {
+  main .wrapper .left .delivery_return li {
+    font-size: 0.85em;
+    letter-spacing: -0.01em;
+    line-height: 18px;
+  }
+}
+
 main .wrapper .left .delivery_return span {
   display: inline;
   color: #f05252;
 }
 
 main .wrapper .left .delivery_return .order {
-  font-size: 0.75em;
+  font-size: 0.7em;
   font-weight: 600;
   letter-spacing: 0.01em;
   line-height: 15px;
   word-break: keep-all;
   padding: 15px;
+  margin-top: 10px;
   border: 1px solid #000;
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left .delivery_return .order {
+    font-weight: 500;
+    line-height: 15px;
+    word-break: keep-all;
+    padding: 15px;
+    border: 2px solid #000;
+  }
 }
 /*# sourceMappingURL=Rasid.css.map */

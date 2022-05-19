@@ -1,11 +1,30 @@
-@mixin h1 {
+@mixin h1-mobile($size: 1.1em) {
     font: {
-        size: 1.1em;
+        size: $size;
         weight: 700;
     }
     text-transform: uppercase;
     letter-spacing: 0.03em;
     margin-bottom: 15px;
+}
+
+@mixin h1-pc {
+    font: {
+        size: 1.3em;
+        weight: 600;
+    }
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    margin-bottom: 15px;
+}
+
+@mixin right_p($p-size: 0.9em) {
+    font: {
+        size: $p-size;
+        weight: 400;
+    }
+    text-align: left;
+    letter-spacing: 0.04em;
 }
 
 @mixin wrapper {

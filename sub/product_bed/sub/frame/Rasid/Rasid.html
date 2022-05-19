@@ -33,12 +33,76 @@
             <img src="./images/Frame-rasid-lookbook-200615.jpg" alt="rasid-lookbook">
         </section> <!-- slide -->
         <div class="wrapper">
-            <div class="left">
-                <section class="description">
-                    <div class="pay">
-                        <img src="./images/simmons_pay_b1_pc.png" alt="simmons_pay">
-                    </div> <!-- pay -->
-        
+            <section class="right">
+                <h1 class="name">
+                    Rasid
+                </h1>
+                <hr>
+
+                <form action="#">
+                    <p class="fo_size">
+                        사이즈 <select name="se_size" id="se_size">
+                            <option value="">선택하세요.</option>
+                            <option value="GK">GK / 그레이트킹</option>
+                            <option value="KK">KK / 킹오브킹</option>
+                            <option value="LK">LK / 라지킹</option>
+                            <option value="QE">QE / 퀸</option>
+                            <option value="SS">SS / 수퍼싱글</option>
+                        </select>
+                    </p>
+                    <p class="fo_color">
+                        색상 <select name="se_color" id="se_color">
+                            <option value="">선택하세요.</option>
+                            <option value="Beige">Beige</option>
+                            <option value="Sweet">Sweet</option>
+                        </select>
+                    </p>
+                </form>
+
+                <div class="price">
+                    <p>판매가</p>
+                    <p class="won">₩ 0</p>
+                </div> <!-- price -->
+
+                <hr class="hr_2">
+
+                <div class="point">
+                    <div class="acc_box">                        
+                        <p class="acc">적립금</p>
+                        <p class="acc_p">0P</p>
+                    </div> <!-- acc_box -->
+
+                    <div class="simon_pay_box">
+                        <p class="simon_pay">시몬스페이</p>
+                        <p class="simon_pay_p">0P</p>
+                        <p class="simon_pay_p_sale">
+                            <span class="red">월 0원</span> (36개월 할부시) <br>
+                            <span class="underscore">SIMMONS PAY 무이자 할부 혜택</span>
+                        </p>
+                    </div> <!-- simon_pay_box -->
+                </div> <!-- price -->
+
+                <div class="icon">
+                    <button>BUY</button>
+                    <img src="./images/cart_buy.png" alt="cart_buy">
+                    <img src="./images/heart.png" alt="heart">
+                </div> <!-- icon -->
+            </section> <!-- right -->
+
+            <div class="tabs">
+                <ul>
+                    <li><a href="pay">Simmons Pay</a></li>
+                    <li><a href="description">Desription</a></li>
+                    <li><a href="details">Details</a></li>
+                </ul>
+            </div> <!-- tabs -->
+
+            <section class="left">
+                <section id="pay">
+                    <img src="./images/simmons_pay_b1_pc.png" alt="simmons_pay">
+                </section> <!-- pay -->
+
+                <section id="description">
                     <div class="description-text">
                         <img src="./images/Frame-rasid-lookbook2-200615_1.jpg" alt="rasid-lookbook2" class="lookbook">
                         <h1>Description</h1>
@@ -50,7 +114,7 @@
                     </div> <!-- description-text -->
                 </section> <!-- description -->
         
-                <section class="details">
+                <section id="details">
                     <h1>Details</h1>
                     <table>
                         <tr>

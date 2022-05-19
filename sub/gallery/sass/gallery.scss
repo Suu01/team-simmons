@@ -477,16 +477,17 @@ main {
 
                 div.gallery-info {
                     width: $width-wide;
-                    border-bottom: 1px solid #c4c4c4;
-                    padding: 25px 20px;
 
                     .gallery-info-des {
                         width: $width-wide;
 
                         .gal-name-address {
+                            position: relative;
                             width: $width-wide;
+                            border-bottom: 1px solid #c4c4c4;
+                            padding: 25px 20px;
 
-                            a {
+                            a:first-child {
                                 p.gal-add-title {
                                     font-size: 16px;
                                     font-weight: 600;
@@ -499,14 +500,30 @@ main {
                                 }
                             }
 
-                            a {
+                            a:nth-child(2) {
                                 .gal-number {
                                     font-size: 14px;
                                     color: #999;
                                 }
                             }
 
-                            a {
+                            a:nth-child(3) {
+                                position: absolute;
+                                .gal-copy {
+                                    border-radius: 50px;
+                                    display: inline-block;
+                                    background-color: #b9d3c2;
+
+                                    p {
+                                        padding: 2px 7px;
+                                        font-size: 12px;
+                                        color: $bg-color;
+                                    }
+                                }
+                            }
+
+                            a:nth-child(4) {
+                                position: absolute;
                                 .gal-popup {
                                     font-size: 12px;
                                     color: #555;

@@ -222,4 +222,100 @@ header {
             }
      
         }
+
+        .title-login{
+            position: relative;
+            margin: 0 auto;
+            padding-top: 33px;
+    
+    
+            @media screen and (min-width: 1024px) {
+                padding-left: 279px;
+                padding-top: 137px;
+            }
+    
+            .title-fir {
+                font-size: 1.5em;
+                font-family: $title-font;
+                font-weight: 500;
+                //display: flex;
+                margin: 0 auto;
+                //padding: 0 auto;
+                margin-top: 50px;
+    
+            }
+    
+            @include responsive(mobile-size) {
+                width: 1024px;
+                font-size: 3em;
+                font-family: $main-font;
+                margin-left: 80px;
+    
+    
+                .title {
+                    margin-top: 55px;
+                    padding: 0 auto;
+
+    
+                    @include responsive(pc-size) {
+                        display: block;
+                        float: left;
+                        margin: 0 auto;
+                        padding: 0 auto;
+    
+                    }
+                }
+
+            }
+            
+            nav.content-menu {
+                @include responsive(pc-size) {
+                    padding-top: 388px;
+    
+    
+                }
+    
+                @include responsive(mobile-size) {
+                    display: flex;
+                    //background-color: aqua;
+                    margin-top: 42px;
+                }
+    
+                ul {
+                    display: flex;
+                    width: 800px;
+                    margin: 32px auto 34px;
+                    font-size: 30px;
+                            
+                    li {
+                        &:first-child a{
+                            border-right: 0;
+                            border-bottom: 0;
+                          }
+    
+                        a {
+                            color: #333333;
+                            width: 200px;
+                            text-align: center;
+                            border: 1px solid #666666;
+                            padding: 10px;
+            
+                            &:hover {
+                                color: $point-color;
+                                border-left: 2px solid $point-color;
+                                border-top: 2px solid $point-color;
+                                border-right: 2px solid $point-color;
+                                font-size: 29px;
+                            }
+                        }
+                    }
+                
+                }
+            }
+        }    
+        
+        
+        
+
+
     }

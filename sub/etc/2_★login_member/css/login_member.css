@@ -324,13 +324,6 @@ main .title-login {
   padding-top: 93px;
 }
 
-@media screen and (min-width: 1024px) {
-  main .title-login {
-    padding-left: 279px;
-    padding-top: 137px;
-  }
-}
-
 main .title-login .title-fir {
   font-size: 1.5em;
   font-family: "Roboto", sans-serif;
@@ -341,7 +334,7 @@ main .title-login .title-fir {
 
 @media screen and (min-width: 320px) {
   main .title-login {
-    width: 1024px;
+    width: 100%;
     font-size: 3em;
     font-family: "SCoreDream";
     margin-left: 80px;

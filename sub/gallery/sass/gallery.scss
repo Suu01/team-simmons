@@ -566,7 +566,8 @@ main {
                 @include responsive(tablet-size) {
                     display: block;
                     width: 100%;
-                    background-color: palegoldenrod;
+                    border: 1px solid #c4c4c4;
+                    // background-color: palegoldenrod;
                 }
 
                 iframe {
@@ -581,7 +582,7 @@ main {
             display: none;
 
             @include responsive(tablet-size) {
-                display: block;
+                // display: block;
             }
         }
     }

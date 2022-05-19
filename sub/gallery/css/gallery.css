@@ -708,7 +708,7 @@ main div.gallery-search div.search section.search-map {
   main div.gallery-search div.search section.search-map {
     display: block;
     width: 100%;
-    background-color: palegoldenrod;
+    border: 1px solid #c4c4c4;
   }
 }
 
@@ -722,11 +722,5 @@ main div.gallery-search div.search section.search-map iframe {
 
 main div.gallery-search section.search-table {
   display: none;
-}
-
-@media screen and (min-width: 768px) {
-  main div.gallery-search section.search-table {
-    display: block;
-  }
 }
 /*# sourceMappingURL=gallery.css.map */

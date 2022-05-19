@@ -494,6 +494,8 @@ main {
                                 }
 
                                 p.gal-add-add {
+                                    line-height: 1.5;
+                                    width: 80%;
                                     font-size: 14px;
                                     color: #555;
                                     margin: 18px 0;
@@ -509,6 +511,9 @@ main {
 
                             a:nth-child(3) {
                                 position: absolute;
+                                top: 64px;
+                                right: 20px;
+
                                 .gal-copy {
                                     border-radius: 50px;
                                     display: inline-block;
@@ -524,6 +529,9 @@ main {
 
                             a:nth-child(4) {
                                 position: absolute;
+                                bottom: 15%;
+                                right: 20px;
+
                                 .gal-popup {
                                     font-size: 12px;
                                     color: #555;

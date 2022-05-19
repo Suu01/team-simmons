@@ -636,6 +636,8 @@ main div.gallery-search div.search section.search-section div.gallery-info .gall
 }
 
 main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a:first-child p.gal-add-add {
+  line-height: 1.5;
+  width: 80%;
   font-size: 14px;
   color: #555;
   margin: 18px 0;
@@ -648,6 +650,8 @@ main div.gallery-search div.search section.search-section div.gallery-info .gall
 
 main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a:nth-child(3) {
   position: absolute;
+  top: 64px;
+  right: 20px;
 }
 
 main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a:nth-child(3) .gal-copy {
@@ -664,6 +668,8 @@ main div.gallery-search div.search section.search-section div.gallery-info .gall
 
 main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a:nth-child(4) {
   position: absolute;
+  bottom: 15%;
+  right: 20px;
 }
 
 main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a:nth-child(4) .gal-popup {

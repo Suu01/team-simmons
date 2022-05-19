@@ -42,35 +42,36 @@
 
         <div class="title-cart">
             <div class="title">
-                <div class="title-fir">
-                    <p>CART</p>
-                </div>
 
-                
                 <div class="title-sub">
-                    <p>장바구니에 담긴 상품입니다</p>
+                    <p>주문자 정보로 조회하기</p>
                 </div>
                 
-
             </div> <!-- title -->
         
-            <nav class="content-menu">
-                <div class="confix">
-                    <ul>
-                        <li><a href="#">CART(0)</a></li>
-                        <li><a href="#">RECENT(0)</a></li>
-                    </ul>
-                </div> 
-            </nav> <!-- content-menu -->
-
             <form class="notice-content">
-                <div class="notice">
-                    <img src="./images/notice.png" alt="notice" width="auto" height="330px">
+
+                <div class="inp_wrap">
+                    
+                    <div class="inp_lab">
+                        <label for="join_id">주문번호</label>
+                    </div>
+                    <div class="inp_text">
+                        <input type="text" id="join_id" name="cstmid" valid="required">
+                    </div>
+
+                    <!-- -->
+
+                    <div class="inp_lab">
+                        <label for="join_id">이메일</label>
+                    </div>
+                    <div class="inp_text">
+                        <input type="text" id="join_id" name="cstmid" valid="required">
+                    </div>
+
                 </div>
-                <p class="notice-text">
-                    카트에 담긴 상품이 없습니다
-                </p>
-                <button type="submit" class="notice-submit"><a href="#">전체상품 바로가기</a></button>
+                <br>
+                <button type="submit" class="notice-submit"><a href="#">주문조회</a></button>
                 <label for=""></label>
             </form>
 

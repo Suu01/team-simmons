@@ -428,14 +428,18 @@ main {
 
                         li {
                             width: 50%;
-                            padding: 20px;
-
-                            &:hover {
-                                border-bottom: 2px solid #82ca9c;
-                            }
 
                             a {
+                                padding: 20px;
+                                color: #555;
                                 font-size: 18px;
+                                font-weight: 500;
+
+                                &:hover {
+                                    border-bottom: 2px solid #82ca9c;
+                                    color: #333;
+                                    font-weight: 600;
+                                }
                             }
                         }
                     }
@@ -540,6 +544,10 @@ main {
                         }
                     }
                 }
+            }
+
+            section.search-map {
+                display: none;
             }
         }
 

@@ -2,14 +2,21 @@
 @import "common.scss";
 @import "mixin.scss";
 
-body {
-    padding-top: 60px;
+// body {
+//     padding-top: 60px;
 
+//     @include responsive(pc-size) {
+//         padding-left: 80px;
+//         padding-top: 0;
+//     }
+// }
+body {
     @include responsive(pc-size) {
-        padding-left: 80px;
-        padding-top: 0;
+        margin: 0 auto;
+        padding: 0 auto;
     }
 }
+
 
 // header-area
 header {
@@ -114,59 +121,105 @@ header {
                 }
             }
         }
-    } 
-}
-
-//main-area
-main {
-    width: $width-wide;
-    height: 300px;
-
-    @include responsive(tablet-size) {
-        flex-direction: row;
-        flex-wrap: wrap;
     }
 
-    @include responsive(pc-size) {
-        flex-direction: column;
-    }
+    div.side-menu {
+        // background-color: pink;
 
-    nav {
-        //flex: absolute;
-        height: 228px;
-        font-size: 15px;
-        background-color: aquamarine;
+        @include responsive(pc-size) {
+            height: 20%;
+        }
 
-        .wrapper {
-            width: 100%;
-            background-color: coral;
-
-            @include responsive(pc-size) {
-                width: 1024px;
-                margin: 0 auto;
-            }
-
-            .gnb {
-                //display: flex;
-                list-style: none;
-                margin-left: 930px;
+            .s-menu {
+                
+                @include responsive(pc-size) {
+                    display: flex;
+                    height: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                }
 
                 li {
-                    display: inline-block;
-                    padding-top: 112px;
-                    padding-right: 38px;
-
-
-                    a {
-                        font-size: 1em;
-                        font-family: $main-font;
-
+                    display: none;
+    
+                    @include responsive(pc-size) {
+                        display: block;
+                    }
+    
+                    &:first-child {
+                        font-size: 18px;
+                        // transform: rotate(-90deg);
+                    }
+        
+                    &:last-child {
+                        display: block;
+        
+                        a {
+                            img {
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
                     }
                 }
             }
+        }
+    }
 
+    main {
+        width: $width-wide;
+
+        @include responsive(tablet-size) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    
+        @include responsive(pc-size) {
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            padding: 0 auto;
         }
         
+        nav {
+            display: none;
+    
+            @include responsive(pc-size) {
+                display: block;
+            }
+    
+            .wrapper {
+                width: 100%;
+    
+    
+                @include responsive(pc-size) {
+                    width: 1024px;
+                    margin: 0 auto;
+                }
+    
+                .gnb {
+                    display: flex;
+                    justify-content: flex-end;
+                    list-style: none;
+                    flex-direction: row;
+                    margin-left: 30px;
+        
+                    li {
+                        display: inline-block;
+                        padding-top: 112px;
+                        padding-right: 58px;
+        
+                        a {
+                            font-size: 1em;
+                            font-family: $main-font;
+                        }
+        
+                    }
+                }
+    
+            }
+     
+        }
     }
-  
-}

@@ -193,7 +193,6 @@ main {
             width: 100%;
 
             @include responsive(pc-size) {
-                width: 80%;
                 margin: 0 auto;
             }
         }
@@ -203,7 +202,6 @@ main {
         @include wrapper;
 
         @include responsive(pc-size) {
-            width: 80%;
         }
 
         .right {
@@ -413,8 +411,8 @@ main {
                         }
                     }
                     @include responsive(pc-size) {
-                        width: 140px;
-                        height: 40px;
+                        width: 60%;
+                        height: 50%;
                         font: {
                             family: $main-font;
                             size: 0.9em;
@@ -618,7 +616,7 @@ main {
                     border-collapse: collapse;
 
                     @include responsive(pc-size) {
-                        border-top: 2px solid #000;
+                        border-top: 1px solid #000;
                     }
 
                     th, td {
@@ -630,7 +628,7 @@ main {
                             padding: 15px;
                         }
                         @include responsive(pc-size) {
-                            border-bottom: 2px solid #000;
+                            border-bottom: 1px solid #000;
                         }
                     }
 
@@ -653,7 +651,7 @@ main {
                         @include responsive(pc-size) {
                             width: 20%;
                             font: {
-                                size: 0.5em;
+                                size: 0.8em;
                                 weight: 500;
                             }
                             letter-spacing: 0.01em;
@@ -724,7 +722,7 @@ main {
 
                     @include responsive(pc-size) {
                         font: {
-                            size: 0.85em;
+                            size: 0.75em;
                         }
                         letter-spacing: -0.03em;
                     }
@@ -745,10 +743,10 @@ main {
 
                     @include responsive(pc-size) {
                         font: {
-                            size: 0.85em;
+                            size: 0.7em;
                         }
                         letter-spacing: -0.01em;
-                        line-height: 18px;
+                        line-height: 13px;
                     }
                 }
 

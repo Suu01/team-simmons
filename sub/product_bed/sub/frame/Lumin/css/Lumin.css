@@ -282,7 +282,6 @@ main .slide img {
 
 @media screen and (min-width: 1024px) {
   main .slide img {
-    width: 80%;
     margin: 0 auto;
   }
 }
@@ -292,12 +291,6 @@ main .wrapper {
   max-width: 1320px;
   padding: 0 20px;
   margin: 0 auto;
-}
-
-@media screen and (min-width: 1024px) {
-  main .wrapper {
-    width: 80%;
-  }
 }
 
 main .wrapper .right {
@@ -523,8 +516,8 @@ main .wrapper .right .icon button {
 
 @media screen and (min-width: 1024px) {
   main .wrapper .right .icon button {
-    width: 140px;
-    height: 40px;
+    width: 60%;
+    height: 50%;
     font-family: "SCoreDream";
     font-size: 0.9em;
     font-weight: 600;
@@ -784,7 +777,7 @@ main .wrapper .left #details table {
 
 @media screen and (min-width: 1024px) {
   main .wrapper .left #details table {
-    border-top: 2px solid #000;
+    border-top: 1px solid #000;
   }
 }
 
@@ -802,7 +795,7 @@ main .wrapper .left #details table th, main .wrapper .left #details table td {
 
 @media screen and (min-width: 1024px) {
   main .wrapper .left #details table th, main .wrapper .left #details table td {
-    border-bottom: 2px solid #000;
+    border-bottom: 1px solid #000;
   }
 }
 
@@ -825,7 +818,7 @@ main .wrapper .left #details table th {
 @media screen and (min-width: 1024px) {
   main .wrapper .left #details table th {
     width: 20%;
-    font-size: 0.5em;
+    font-size: 0.8em;
     font-weight: 500;
     letter-spacing: 0.01em;
   }
@@ -907,7 +900,7 @@ main .wrapper .left .delivery_return p {
 
 @media screen and (min-width: 1024px) {
   main .wrapper .left .delivery_return p {
-    font-size: 0.85em;
+    font-size: 0.75em;
     letter-spacing: -0.03em;
   }
 }
@@ -926,9 +919,9 @@ main .wrapper .left .delivery_return li {
 
 @media screen and (min-width: 1024px) {
   main .wrapper .left .delivery_return li {
-    font-size: 0.85em;
+    font-size: 0.7em;
     letter-spacing: -0.01em;
-    line-height: 18px;
+    line-height: 13px;
   }
 }
 

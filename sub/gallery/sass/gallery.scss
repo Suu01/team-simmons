@@ -255,7 +255,7 @@ main {
 
     div.gallery {
         width: $width-wide;
-        // display: none;
+        display: none;
 
         section.gallery-title {
             width: $width-wide;
@@ -410,7 +410,7 @@ main {
 
     div.gallery-search {
         width: $width-wide;
-        display: none;
+        // display: none;
 
         div.search {
             width: $width-wide;
@@ -450,13 +450,15 @@ main {
                     form {
                         display: flex;
                         justify-content: space-between;
-                        padding: 23px;
+                        align-items: center;
+                        padding: 20px 25px;
                         background-color: #b9d3c2;
 
                         input {
-                            width: 75%;
+                            width: 70%;
                             background-color: transparent;
                             border: none;
+                            padding: 8px 0 4px 0;
 
                             &:active {
                                 border-bottom: 1px solid #c4c4c4;
@@ -465,18 +467,22 @@ main {
 
                         .search-icon-wrap {
                             img {
-                                width: 16px;
+                                width: 23px;
                                 height: auto;
                                 color: #fefefc;
                             }
                         }
                     }
                 }
+
+                div.gallery-info {
+
+                }
             }
         }
 
         section.search-table {
-            
+            display: none;
         }
     }
 }

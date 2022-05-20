@@ -418,9 +418,10 @@ main {
 
             @include responsive(tablet-size) {
                 display: flex;
+                margin: 0 auto;
                 width: 100%;
                 max-width: 1024px;
-                margin: 0 auto;
+                margin-bottom: 150px;
                 // height: 755px;
             }
 
@@ -428,6 +429,24 @@ main {
                 width: $width-wide;
                 border-top: 1px solid #c4c4c4;
                 // border: 1px solid #c4c4c4;
+
+                ::-webkit-scrollbar {
+                    width: 2px;  /* 스크롤바의 너비 */
+                }
+                
+                ::-webkit-scrollbar-thumb {
+                    height: auto; /* 스크롤바의 길이 */
+                    background: #c4c4c4; /* 스크롤바의 색상 */
+                    border-radius: 50px;
+                }
+                
+                ::-webkit-scrollbar-track {
+                    background: #fff;  /*스크롤바 뒷 배경 색상*/
+                }
+                
+                // ::-webkit-scrollbar : 스크롤바 영역에 대한 설정
+                // ::-webkit-scrollbar-thumb : 스크롤바 막대에 대한 설정
+                // ::-webkit-scrollbar-track  : 스크롤바 뒷 배경에 대한 설정
 
                 @include responsive(tablet-size) {
                     width: 500px;
@@ -501,7 +520,7 @@ main {
                         width: $width-wide;
 
                         @include responsive(tablet-size) {
-                            height: 600px;
+                            height: 500px;
                             overflow-y: scroll;
                         }
 
@@ -579,8 +598,6 @@ main {
 
                 iframe {
                     width: 100%;
-                    box-sizing: border-box;
-                    object-fit: cover;
                 }
             }
         }
@@ -588,8 +605,42 @@ main {
         section.search-table {
             display: none;
 
-            @include responsive(tablet-size) {
-                // display: block;
+            @include responsive(pc-size) {
+                display: block;
+                width: 100%;
+                max-width: 1024px;
+                margin: 150px auto;
+            }
+
+            table {
+                width: 100%;
+                text-align: left;
+                border-top: 3px solid #000;
+                border-bottom: 3px solid #000;
+                border-collapse: collapse;
+                
+                tr {
+
+                    th {
+                        padding: 15px 30px;
+                        color: #333;
+                        font-size: 18px;
+                        font-weight: 500;
+                        border: 1px solid #c4c4c4;
+                        border-right: 0;
+                        border-left: 0;
+                        border-bottom: 2px solid #000;
+                    }
+
+                    td {
+                        padding: 15px 30px;
+                        color: #333;
+                        font-size: 16px;
+                        border: 1px solid #c4c4c4;
+                        border-right: 0;
+                        border-left: 0;
+                    }
+                }
             }
         }
     }

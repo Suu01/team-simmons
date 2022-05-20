@@ -17,7 +17,6 @@ header {
     top: 0;
     left: 0;
     display: flex;
-    z-index: 1;
     justify-content: space-between;
     align-items: center;
     width: $width-wide;
@@ -25,12 +24,13 @@ header {
     padding: 0 15px;
     border-bottom: 1px solid #333;
     background-color: $bg-color;
+    z-index: 1;
 
     @include responsive(pc-size) {
         width: 80px;
         height: 100%;
         flex-direction: column;
-        // align-items: baseline;
+        align-items: center;
         padding: 60px 0;
         border-bottom: 0;
         border-right: 1px solid #333;
@@ -44,11 +44,11 @@ header {
         transform: translate(-50%, -50%);
 
         @include responsive(pc-size) {
-            // height: 20%;
             position: static;
             top: 0;
             left: 0;
             transform: translate(0, 0);
+            // height: 20%;
         }
     }
 
@@ -80,7 +80,8 @@ header {
                     display: block;
 
                     img {
-                        height: 20px;
+                        width: 100%;
+                        height: auto;
                     }
     
                     @include responsive(pc-size) {
@@ -88,22 +89,7 @@ header {
                     }
                 }
     
-                &:nth-child(2) {
-                    a {
-                        span {
-                            @include responsive(pc-size) {
-                                margin-top: 0;
-                            }
-                        }
-                    }
-                }
-    
                 a {
-                    img {
-                        width: 25px;
-                        height: auto;
-                    }
-    
                     span {
                         width: 10px;
                         height: 10px;
@@ -120,7 +106,7 @@ header {
         // background-color: pink;
 
         @include responsive(pc-size) {
-            height: 18%;
+            // height: 18%;
         }
 
             .s-menu {
@@ -138,11 +124,18 @@ header {
     
                     @include responsive(pc-size) {
                         display: block;
+                        margin-top: 35px;
                     }
     
                     &:first-child {
                         font-size: 18px;
                         transform: rotate(-90deg);
+                        margin-top: 0;
+                        // background-color: orange;
+
+                        a {
+                            color: $font-color;
+                        }
                     }
         
                     &:last-child {
@@ -416,12 +409,49 @@ main {
         width: $width-wide;
         // display: none;
 
+        @include responsive(pc-size) {
+            padding: 0 20px;
+        }
+
         div.search {
             width: $width-wide;
+
+            @include responsive(tablet-size) {
+                display: flex;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 1024px;
+                margin-bottom: 150px;
+                // height: 755px;
+            }
 
             section.search-section {
                 width: $width-wide;
                 border-top: 1px solid #c4c4c4;
+                // border: 1px solid #c4c4c4;
+
+                ::-webkit-scrollbar {
+                    width: 2px;  /* 스크롤바의 너비 */
+                }
+                
+                ::-webkit-scrollbar-thumb {
+                    height: auto; /* 스크롤바의 길이 */
+                    background: #c4c4c4; /* 스크롤바의 색상 */
+                    border-radius: 50px;
+                }
+                
+                ::-webkit-scrollbar-track {
+                    background: #fff;  /*스크롤바 뒷 배경 색상*/
+                }
+                
+                // ::-webkit-scrollbar : 스크롤바 영역에 대한 설정
+                // ::-webkit-scrollbar-thumb : 스크롤바 막대에 대한 설정
+                // ::-webkit-scrollbar-track  : 스크롤바 뒷 배경에 대한 설정
+
+                @include responsive(tablet-size) {
+                    width: 500px;
+                    border: 1px solid #c4c4c4;
+                }
 
                 div.search-tap {
                     width: $width-wide;
@@ -432,14 +462,18 @@ main {
 
                         li {
                             width: 50%;
-                            padding: 20px;
-
-                            &:hover {
-                                border-bottom: 2px solid #82ca9c;
-                            }
 
                             a {
+                                padding: 20px;
+                                color: #555;
                                 font-size: 18px;
+                                font-weight: 500;
+
+                                &:hover {
+                                    border-bottom: 2px solid #82ca9c;
+                                    color: #333;
+                                    font-weight: 600;
+                                }
                             }
                         }
                     }
@@ -454,13 +488,15 @@ main {
                     form {
                         display: flex;
                         justify-content: space-between;
-                        padding: 23px;
+                        align-items: center;
+                        padding: 20px 25px;
                         background-color: #b9d3c2;
 
                         input {
-                            width: 75%;
+                            width: 70%;
                             background-color: transparent;
                             border: none;
+                            padding: 8px 0 4px 0;
 
                             &:active {
                                 border-bottom: 1px solid #c4c4c4;
@@ -469,11 +505,140 @@ main {
 
                         .search-icon-wrap {
                             img {
-                                width: 16px;
+                                width: 23px;
                                 height: auto;
                                 color: #fefefc;
                             }
                         }
+                    }
+                }
+
+                div.gallery-info {
+                    width: $width-wide;
+
+                    .gallery-info-des {
+                        width: $width-wide;
+
+                        @include responsive(tablet-size) {
+                            height: 500px;
+                            overflow-y: scroll;
+                        }
+
+                        .gal-name-address {
+                            position: relative;
+                            width: $width-wide;
+                            border-bottom: 1px solid #c4c4c4;
+                            padding: 25px 20px;
+
+                            a:first-child {
+                                p.gal-add-title {
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                }
+
+                                p.gal-add-add {
+                                    line-height: 1.5;
+                                    width: 80%;
+                                    font-size: 14px;
+                                    color: #555;
+                                    margin: 18px 0;
+                                }
+                            }
+
+                            a:nth-child(2) {
+                                .gal-number {
+                                    font-size: 14px;
+                                    color: #999;
+                                }
+                            }
+
+                            a:nth-child(3) {
+                                position: absolute;
+                                top: 64px;
+                                right: 20px;
+
+                                .gal-copy {
+                                    border-radius: 50px;
+                                    display: inline-block;
+                                    background-color: #b9d3c2;
+
+                                    p {
+                                        padding: 2px 7px;
+                                        font-size: 12px;
+                                        color: $bg-color;
+                                    }
+                                }
+                            }
+
+                            a:nth-child(4) {
+                                position: absolute;
+                                bottom: 15%;
+                                right: 20px;
+
+                                .gal-popup {
+                                    font-size: 12px;
+                                    color: #555;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            section.search-map {
+                display: none;
+
+                @include responsive(tablet-size) {
+                    display: block;
+                    width: 100%;
+                    border: 1px solid #c4c4c4;
+                    border-left: none;
+                    // background-color: palegoldenrod;
+                }
+
+                iframe {
+                    width: 100%;
+                }
+            }
+        }
+
+        section.search-table {
+            display: none;
+
+            @include responsive(pc-size) {
+                display: block;
+                width: 100%;
+                max-width: 1024px;
+                margin: 150px auto;
+            }
+
+            table {
+                width: 100%;
+                text-align: left;
+                border-top: 3px solid #000;
+                border-bottom: 3px solid #000;
+                border-collapse: collapse;
+                
+                tr {
+
+                    th {
+                        padding: 15px 30px;
+                        color: #333;
+                        font-size: 18px;
+                        font-weight: 500;
+                        border: 1px solid #c4c4c4;
+                        border-right: 0;
+                        border-left: 0;
+                        border-bottom: 2px solid #000;
+                    }
+
+                    td {
+                        padding: 15px 30px;
+                        color: #333;
+                        font-size: 16px;
+                        border: 1px solid #c4c4c4;
+                        border-right: 0;
+                        border-left: 0;
                     }
                 }
             }

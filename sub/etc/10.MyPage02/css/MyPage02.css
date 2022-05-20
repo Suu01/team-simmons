@@ -9,7 +9,10 @@
 }
 
 body {
-  font-family: 'SCoreDream';
+  font-family: "SCoreDream";
+  background-color: #fefefc;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .wrapper {
@@ -44,14 +47,33 @@ span {
   font-size: 1em;
 }
 
-body {
-  padding-top: 60px;
+article {
+  display: block;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+body, button, input {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+nav,
+main,
+aside,
+article,
+footer {
+  display: block;
 }
 
 @media screen and (min-width: 1024px) {
   body {
-    padding-left: 80px;
-    padding-top: 0;
+    margin: 0 auto;
+    padding: 0 auto;
   }
 }
 
@@ -76,9 +98,9 @@ header {
   background-color: #fefefc;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   header {
-    width: 70px;
+    width: 80px;
     height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -90,12 +112,6 @@ header {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  header {
-    width: 80px;
-  }
-}
-
 header h1 {
   position: absolute;
   top: 50%;
@@ -104,7 +120,7 @@ header h1 {
           transform: translate(-50%, -50%);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   header h1 {
     position: static;
     top: 0;
@@ -115,19 +131,12 @@ header h1 {
 }
 
 @media screen and (min-width: 1024px) {
-  header h1 a img {
-    width: 62px;
-    height: 44px;
-  }
-}
-
-@media screen and (min-width: 768px) {
   header nav {
     height: 30%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   header nav ul.gnb {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -150,7 +159,7 @@ header nav ul.gnb li {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   header nav ul.gnb li {
     display: block;
   }
@@ -160,13 +169,17 @@ header nav ul.gnb li:first-child {
   display: block;
 }
 
-@media screen and (min-width: 768px) {
+header nav ul.gnb li:first-child img {
+  height: 20px;
+}
+
+@media screen and (min-width: 1024px) {
   header nav ul.gnb li:first-child {
     display: none;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   header nav ul.gnb li:nth-child(2) a span {
     margin-top: 0;
   }
@@ -184,13 +197,13 @@ header nav ul.gnb li a span {
   background-color: #82ca9c;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   header div.side-menu {
     height: 20%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   header div.side-menu .s-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -213,7 +226,7 @@ header div.side-menu .s-menu li {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   header div.side-menu .s-menu li {
     display: block;
   }
@@ -221,8 +234,6 @@ header div.side-menu .s-menu li {
 
 header div.side-menu .s-menu li:first-child {
   font-size: 18px;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
 }
 
 header div.side-menu .s-menu li:last-child {
@@ -236,7 +247,6 @@ header div.side-menu .s-menu li:last-child a img {
 
 main {
   width: 100%;
-  height: 300px;
 }
 
 @media screen and (min-width: 768px) {
@@ -259,15 +269,22 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    padding: 0 auto;
   }
 }
 
 main nav {
-  -webkit-box-flex: absolute;
-      -ms-flex: absolute;
-          flex: absolute;
-  height: 228px;
-  font-size: 15px;
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main nav {
+    display: block;
+  }
 }
 
 main nav .wrapper {
@@ -281,114 +298,229 @@ main nav .wrapper {
   }
 }
 
-main nav .wrapper .main-menu .gnb {
+@media screen and (min-width: 768px) {
+  main nav .wrapper {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+main nav .wrapper .gnb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   list-style: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-left: 30px;
 }
 
-main nav .wrapper .main-menu .gnb .main-menu .gnb > li {
+main nav .wrapper .gnb li {
   display: inline-block;
-  padding-top: 52px;
+  padding-top: 112px;
   padding-right: 58px;
 }
 
-main nav .wrapper .main-menu .gnb .main-menu .gnb > li .main-menu .gnb > li > a {
+main nav .wrapper .gnb li a {
   font-size: 1em;
   font-family: "SCoreDream";
 }
 
-main .title-login {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 800px;
-  margin: 0 auto;
+main .title-cart {
+  position: relative;
+  margin: 0 0;
+  padding: 0 0;
+  margin-top: 36px;
+  margin-left: 34px;
+  padding-top: 33px;
+  font-size: 3em;
 }
 
-@media screen and (min-width: 320px) {
-  main .title-login {
-    position: relative;
-    top: 0 auto;
-    left: 363px;
+main .title-cart .title {
+  margin-top: 55px;
+  padding: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  main .title-cart .title {
+    display: block;
+    float: left;
+    margin-top: 10px;
+  }
+}
+
+main .title-cart .title .title-fir {
+  font-size: 1.5em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .title-cart .title .title-fir {
+    display: block;
+    float: left;
+    margin: 0 auto;
     padding: 0 auto;
+    margin-left: -283px;
+    margin-top: -90px;
+    padding-top: 5px;
+    font-size: 90px;
   }
-  main .title-login .title {
-    font-size: 7em;
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    background-color: aqua;
-  }
-  main .title-login .title .title-sub {
-    display: none;
+}
+
+main .title-cart .title .title-sub {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main .title-cart .title .title-sub {
+    display: block;
+    width: 1024px;
+    font-size: 22px;
+    font-family: "SCoreDream";
+    margin-top: -30px;
+    margin-left: -320px;
+    padding-left: 279px;
+    padding-top: 7px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main .title-login {
+  main .title-cart .title .title-sub {
+    display: block;
     width: 1024px;
-    font-size: 3em;
-    font-family: "SCoreDream";
-  }
-  main .title-login .title-sub {
     font-size: 22px;
     font-family: "SCoreDream";
-    font-weight: 500;
-    margin: 0 auto;
-    padding-top: 83px;
-    /*125*/
-    padding-right: 895px;
+    margin-top: -30px;
+    margin-left: -320px;
+    padding-left: 279px;
+    padding-top: 7px;
   }
 }
 
-main .title-login .content-menu ul {
+main .title-cart nav.content-menu {
+  display: block;
+  padding-top: 2px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  main .title-cart nav.content-menu {
+    padding-top: 88px;
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .title-cart nav.content-menu {
+    padding-top: 88px;
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+
+main .title-cart nav.content-menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 800px;
   margin: 32px auto 34px;
+  font-size: 30px;
 }
 
-main .title-login .content-menu ul .content-menu li a {
+main .title-cart nav.content-menu ul li:first-child a {
+  border-right: 0;
+  border-bottom: 0;
+}
+
+main .title-cart nav.content-menu ul li a {
   color: #333333;
-  width: 400px;
+  width: 200px;
   text-align: center;
   border: 1px solid #666666;
   padding: 10px;
 }
 
-main .title-login .content-menu ul .content-menu li a .content-menu li:last-child a {
-  border-right: 1px solid #666666;
+main .title-cart nav.content-menu ul li a:hover {
+  color: #82ca9c;
+  border-left: 2px solid #82ca9c;
+  border-top: 2px solid #82ca9c;
+  border-right: 2px solid #82ca9c;
+  font-size: 29px;
 }
 
-main .title-login .loginForm {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 800px;
-  margin: 0 auto;
-}
-
-main .title-login .loginForm .loginform-box .radius-button {
-  border-radius: 30px;
-}
-
-main .title-login .loginForm .loginform-box .radius-button .submit {
-  width: 254px;
-  height: 50px;
-  border: 1px solid #82ca9c;
-  border-radius: 10px;
-  background-color: #82ca9c;
-}
-
-main .title-login .loginForm .loginform-box .alert {
-  text-align: justify;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+main .title-cart .notice-content {
   margin: 0 auto;
   padding: 0 auto;
+  width: 100%;
+  height: 455px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-/*# sourceMappingURL=login_member.css.map */
+
+@media screen and (min-width: 768px) {
+  main .title-cart .notice-content {
+    padding-top: 88px;
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .title-cart .notice-content {
+    padding-top: 38px;
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+
+main .title-cart .notice-content .notice {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 17%;
+  margin-top: -45px;
+}
+
+main .title-cart .notice-content .notice-text {
+  font-size: 23px;
+  color: #666666;
+  padding-left: 14%;
+  margin-top: -55px;
+}
+
+main .title-cart .notice-content button {
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 0 auto;
+  display: block;
+  text-align: center;
+  width: 328px;
+  height: 46px;
+  background-color: #82ca9c;
+  border-radius: 10px;
+  border-color: white;
+  padding-left: 15%;
+  margin-top: 35px;
+  margin-left: 40px;
+  font-size: 25px;
+}
+
+main .title-cart .notice-content button a {
+  color: #fefefe;
+  font-size: 1em;
+  font-family: "SCoreDream";
+  margin-right: 50px;
+  width: 80%;
+}
+/*# sourceMappingURL=MyPage02.css.map */

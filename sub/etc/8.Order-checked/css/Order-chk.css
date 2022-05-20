@@ -298,6 +298,13 @@ main nav .wrapper {
   }
 }
 
+@media screen and (min-width: 768px) {
+  main nav .wrapper {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
+
 main nav .wrapper .gnb {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -516,4 +523,4 @@ main .title-cart .notice-content button a {
   margin-right: 50px;
   width: 80%;
 }
-/*# sourceMappingURL=cart.css.map */
+/*# sourceMappingURL=Order-chk.css.map */

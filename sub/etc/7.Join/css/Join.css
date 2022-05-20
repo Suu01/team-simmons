@@ -298,6 +298,13 @@ main nav .wrapper {
   }
 }
 
+@media screen and (min-width: 768px) {
+  main nav .wrapper {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
+
 main nav .wrapper .gnb {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,59 +405,6 @@ main .title-cart .title .title-sub {
   }
 }
 
-main .title-cart nav.content-menu {
-  display: block;
-  padding-top: 2px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  main .title-cart nav.content-menu {
-    padding-top: 88px;
-    margin: 0 auto;
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  main .title-cart nav.content-menu {
-    padding-top: 88px;
-    margin: 0 auto;
-    width: 50%;
-  }
-}
-
-main .title-cart nav.content-menu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 800px;
-  margin: 32px auto 34px;
-  font-size: 30px;
-}
-
-main .title-cart nav.content-menu ul li:first-child a {
-  border-right: 0;
-  border-bottom: 0;
-}
-
-main .title-cart nav.content-menu ul li a {
-  color: #333333;
-  width: 200px;
-  text-align: center;
-  border: 1px solid #666666;
-  padding: 10px;
-}
-
-main .title-cart nav.content-menu ul li a:hover {
-  color: #82ca9c;
-  border-left: 2px solid #82ca9c;
-  border-top: 2px solid #82ca9c;
-  border-right: 2px solid #82ca9c;
-  font-size: 29px;
-}
-
 main .title-cart .notice-content {
   margin: 0 auto;
   padding: 0 auto;
@@ -516,4 +470,4 @@ main .title-cart .notice-content button a {
   margin-right: 50px;
   width: 80%;
 }
-/*# sourceMappingURL=cart.css.map */
+/*# sourceMappingURL=Join.css.map */

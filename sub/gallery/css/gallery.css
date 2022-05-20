@@ -540,6 +540,12 @@ main div.gallery-search {
   width: 100%;
 }
 
+@media screen and (min-width: 1024px) {
+  main div.gallery-search {
+    padding: 0 20px;
+  }
+}
+
 main div.gallery-search div.search {
   width: 100%;
 }
@@ -557,12 +563,13 @@ main div.gallery-search div.search {
 
 main div.gallery-search div.search section.search-section {
   width: 100%;
-  border: 1px solid #c4c4c4;
+  border-top: 1px solid #c4c4c4;
 }
 
 @media screen and (min-width: 768px) {
   main div.gallery-search div.search section.search-section {
     width: 500px;
+    border: 1px solid #c4c4c4;
   }
 }
 
@@ -709,6 +716,7 @@ main div.gallery-search div.search section.search-map {
     display: block;
     width: 100%;
     border: 1px solid #c4c4c4;
+    border-left: none;
   }
 }
 

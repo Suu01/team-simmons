@@ -409,6 +409,10 @@ main {
         width: $width-wide;
         // display: none;
 
+        @include responsive(pc-size) {
+            padding: 0 20px;
+        }
+
         div.search {
             width: $width-wide;
 
@@ -422,10 +426,12 @@ main {
 
             section.search-section {
                 width: $width-wide;
-                border: 1px solid #c4c4c4;
+                border-top: 1px solid #c4c4c4;
+                // border: 1px solid #c4c4c4;
 
                 @include responsive(tablet-size) {
                     width: 500px;
+                    border: 1px solid #c4c4c4;
                 }
 
                 div.search-tap {
@@ -567,6 +573,7 @@ main {
                     display: block;
                     width: 100%;
                     border: 1px solid #c4c4c4;
+                    border-left: none;
                     // background-color: palegoldenrod;
                 }
 

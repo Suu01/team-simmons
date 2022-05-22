@@ -61,7 +61,6 @@ footer {
 
 body {
   padding-top: 60px;
-  -ms-overflow-style: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -69,10 +68,6 @@ body {
     padding-left: 80px;
     padding-top: 0;
   }
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 header {

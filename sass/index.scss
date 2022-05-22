@@ -196,6 +196,12 @@ main {
         margin: 12% 0;
 
         @include responsive(pc-size) {
+            &::after {
+                content: ""; display: block; clear: both;
+            }
+        }
+
+        @include responsive(pc-size) {
             padding: 0 100px;
             margin: 120px 0;
             // height: 100%;
@@ -214,6 +220,10 @@ main {
         .sec2-txt {
             width: $width-wide;
 
+            @include responsive(pc-size) {
+                clear: both;
+            }
+
             p {
                 // font-size: 1em;
                 font-size: 3vw;
@@ -228,6 +238,7 @@ main {
         .sec2-img + .sec2-txt {
             @include responsive(pc-size) {
                 text-align: right;
+                padding-top: 35px;
             }
         }
 
@@ -236,12 +247,21 @@ main {
             margin: 10% 0;
             // margin: 35px 0;
             // background-color: aquamarine;
+
+            @include responsive(pc-size) {
+                margin: 35px 0;
+            }
             
             .img {
                 margin: auto;
                 width: 53%;
                 height: auto;
                 // background-color: lightblue;
+
+                @include responsive(pc-size) {
+                    float: right;
+                    width: 500px;
+                }
 
                 img {
                     width: 100%;

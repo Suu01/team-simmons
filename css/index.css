@@ -280,6 +280,14 @@ main section.section2 {
 }
 
 @media screen and (min-width: 1024px) {
+  main section.section2::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   main section.section2 {
     padding: 0 100px;
     margin: 120px 0;
@@ -300,6 +308,12 @@ main section.section2 .sec2-txt {
   width: 100%;
 }
 
+@media screen and (min-width: 1024px) {
+  main section.section2 .sec2-txt {
+    clear: both;
+  }
+}
+
 main section.section2 .sec2-txt p {
   font-size: 3vw;
   line-height: 1.8;
@@ -314,6 +328,7 @@ main section.section2 .sec2-txt p {
 @media screen and (min-width: 1024px) {
   main section.section2 .sec2-img + .sec2-txt {
     text-align: right;
+    padding-top: 35px;
   }
 }
 
@@ -322,10 +337,23 @@ main section.section2 .sec2-img {
   margin: 10% 0;
 }
 
+@media screen and (min-width: 1024px) {
+  main section.section2 .sec2-img {
+    margin: 35px 0;
+  }
+}
+
 main section.section2 .sec2-img .img {
   margin: auto;
   width: 53%;
   height: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  main section.section2 .sec2-img .img {
+    float: right;
+    width: 500px;
+  }
 }
 
 main section.section2 .sec2-img .img img {

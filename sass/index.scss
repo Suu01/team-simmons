@@ -198,6 +198,7 @@ main {
         @include responsive(pc-size) {
             padding: 0 100px;
             margin: 120px 0;
+            // height: 100%;
         }
         
         h2 + .sec2-txt {

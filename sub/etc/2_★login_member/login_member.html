@@ -64,24 +64,43 @@
 
                 <div class="loginform-box">
                     <form class="loginform-input-form">
-                        <section class="loginform-input-area">
-                            <p class="loginform-id">
-                                아이디
-                            </p>
-                            <input id="loginform-input-email" type="email" required="required"><br><br>
-                            
-                            <p class="loginform-pw">
-                                비밀번호
-                            </p>
-                            
-                            <input id="loginform-input-password" type="password" required="required">
-                        </section>
-                        <br><br>
-                        <label for="">
-                            
-                            <button type="submit" class="loginform-input-submit">로그인</button>
 
-                        </label>
+
+                        <div class="inp_wrap">
+                    
+                            <div class="inp_lab">
+                                <label for="join_id">아이디</label>
+                            </div>
+                            <div class="inp_text">
+                                <input type="text" id="login_id" name="cstmid" valid="required">
+                            </div>
+
+                            <!--
+                                <p class="error-sv">아이디를 입력해주세요</p>
+                            -->
+        
+                        </div>
+
+                        <div class="inp_wrap">
+                    
+                            <div class="loginform-id">
+                                <label for="join_id">비밀번호</label>
+                            </div>
+                            <div class="inp_text">
+                                <input type="text" id="login_pw" name="cstmid" valid="required">
+                            </div>
+
+                            <!--
+                                <p class="error-sv">비밀번호를 입력해주세요</p>
+                            -->
+        
+                        </div>
+
+                        <div class="login-button">
+                            <button type="submit" class="loginform-input-submit"><a href="#">로그인</a></button>
+                            <label for="login"></label>
+                        </div>
+
                     </form>
                 </div> <!-- loginform-box -->
 

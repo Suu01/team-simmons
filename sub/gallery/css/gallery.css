@@ -1,16 +1,17 @@
+@charset "UTF-8";
 @import url("https://webfontworld.github.io/SCoreDream/SCoreDream.css");
 @import url("https://webfontworld.github.io/cafe24/Cafe24Danjunghae.css");
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 ::-moz-input-placeholder, ::-moz-textarea-placeholder {
   color: #fefefc;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   overflow: hidden;
 }
 
 ::-webkit-input-placeholder, ::-webkit-textarea-placeholder {
   color: #fefefc;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   overflow: hidden;
 }
@@ -76,7 +77,6 @@ footer {
 
 body {
   padding-top: 60px;
-  -ms-overflow-style: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -84,10 +84,6 @@ body {
     padding-left: 80px;
     padding-top: 0;
   }
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 header {
@@ -545,13 +541,56 @@ main div.gallery-search {
   width: 100%;
 }
 
+@media screen and (min-width: 1024px) {
+  main div.gallery-search {
+    padding: 0 20px;
+  }
+}
+
 main div.gallery-search div.search {
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  main div.gallery-search div.search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+    margin-bottom: 150px;
+  }
 }
 
 main div.gallery-search div.search section.search-section {
   width: 100%;
   border-top: 1px solid #c4c4c4;
+}
+
+main div.gallery-search div.search section.search-section ::-webkit-scrollbar {
+  width: 2px;
+  /* 스크롤바의 너비 */
+}
+
+main div.gallery-search div.search section.search-section ::-webkit-scrollbar-thumb {
+  height: auto;
+  /* 스크롤바의 길이 */
+  background: #c4c4c4;
+  /* 스크롤바의 색상 */
+  border-radius: 50px;
+}
+
+main div.gallery-search div.search section.search-section ::-webkit-scrollbar-track {
+  background: #fff;
+  /*스크롤바 뒷 배경 색상*/
+}
+
+@media screen and (min-width: 768px) {
+  main div.gallery-search div.search section.search-section {
+    width: 500px;
+    border: 1px solid #c4c4c4;
+  }
 }
 
 main div.gallery-search div.search section.search-section div.search-tap {
@@ -567,15 +606,19 @@ main div.gallery-search div.search section.search-section div.search-tap ul {
 
 main div.gallery-search div.search section.search-section div.search-tap ul li {
   width: 50%;
-  padding: 20px;
-}
-
-main div.gallery-search div.search section.search-section div.search-tap ul li:hover {
-  border-bottom: 2px solid #82ca9c;
 }
 
 main div.gallery-search div.search section.search-section div.search-tap ul li a {
+  padding: 20px;
+  color: #555;
   font-size: 18px;
+  font-weight: 500;
+}
+
+main div.gallery-search div.search section.search-section div.search-tap ul li a:hover {
+  border-bottom: 2px solid #82ca9c;
+  color: #333;
+  font-weight: 600;
 }
 
 main div.gallery-search div.search section.search-section div.search-bar {
@@ -621,6 +664,13 @@ main div.gallery-search div.search section.search-section div.gallery-info {
 
 main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des {
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des {
+    height: 500px;
+    overflow-y: scroll;
+  }
 }
 
 main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address {
@@ -677,7 +727,61 @@ main div.gallery-search div.search section.search-section div.gallery-info .gall
   color: #555;
 }
 
+main div.gallery-search div.search section.search-map {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main div.gallery-search div.search section.search-map {
+    display: block;
+    width: 100%;
+    border: 1px solid #c4c4c4;
+    border-left: none;
+  }
+}
+
+main div.gallery-search div.search section.search-map iframe {
+  width: 100%;
+}
+
 main div.gallery-search section.search-table {
   display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.gallery-search section.search-table {
+    display: block;
+    width: 100%;
+    max-width: 1024px;
+    margin: 150px auto;
+  }
+}
+
+main div.gallery-search section.search-table table {
+  width: 100%;
+  text-align: left;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  border-collapse: collapse;
+}
+
+main div.gallery-search section.search-table table tr th {
+  padding: 15px 30px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid #c4c4c4;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 2px solid #000;
+}
+
+main div.gallery-search section.search-table table tr td {
+  padding: 15px 30px;
+  color: #333;
+  font-size: 16px;
+  border: 1px solid #c4c4c4;
+  border-right: 0;
+  border-left: 0;
 }
 /*# sourceMappingURL=gallery.css.map */

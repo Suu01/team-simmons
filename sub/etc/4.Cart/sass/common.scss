@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: $main-font;
+    font-family: 'SCoreDream';
     background-color: $bg-color;
     width: $width-wide;
     margin: 0 auto;
@@ -41,6 +41,15 @@ img {
 
 h1 {
     font-size: 1.8em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.3em;
+}
+p {
+    font-size: 0.9em;
 }
 span {
     display: block;

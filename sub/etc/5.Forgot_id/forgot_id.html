@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>join</title>
-    <link rel="stylesheet" href="./css/for_id.css">
+    <link rel="stylesheet" href="">
     <!-- <script src=""></script> -->
 
 </head>
@@ -32,49 +32,133 @@
 
     <main>
 
+        <nav class="main-menu">            
+            <div class="wrapper">
+                <ul class="gnb">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#center">고객센터</a></li>
+                </ul>
+            </div> <!-- wrapper -->
+        </nav> <!-- main-menu -->
 
-            <form class="forgotId-content">
+        <div id="Container" class="for-id">
+            <div id="Contents">
+                <div class="login">
+                    
+                    <!--
+                    <div class="login-title">
+                        <h2>아이디찾기</h2>
+                        <p class="fct">회원님의 아이디를 잊으셨나요?<br>
+                            이름과 가입 시 기재한 이메일 주소를 입력하시면<br>
+                            고객님의 정보를 알려드립니다
+                        </p>
+                    </div>
+                    -->
 
-                <div class="forgotId-content-text">
-                    아이디 찾기
-                    <p class="fct">회원님의 아이디를 잊으셨나요?<br>
-                        이름과 가입 시 기재한 이메일 주소를 입력하시면<br>
-                        고객님의 정보를 알려드립니다</p>
-                </div>
+
+                    <div class="title">
+                        <div class="title-fir">
+                            <p>아이디 찾기</p>
+                        </div>
+        
+                        
+                        <div class="title-sub">
+                            <p>회원님의 아이디를 잊으셨나요?<br>
+                                이름과 가입 시 기재한 이메일 주소를 입력하시면<br>
+                                고객님의 정보를 알려드립니다</p>
+                        </div>
+                        
+        
+                    </div> <!-- title -->
 
 
-                <div class="loginform-box">
-                    <form class="loginform-input-form">
-                        <section class="loginform-input-area">
-                            <p class="loginform-id">
-                                아이디
-                            </p>
-                            <input id="loginform-input-email" type="email" required="required"><br><br>
-                            <label for="login-id"></label>
-                            
-                            <p class="loginform-pw">
-                                비밀번호
-                            </p>
-                            
-                            <input id="loginform-input-password" type="password" required="required">
-                            <label for="login-pw"></label>
-                            
-                        </section>
 
-                        <label for="login"></label>
-                        <button type="submit" class="notice-submit"><a href="#">로그인</a></button>
+                    <form id="formLogin" name="formLogin">
+                        <!--
+                            <input type="text">
+                            <input type="text">
+                        -->
+                        <div class="loginForm">
+                            <ul>
+                                <li>
+                                    <label for="login-name" class="nm"></label>
+                                    <input id="loginform-input-name" type="name" placeholder="이름을 입력해주세요." required="required">
+                                </li>
+                                <li>
+                                    <label for="login-em" class="em"></label>
+                                    <input id="loginform-input-em" type="email" placeholder="이메일을 입력해주세요." required="required"><br><br>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="loginForm_btn">
+                            <button type="button" class="notice-submit"><a href="#">아이디찾기</a></button>
+                        </div>
                     </form>
 
                 </div>
+            </div>
+        </div>
 
-            </form>
-
-       
-
+        <div class="bottom-text">
+            <p class="text01">
+                고객센터 1899-8182
+            </p>
+            <p class="text02">
+                평일 9시 ~ 18시 (점심 12~13시) / 토요일 일요일 공휴일 휴무
+            </p>
+        </div>
 
     </main>
 
+    <footer class="box">
+        <div class="footer-logo">
+            <h2 class="f-logo"><a href="#"><img src="./images/f-logo.png" alt=""></a></h2>
+        </div>
 
+        <div class="f-top">
+            <div class="f-top-fir"><a href="#">이용약관</a></div>
+            <div class="f-top-sec"><a href="#">개인정보처리방침</a></div>
+        </div>
+
+        <div class="sns-icon">
+            <ul>
+                <li><a href="#"><img src="./images/f_sta.png" alt="sns"></a></li>
+                <li><a href="#"><img src="./images/f_you.png" alt="sns"></a></li>
+                <li><a href="#"><img src="./images/f_face.png" alt="sns"></a></li>
+                <li><a href="#"><img src="./images/f_na.png" alt="sns"></a></li>
+            </ul>
+        </div>
+
+        <div class="f-des">
+            <ul>
+                <li>고객센터 : 1899-8182</li>
+                <li>상호 : (주)시몬스</li>
+                <li>대표 : 안정호</li>
+                <li>사업자등록번호 : 126-81-24808</li>
+                <li><a href="#">[사업자정보 확인]</a></li>
+                <li>주소 : 경기도 이천시 모가면 사실로 1000</li>
+                <li>통신판매업신고 : 제2014-경기이천-0135호</li>
+                <li>개인정보 관리책임자 : 이정호</li>
+                <li>호스팅 서비스 사업자 : ㈜가비아</li>
+                <li>문의 : master @ simmons.co.kr</li>
+            </ul>
+        </div>
+
+        <div class="kcp">
+            <div class="k-icon">
+                <img src="./images/f-kcp.png" alt="kcp">
+            </div>
+            <div class="k-des">
+                <p>고객님은 안전거래를 위해 현금 등으로 결제 시 모든 금액에 대하여 본 쇼핑몰에서 가입한 구매안전서비스 소비자피해보상보험 서비스를 이용하실 수 있습니다
+                </p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © by SIMMONS-K, Co., Ltd All Rights Reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>

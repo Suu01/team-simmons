@@ -40,43 +40,39 @@
             </div> <!-- wrapper -->
         </nav> <!-- main-menu -->
 
-        <div class="title-cart">
-            <div class="title">
+        <div class="title-chk">
 
-                <div class="title-sub">
-                    <p>주문자 정보로 조회하기</p>
-                </div>
-                
-            </div> <!-- title -->
         
-            <form class="notice-content">
+            <div class="title">
+                <p>주문자정보로 조회하기</p>
+                <p class="title-fir">주문번호를 클릭하시면 상세 주문내역을 확인하실 수 있습니다</p>
+            </div>
 
-                <div class="inp_wrap">
+            <div class="form_wrapper">
+                <div class="form_cont">
+                     <form action="#" method="post" id="login-member">
+
+                        <div class="input-wrap">
+                            <label for="order" class="input-label"></label>
+                            <input type="text-input " name="orderId" type="text" id="order" placeholder="주문 번호">
+                        </div>
                     
-                    <div class="inp_lab">
-                        <label for="join_id">주문번호</label>
-                    </div>
-                    <div class="inp_text">
-                        <input type="text" id="join_id" name="cstmid" valid="required">
-                    </div>
 
-                    <!-- -->
+                        <div class="input-wrap">
+                            <label for="order" class="input-label"></label>
+                            <input type="text-input " name="orderId" type="text" id="order" placeholder="이메일">
+                        </div>
 
-                    <div class="inp_lab">
-                        <label for="join_id">이메일</label>
-                    </div>
-                    <div class="inp_text">
-                        <input type="text" id="join_id" name="cstmid" valid="required">
-                    </div>
+                        <button type="submit" class="login-submit">
+                            주문조회
+                        </button>
+                    </form>
 
                 </div>
-                <br>
-                <button type="submit" class="notice-submit"><a href="#">주문조회</a></button>
-                <label for=""></label>
-            </form>
+
+            </div>
 
         </div>
-
 
     </main>
 

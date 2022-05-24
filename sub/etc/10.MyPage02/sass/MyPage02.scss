@@ -292,35 +292,137 @@ header {
                         }
                     }
                 }
-            nav.content-menu {
-                display: block;
-                padding-top: 2px;
-                margin: 0 auto;
-                text-align: center;
 
-                @include responsive(tablet-size) {
-                    padding-top: 88px;
-                    margin: 0 auto;
-                    width: $width-half;
-                }
+                .content-menu_m {
+                    display:grid;
+                //grid-template-columns: repeat(2, 1fr);
+                // grid-template-rows: minmax(100px auto);
+                // grid-column-gap: 10px;
+                // margin-bottom: 50px;
+                //width: 100%;
     
-                @include responsive(pc-size) {
-                    padding-top: 88px;
+    
+                .confix_m {
+    
+                    font-size: 22px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 70%;
+                    margin: 0 auto;
+                    //margin-bottom: 20px;
+                    padding: 0 auto;
+                    //padding-top: 45px;
+                   // background-color: aqua;
+    
+    
+                    @include responsive(tablet-size){
+                        display: none;
+                    }
+    
+                    @include responsive(pc-size){
+                        display: none;
+                    }
+    
+                    li {
+                        //background-color: aqua;
+                        width: 50%;
+                        display: flex;
+                        justify-content: space-between;
+    
+                        text-align: center;
+                        border: 1px solid $gray-color;
+                        border-left: none;
+                        border-right: none;
+    
+                        a {
+                            // display: inline-block;
+                            color: #333;
+                            &:nth-child(2n-1){
+                                border-left: 1px solid $gray-color;
+                            }
+                            &:first-child a:hover{
+                                background-color: $point-color;
+                                color: $bg-color;
+                                border: $point-color;
+                            }
+                            &:nth-child(3),
+                            &:nth-child(4) {
+                                border-top: none;
+                            }
+    
+                            &:last-child {
+                                border-right: 1px solid #9b9b9b;
+                            }
+                            &:hover {
+                                color: #fff;
+                                background-color: $point-color;
+                            } 
+                        }
+                    }
+                    @include responsive(tablet-size){
+                        display: none;
+                    }
+            
+                    @include responsive(pc-size){
+                        display: none;        
+                    }
+                }
+            }
+    
+        }
+            
+            nav.content-menu {
+                
+                width: 70%;
+                margin: 0 auto;
+                display: block;
+                padding-top: 17px;
+                text-align: center;
+                padding-left: 30px;
+                //background-color: aqua;
+    
+    
+                @include responsive(tablet-size) {
+                    position: absolute;
+                    top: 30%;
+                    width: 60%;
+                    margin-left: 410px;
+                    padding-top: 5px;
                     margin: 0 auto;
                     width: 50%;
                 }
     
+                @include responsive(pc-size) {
+                    position: absolute;
+                    top: 30%;
+                    margin-left: 410px;
+                    padding-top: 5px;
+                    margin: 0 auto;
+                    width: 80%;
+                    //background-color: aqua;
+                }
+    
                 ul {
-                    display: flex;
+                    display: none;
+    
                     width: 800px;
-                    margin: 32px auto 34px;
-                    font-size: 30px;
+                    //margin: 32px auto 34px;
+                    margin-top: 20px;
+                    font-size: 22px;
+    
+                    @include responsive(tablet-size) {
+                        display: flex;
+                    }
+    
+                    @include responsive(pc-size) {
+                        display: flex;
+                    }
                             
                     li {
-                        &:first-child a{
+                        &:first-child a {
                             border-right: 0;
                             border-bottom: 0;
-                          }
+                        }
     
                         a {
                             color: #333333;
@@ -334,19 +436,71 @@ header {
                                 border-left: 2px solid $point-color;
                                 border-top: 2px solid $point-color;
                                 border-right: 2px solid $point-color;
-                                font-size: 29px;
+                                font-size: 23px;
                             }
                         }
                     }
                 
                 }
             }
+            .tabs {
+                width: 80%;
+                margin: 0 auto;
+    
+                @include responsive(pc-size){
+                    position: absolute;
+                    top: 30%;
+                    width: 60%;
+                    margin-left: 400px;
+                }
+                .tabs-list {
+    
+                    .tabs-list-btn {
+    
+                        ul{
+                            display: flex;
+                            margin-bottom: 50px;
+                            li{
+                                display: none;
+                                @include responsive(pc-size){
+                                    display: block;
+    
+                                    text-align: center;
+                                    padding-top: 10px;
+                                    border: 1px solid black;
+                                    border-bottom: 3px solid $point-color;
+                                    border-left: none;
+                                    // &:first-child{
+                                    //     border: 3px solid $point-color;
+                                    //     border-bottom: none;
+                                    // }
+                                }
+                            }
+                        }
+                    }
+                    
+                    fieldset{
+                        display: flex;
+                        // margin: 1em 0;
+                        border: none;
+                        // select{
+                        //     width: 10em;
+                        //     height: 2em;
+                        // }
+                        @include responsive(pc-size){
+                            display: none;
+                        }
+                    }
+    
+                }
+            }
 
             .notice-content {
                 margin: 0 auto;
                 padding: 0 auto;
+                padding-top: 280px;
                 width: $width-wide;
-                height: 455px;
+                height: 855px;
                 //background-color: aquamarine;
                 align-items: center;
                 @include responsive(tablet-size) {
@@ -368,11 +522,11 @@ header {
                     margin-top: -45px;
                 }
                 .notice-text {
-                    font-size: 23px;
+                    font-size: 17px;
                     color: #666666;
                     //background-color: aqua;
-                    padding-left: 14%;
-                    margin-top: -55px;
+                    padding-left: 15.5%;
+                    margin-top: -145px;
                 }
 
                 button {
@@ -406,6 +560,6 @@ header {
                 }
 
             }
-        }    
+    }    
         
-    }
+    

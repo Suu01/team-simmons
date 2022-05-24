@@ -297,12 +297,20 @@ main {
             }
 
         .content-menu_m {
-                display:grid;
+            display:grid;
             //grid-template-columns: repeat(2, 1fr);
             // grid-template-rows: minmax(100px auto);
             // grid-column-gap: 10px;
             // margin-bottom: 50px;
             //width: 100%;
+
+            @include responsive(tablet-size){
+                display: none;
+            }
+    
+            @include responsive(pc-size){
+                display: none;        
+            }
 
 
             .confix_m {
@@ -327,13 +335,20 @@ main {
                 }
 
                 li {
+                    @include responsive(tablet-size){
+                        display: none;
+                    }
+            
+                    @include responsive(pc-size){
+                        display: none;        
+                    }
                     //background-color: aqua;
                     width: 50%;
                     display: flex;
                     justify-content: space-between;
 
                     text-align: center;
-                    border: 1px solid $gray-color;
+                    border: 1px solid #666;
                     border-left: none;
                     border-right: none;
 
@@ -341,7 +356,7 @@ main {
                         // display: inline-block;
                         color: #333;
                         &:nth-child(2n-1){
-                            border-left: 1px solid $gray-color;
+                            border-left: 1px solid #666;
                         }
                         &:first-child a:hover{
                             background-color: $point-color;
@@ -359,93 +374,58 @@ main {
                         &:hover {
                             color: #fff;
                             background-color: $point-color;
+                        }
+                        @include responsive(tablet-size){
+                            display: none;
+                        }
+                
+                        @include responsive(pc-size){
+                            display: none;        
                         } 
                     }
                 }
-                @include responsive(tablet-size){
-                    display: none;
-                }
-        
-                @include responsive(pc-size){
-                    display: none;        
-                }
             }
         }
-
     }
-        
-        nav.content-menu {
-            
-            width: 70%;
-            margin: 0 auto;
-            display: block;
-            padding-top: 17px;
-            text-align: center;
-            padding-left: 30px;
-            //background-color: aqua;
 
-
-            @include responsive(tablet-size) {
-                position: absolute;
-                top: 30%;
-                width: 60%;
-                margin-left: 410px;
-                padding-top: 5px;
-                margin: 0 auto;
+    .confix {
+        .content_menu02 {
+            display: table;
+                    
+            li {
+                display: table-cell;
                 width: 50%;
-            }
-
-            @include responsive(pc-size) {
-                position: absolute;
-                top: 30%;
-                margin-left: 410px;
-                padding-top: 5px;
-                margin: 0 auto;
-                width: 80%;
-                //background-color: aqua;
-            }
-
-            ul {
-                display: none;
-
-                width: 800px;
-                //margin: 32px auto 34px;
-                margin-top: 20px;
-                font-size: 22px;
+                height: 50px;
 
                 @include responsive(tablet-size) {
-                    display: flex;
+                    
                 }
-
+    
                 @include responsive(pc-size) {
-                    display: flex;
+                    width: 20%;
+                    height: 20%;
                 }
-                        
-                li {
-                    &:first-child a {
-                        border-right: 0;
-                        border-bottom: 0;
-                    }
+                &:first-child a { //이용가능한 
+                    border-right: 0;
+                    border-bottom: 0;
+                }
 
-                    a {
-                        color: #333333;
-                        width: 200px;
-                        text-align: center;
-                        border: 1px solid #666666;
-                        padding: 10px;
-        
-                        &:hover {
-                            color: $point-color;
-                            border-left: 2px solid $point-color;
-                            border-top: 2px solid $point-color;
-                            border-right: 2px solid $point-color;
-                            font-size: 23px;
-                        }
-                    }
+                a {
+                    color: $point-color;
+                    font-size: 23px;
+                    color: #333333;
+                    text-align: center;
+                    
                 }
-            
+
+
+
             }
+        
         }
+    }
+
+
         .tabs {
             width: 80%;
             margin: 0 auto;
@@ -463,6 +443,7 @@ main {
                     ul{
                         display: flex;
                         margin-bottom: 50px;
+                        
                         li{
                             display: none;
                             @include responsive(pc-size){

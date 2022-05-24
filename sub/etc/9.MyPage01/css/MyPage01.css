@@ -356,7 +356,7 @@ main .title-cart .title {
 
 main .title-cart .title .title-fir {
   font-size: 1.5em;
-  font-family: "Roboto", sans-serif;
+  font-family: "SCoreDream";
   font-weight: 500;
   margin: 0 auto;
   margin-top: 50px;
@@ -399,10 +399,8 @@ main .title-cart .title .title-sub {
     font-size: 22px;
     font-family: "SCoreDream";
     margin-top: -30px;
-    margin-left: -320px;
-    padding-left: 279px;
+    padding-left: 289px;
     padding-top: 7px;
-    padding-left: 90px;
   }
 }
 

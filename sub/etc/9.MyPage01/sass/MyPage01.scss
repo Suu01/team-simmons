@@ -245,7 +245,7 @@ main {
 
                 .title-fir {
                     font-size: 1.5em;
-                    font-family: $title-font;
+                    font-family: $main-font;
                     font-weight: 500;
                     //display: flex;
                     margin: 0 auto;
@@ -287,10 +287,10 @@ main {
                         font-size: 22px;
                         font-family: $main-font;
                         margin-top: -30px;
-                        margin-left: -320px;
-                        padding-left: 279px;
+                        // margin-left: -320px;
+                        padding-left: 289px;
                         padding-top: 7px;
-                        padding-left: 90px;
+
                         //background-color: aqua;
                     }
                 }

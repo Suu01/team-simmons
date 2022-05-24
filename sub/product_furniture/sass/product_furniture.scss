@@ -176,6 +176,9 @@ header {
 main {
     .wrapper {
         @include wrapper;
+        padding-bottom: 100px;
+
+        &::after{content:""; display:block; clear:both;}
 
         h1 {
             font: {

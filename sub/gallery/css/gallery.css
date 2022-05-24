@@ -366,7 +366,6 @@ main section.tap ul li:first-child {
 
 main div.gallery {
   width: 100%;
-  display: none;
 }
 
 main div.gallery section.gallery-title {
@@ -423,8 +422,8 @@ main div.gallery section.gallery-intro {
   text-align: center;
   color: #333333;
   margin: 0 auto;
-  width: 1024px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1320px;
 }
 
 main div.gallery section.gallery-intro div.g {
@@ -524,7 +523,7 @@ main div.gallery section.gallery-slide {
 
 main div.gallery section.gallery-slide div.g-wrapper {
   margin: 0 auto;
-  width: 1024px;
+  width: 1320px;
   max-width: 100%;
 }
 
@@ -539,6 +538,7 @@ main div.gallery section.gallery-slide div.g-wrapper .slide-img-wrap img {
 
 main div.gallery-search {
   width: 100%;
+  display: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -558,7 +558,7 @@ main div.gallery-search div.search {
     display: flex;
     margin: 0 auto;
     width: 100%;
-    max-width: 1024px;
+    max-width: 1320px;
     margin-bottom: 150px;
   }
 }
@@ -752,7 +752,7 @@ main div.gallery-search section.search-table {
   main div.gallery-search section.search-table {
     display: block;
     width: 100%;
-    max-width: 1024px;
+    max-width: 1320px;
     margin: 150px auto;
   }
 }

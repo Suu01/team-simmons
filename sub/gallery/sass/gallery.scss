@@ -252,7 +252,7 @@ main {
 
     div.gallery {
         width: $width-wide;
-        display: none;
+        // display: none;
 
         section.gallery-title {
             width: $width-wide;
@@ -302,8 +302,8 @@ main {
             text-align: center;
             color: $font-color;
             margin: 0 auto;
-            width: 1024px;
-            max-width: 100%;
+            width: 100%;
+            max-width: 1320px;
             
             div.g {
                 width: $width-wide;
@@ -390,7 +390,7 @@ main {
 
             div.g-wrapper {
                 margin: 0 auto;
-                width: 1024px;
+                width: 1320px;
                 max-width: 100%;
 
                 .slide-img-wrap {
@@ -407,7 +407,7 @@ main {
 
     div.gallery-search {
         width: $width-wide;
-        // display: none;
+        display: none;
 
         @include responsive(pc-size) {
             padding: 0 20px;
@@ -420,7 +420,7 @@ main {
                 display: flex;
                 margin: 0 auto;
                 width: 100%;
-                max-width: 1024px;
+                max-width: 1320px;
                 margin-bottom: 150px;
                 // height: 755px;
             }
@@ -608,7 +608,7 @@ main {
             @include responsive(pc-size) {
                 display: block;
                 width: 100%;
-                max-width: 1024px;
+                max-width: 1320px;
                 margin: 150px auto;
             }
 

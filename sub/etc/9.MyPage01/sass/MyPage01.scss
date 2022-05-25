@@ -302,8 +302,8 @@ main {
             display: table;
             width: 100%;
             table-layout: fixed;
-            border-left: 2px solid #e1e1e1;
-            position: relative;
+            border-left: 2px solid $point-color;
+            // position: relative;
             margin-bottom: 25px;
 
             @include responsive(pc-size) {
@@ -340,6 +340,7 @@ main {
                         width: 25%;
                     }
                 }
+
                 &:hover {
                     border-bottom: $point-color;
                     border-top: 2px solid $point-color;
@@ -347,11 +348,16 @@ main {
                     background-color: $point-color;
                     color: #fff;
 
+                    @include responsive(pc-size) {
+                        // background-color: #fff;
+                        color: $point-color;
+                        border-top: #e1e1e1;
+                    }
+
                     transition: all 0.5s;
 
                     @include responsive(tablet-size) {
                         border-bottom-color: transparent;
-                        
                     }
 
                     &:after {
@@ -363,7 +369,7 @@ main {
                         bottom: -2px;
                         width: 2px;
                         background-color: $point-color;
-                    }
+                    } 
 
                     &::before {
                         content: '';
@@ -387,9 +393,17 @@ main {
                 display: block;
                 position: relative;
                 height: 50px;
-                border-top: 2px solid #e1e1e1;
-                border-bottom: 2px solid #e1e1e1;
+                // border-top: 2px solid #e1e1e1; 클릭 전 라인상태;
+                // border-bottom: 2px solid #e1e1e1; 클릭 전 라인상태;
+                border-top: 2px solid $point-color;
+                border-bottom: 2px solid $point-color;
+                border-right: 2px solid $point-color;
+
+                &:hover {
+                    color: #fff;
+                }
                 // background-color: $bg-color;
+
                 
                 letter-spacing: 0.001em;
                 line-height: 50px;
@@ -402,6 +416,8 @@ main {
                     border-bottom: 2px solid #e1e1e1;
                     // border-top: 2px solid #e1e1e1;
                 }
+
+                
                 
                 &:after {
                     content: '';

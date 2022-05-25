@@ -412,8 +412,7 @@ main .confix .menu-tabs {
   display: table;
   width: 100%;
   table-layout: fixed;
-  border-left: 2px solid #e1e1e1;
-  position: relative;
+  border-left: 2px solid #82ca9c;
   margin-bottom: 25px;
 }
 
@@ -471,6 +470,13 @@ main .confix .menu-tabs li:hover {
   transition: all 0.5s;
 }
 
+@media screen and (min-width: 1024px) {
+  main .confix .menu-tabs li:hover {
+    color: #82ca9c;
+    border-top: #e1e1e1;
+  }
+}
+
 @media screen and (min-width: 768px) {
   main .confix .menu-tabs li:hover {
     border-bottom-color: transparent;
@@ -507,14 +513,19 @@ main .confix .menu-tabs a {
   display: block;
   position: relative;
   height: 50px;
-  border-top: 2px solid #e1e1e1;
-  border-bottom: 2px solid #e1e1e1;
+  border-top: 2px solid #82ca9c;
+  border-bottom: 2px solid #82ca9c;
+  border-right: 2px solid #82ca9c;
   letter-spacing: 0.001em;
   line-height: 50px;
   text-align: center;
   font-size: 23px;
   color: #333333;
   text-align: center;
+}
+
+main .confix .menu-tabs a:hover {
+  color: #fff;
 }
 
 @media screen and (min-width: 768px) {

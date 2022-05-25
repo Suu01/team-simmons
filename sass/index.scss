@@ -41,22 +41,27 @@ header {
 
     h1 {
         // background-color: aqua;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        order: 2;
+
 
         @include responsive(pc-size) {
-            position: static;
-            top: 0;
-            left: 0;
-            transform: translate(0, 0);
+            // position: static;
+            // top: 0;
+            // left: 0;
+            // transform: translate(0, 0);
             // height: 20%;
+            order: 0;
         }
+
     }
 
     nav {
         // background-color: aquamarine;
+        order: 1;
 
         @include responsive(pc-size) {
             height: 30%;
@@ -107,6 +112,7 @@ header {
 
     div.side-menu {
         // background-color: pink;
+        order: 3;
 
         @include responsive(pc-size) {
             // height: 18%;

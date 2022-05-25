@@ -484,6 +484,15 @@ main .wrapper .right .point .simon_pay_box .simon_pay_p_sale .underscore {
 
 main .wrapper .right .icon {
   text-align: center;
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media screen and (min-width: 1024px) {
@@ -493,14 +502,13 @@ main .wrapper .right .icon {
 }
 
 main .wrapper .right .icon button {
-  width: 160px;
+  width: 230px;
   height: 45px;
   font-family: "SCoreDream";
   font-size: 1em;
   font-weight: 600;
   color: #fefefc;
   letter-spacing: 0.1em;
-  padding: 10px;
   border: none;
   border-radius: 5px;
   background-color: #82ca9c;
@@ -509,7 +517,7 @@ main .wrapper .right .icon button {
 @media screen and (min-width: 768px) {
   main .wrapper .right .icon button {
     width: 220px;
-    height: 50px;
+    height: 45px;
     font-size: 1.1em;
   }
 }
@@ -524,41 +532,38 @@ main .wrapper .right .icon button {
   }
 }
 
-main .wrapper .right .icon img {
+main .wrapper .right .icon .img-wrap {
+  position: relative;
   width: 45px;
   height: 45px;
-  display: inline;
-  padding: 10px;
   border: 1px solid #cecece;
   border-radius: 5px;
-  margin-left: 10px;
 }
 
-@media screen and (min-width: 768px) {
-  main .wrapper .right .icon img {
-    width: 50px;
-    height: 50px;
-    margin-left: 15px;
-  }
+main .wrapper .right .icon .img-wrap img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: 1024px) {
-  main .wrapper .right .icon img {
+  main .wrapper .right .icon .img-wrap img {
     width: 40px;
     height: 40px;
-    margin-left: 10px;
   }
 }
 
 main .wrapper .tabs {
-  width: 100%;
+  width: 280px;
   margin-bottom: 30px;
+  margin: auto;
 }
 
 @media screen and (min-width: 768px) {
   main .wrapper .tabs {
     width: 350px;
-    margin: 0 auto;
   }
 }
 
@@ -584,14 +589,8 @@ main .wrapper .tabs ul {
   padding: 3%;
 }
 
-@media screen and (min-width: 768px) {
-  main .wrapper .tabs ul {
-    padding: 2% 4%;
-  }
-}
-
 main .wrapper .tabs ul li {
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -601,7 +600,7 @@ main .wrapper .tabs ul li {
 }
 
 main .wrapper .tabs ul li a {
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -609,19 +608,12 @@ main .wrapper .tabs ul li a {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 768px) {
-  main .wrapper .tabs ul li a {
-    font-size: 0.8em;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-    margin-bottom: 15px;
-    margin-bottom: 0;
-  }
-}
-
 main .wrapper .tabs ul li:last-child {
   margin-right: 0;
+}
+
+main .wrapper .left {
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {

@@ -214,8 +214,9 @@ main {
             }
             @include responsive(pc-size) {
                 float: right;
-                width: 35%;
-                margin-left: 3%;
+                width: 32%;
+                padding-right: 15px;
+                // margin-left: 2%;
                 // background-color: aqua;
             }
 
@@ -386,19 +387,19 @@ main {
             .icon {
                 text-align: center;
                 width: 100%;
-                max-width: 350px;
-                margin: auto;
                 // background-color: pink;
                 display: flex;
                 justify-content: space-between;
 
                 @include responsive(pc-size) {
-                    text-align: left;
+                    // text-align: left;
                 }
 
                 button {
-                    width: 230px;
-                    height: 45px;
+                    width: 70%;
+                    max-width: 330px;
+                    height: 40px;
+                    margin: auto;
                     font: {
                         family: $main-font;
                         size: 1em;
@@ -411,45 +412,50 @@ main {
                     background-color: $point-color;
 
                     @include responsive(tablet-size) {
-                        width: 220px;
-                        height: 45px;
+                        max-width: 400px;
                         font: {
                             size: 1.1em;
                         }
                     }
                     @include responsive(pc-size) {
-                        width: 60%;
-                        height: 50%;
+                        width: 100%;
+                        max-width: 100%;
+                        height: 45px;
                         font: {
                             family: $main-font;
-                            size: 0.9em;
+                            size: 1em;
                             weight: 600;
                         }
                     }
                 }
 
-                .img-wrap {
-                    position: relative;
-                    width: 45px;
-                    height: 45px;
-                    border: 1px solid $gray-color;
-                    border-radius: 5px;
+                // .img-wrap {
+                //     display: none;
+                //     position: relative;
+                //     width: 45px;
+                //     height: 45px;
+                //     border: 1px solid $gray-color;
+                //     border-radius: 5px;
 
-                    img {    
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        // background-color: aqua;     
-                        // display: inline;
-                        // padding: 10px;
+                //     @include responsive(pc-size) {
+                //         display: block;
+                //     }
+
+                //     img {    
+                //         position: absolute;
+                //         top: 50%;
+                //         left: 50%;
+                //         transform: translate(-50%, -50%);
+                //         // background-color: aqua;     
+                //         // display: inline;
+                //         // padding: 10px;
     
-                        @include responsive(pc-size) {
-                            width: 40px;
-                            height: 40px;
-                        }
-                    }
-                }
+                //         @include responsive(pc-size) {
+                //             width: 40px;
+                //             height: 40px;
+                //         }
+                //     }
+                // }
             }
         }
 
@@ -501,7 +507,7 @@ main {
                 margin: 0 auto;
             }
             @include responsive(pc-size) {
-                width: 60%;
+                width: 65%;
                 float: left;
             }
             

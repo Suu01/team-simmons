@@ -208,138 +208,101 @@ main {
         .tabs-menu {
             width: 100%;
             .tabs {
-                width: 100%;
-                margin-bottom: 25px;
                 display: table;
+                width: 100%;
+                table-layout: fixed;
+                border-left: 2px solid #e1e1e1;
+                position: relative;
+                margin-bottom: 25px;
 
                 li {
                     display: table-cell;
                     float: left;
                     width: 50%;
-                    padding: 10px;
-                    border: 3px solid #e1e1e1;
+                    height: 50px;
 
                     @include responsive(tablet-size) {
                         width: 25%;
-                        font: {
-                            size: 0.9em;
-                        }
-                        padding: 7px 10px;
-                        border-right: none;
-                    }
-                    @include responsive(pc-size) {
-                        font: {
-                            size: 1.2em;
-                        }
-                        padding: 8px 12px;
                     }
 
-                    &:first-child {
-                        position: relative;
-                        border-right: none;
-
-                        &:hover {
-                            @include responsive(tablet-size) {
-                                border-bottom: none;
-                            }
-                        }
-
-                        &:hover:after {
-                            @include li_hover_after;
-
-                            @include responsive(tablet-size) {
-                                border-bottom: none;
-                            }
-                        }
-
-                        &:hover:before {
-                            @include responsive(tablet-size) {
-                                content: '';
-                                position: absolute;
-                                top: 100%;
-                                left: 100%;
-                                width: 303%;
-                                border-bottom: 3px solid $point-color;
-                                z-index: 1;
-                            }
-                        }
-                    }
-
-                    &:nth-child(2) {
-                        position: relative;
-
-                        &:hover {
-                            @include responsive(tablet-size) {
-                                border-bottom: none;
-                            }
-                        }
-
-                        &:hover:after {
-                            @include li_hover_after;
-
-                            @include responsive(tablet-size) {
-                                border-bottom: none;
-                            }
-                        }
-
-                        &:hover:before {
-                            @include responsive(tablet-size) {
-                                content: '';
-                                position: absolute;
-                                top: -3px;
-                                left: -3px;
-                                width: 100%;
-                                height: 100%;
-                                border: 3px solid $point-color;
-                                border-bottom: none;
-                                z-index: 1;
-                            }
-                        }
-                    }
-
-                    &:nth-child(3) {
-                        position: relative;
-                        border-top: none;
-                        border-right: none;
+                    &:nth-child(n+3) {
+                        margin-top: -2px;
 
                         @include responsive(tablet-size) {
-                            border-top: 3px solid #e1e1e1;
-                        }
-
-                        &:hover:after {
-                            @include li_hover_after;
+                            margin-top: 0;
                         }
                     }
 
-                    &:last-child {
-                        position: relative;
-                        border-top: none;
+                    &:hover {
+                        a {
+                            border-bottom-color: $point-color;
+                            border-top: 2px solid $point-color;
+                            z-index: 1;
+                            background-color: $point-color;
+                            color: #fff;
 
-                        @include responsive(tablet-size) {
-                            border-top: 3px solid #e1e1e1;
-                            border-right: 3px solid #e1e1e1;
-                        }
+                            transition: all 0.5s;
 
-                        &:hover:after {
-                            @include li_hover_after;
+                            @include responsive(tablet-size) {
+                                border-bottom-color: transparent;
+                            }
+
+                            &:after {
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                bottom: -2px;
+                                width: 2px;
+                                background-color: $point-color;
+                            }
+
+                            &:before {
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                top: -2px;
+                                left: -2px;
+                                bottom: -2px;
+                                width: 2px;
+                                background-color: $point-color;
+                                box-sizing: inherit;
+
+                                transition: all 0.5s;
+                            }
                         }
                     }
 
                     a {
+                        display: block;
+                        position: relative;
+                        height: 50px;
+                        border-top: 2px solid #e1e1e1;
+                        border-bottom: 2px solid #e1e1e1;
                         font: {
                             size: 1.2em;
                             weight: 600;
                         }
                         letter-spacing: 0.001em;
+                        line-height: 50px;
                         text-align: center;
-                        
+                        background-color: $bg-color;
+                        color: $font-color;
+
                         @include responsive(tablet-size) {
-                            font: {
-                                size: 1.3em;
-                                weight: 700;
-                            }
-                            letter-spacing: 0.001em;
-                            text-align: center;
+                            border-bottom: 2px solid #e1e1e1;
+                        }
+
+                        &:after {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            width: 2px;
+                            background-color: #e1e1e1;
                         }
                     }
                 }
@@ -358,9 +321,9 @@ main {
                     size: 0.8em;
                     weight: 500;
                 }
-                color: #000;
+                color: $font-color;
                 border: none;
-                border-bottom: 2px solid $font-color;
+                border-bottom: 2px solid #e1e1e1;
                 background: url(../images/select_bt.png) no-repeat right 8% center;
                 appearance: none;
                 padding: 5px;
@@ -377,7 +340,7 @@ main {
                 }
                 @include responsive(pc-size) {
                     font: {
-                        size: 1.2em;
+                        size: 0.8em;
                     }
                     padding: 8px 12px;
                 }

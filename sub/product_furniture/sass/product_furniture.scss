@@ -5,13 +5,9 @@
 body {
     padding-top: 60px;
 
-    @include responsive(tablet-size) {
-        padding-top: 0;
-        padding-left: 70px;
-    }
-
     @include responsive(pc-size) {
         padding-left: 80px;
+        padding-top: 0;
     }
 }
 
@@ -21,7 +17,6 @@ header {
     top: 0;
     left: 0;
     display: flex;
-    z-index: 1;
     justify-content: space-between;
     align-items: center;
     width: $width-wide;
@@ -29,56 +24,37 @@ header {
     padding: 0 15px;
     border-bottom: 1px solid #333;
     background-color: $bg-color;
+    z-index: 1;
 
-    @include responsive(tablet-size) {
-        width: 70px;
+    @include responsive(pc-size) {
+        width: 80px;
         height: 100%;
         flex-direction: column;
-        // align-items: baseline;
+        align-items: center;
         padding: 60px 0;
         border-bottom: 0;
         border-right: 1px solid #333;
     }
 
-    @include responsive(pc-size) {
-        width: 80px;
-    }
-
     h1 {
-        // background-color: aqua;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        order: 2;
 
-        @include responsive(tablet-size) {
-            // height: 20%;
-            position: static;
-            top: 0;
-            left: 0;
-            transform: translate(0, 0);
+        @include responsive(pc-size) {
+            order: 0;
         }
-
-        // a {
-        //     img {
-        //         @include responsive(pc-size) {
-        //             width: 62px;
-        //             height: 44px;
-        //         }
-        //     }
-        // }
     }
 
     nav {
+        order: 1;
         // background-color: aquamarine;
 
-        @include responsive(tablet-size) {
+        @include responsive(pc-size) {
             height: 30%;
         }
 
         ul.gnb {
 
-            @include responsive(tablet-size) {
+            @include responsive(pc-size) {
                 display: flex;
                 height: 100%;
                 flex-direction: column;
@@ -89,34 +65,24 @@ header {
             li {
                 display: none;
     
-                @include responsive(tablet-size) {
+                @include responsive(pc-size) {
                     display: block;
                 }
     
                 &:first-child {
                     display: block;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
     
-                    @include responsive(tablet-size) {
+                    @include responsive(pc-size) {
                         display: none;
                     }
                 }
     
-                &:nth-child(2) {
-                    a {
-                        span {
-                            @include responsive(tablet-size) {
-                                margin-top: 0;
-                            }
-                        }
-                    }
-                }
-    
                 a {
-                    img {
-                        width: 25px;
-                        height: auto;
-                    }
-    
                     span {
                         width: 10px;
                         height: 10px;
@@ -130,15 +96,16 @@ header {
     }
 
     div.side-menu {
+        order: 3;
         // background-color: pink;
 
-        @include responsive(tablet-size) {
-            height: 20%;
+        @include responsive(pc-size) {
+            // height: 18%;
         }
 
             .s-menu {
                 
-                @include responsive(tablet-size) {
+                @include responsive(pc-size) {
                     display: flex;
                     height: 100%;
                     flex-direction: column;
@@ -149,13 +116,20 @@ header {
                 li {
                     display: none;
     
-                    @include responsive(tablet-size) {
+                    @include responsive(pc-size) {
                         display: block;
+                        margin-top: 35px;
                     }
     
                     &:first-child {
                         font-size: 18px;
                         transform: rotate(-90deg);
+                        margin-top: 0;
+                        // background-color: orange;
+
+                        a {
+                            color: $font-color;
+                        }
                     }
         
                     &:last-child {

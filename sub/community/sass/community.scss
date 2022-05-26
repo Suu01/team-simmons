@@ -178,7 +178,7 @@ header {
 
     
 h1{
-    text-indent: 1.6em;
+    text-indent: 10%;
     line-height: 2em;
     @include responsive(pc-size){
         text-indent: 0;
@@ -188,14 +188,14 @@ h1{
         left: 480px; top: 15%;   
     }
 }
-
+    
 .wrapper{   
     @include responsive(pc-size){
         display: flex;
         width: 100%;
     }
 }
-
+    
 .commu-btn{
     @include responsive(pc-size){
         position: fixed;
@@ -217,7 +217,7 @@ h1{
         li{
             width: 50%;
             text-align: center;
-            padding-top: 12px;
+            padding: 12px;
             border: 1px solid $gray-color;
             border-left: none;
             &:nth-child(2n-1){
@@ -237,23 +237,34 @@ h1{
             @include responsive(pc-size){
                 border: 1px solid $gray-color;
                 border-top: none;
-                width: 250px;
-                height: 50px;
+                width: 230px;
+
             }
         }
     }
 }
-
+.fake-width{
+    display: none;
+    @include responsive(pc-size){
+        display: inline-block;
+        font-size: 0;
+        width: 30%;
+        max-width: 410px;
+    
+    }
+}
 .commu-main{
     width: 80%;
     margin: 0 auto;
     @include responsive(pc-size){
+        display: inline-block;
         position: absolute;
         top: 30%;
         width: 60%;
-        margin-left: 410px;
+        // margin-left: min(30%,410px);
+
     }
-    
+        
 }
 
 .faq{

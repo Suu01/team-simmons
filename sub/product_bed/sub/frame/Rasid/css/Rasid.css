@@ -331,7 +331,7 @@ main .wrapper .right h1 {
 
 @media screen and (min-width: 1024px) {
   main .wrapper .right h1 {
-    font-size: 1.3em;
+    font-size: 1.8em;
     font-weight: 400;
     text-align: left;
     letter-spacing: 0.04em;
@@ -340,15 +340,16 @@ main .wrapper .right h1 {
   }
 }
 
-main .wrapper .right hr {
+main .wrapper .right .na_bo {
   display: none;
 }
 
 @media screen and (min-width: 1024px) {
-  main .wrapper .right hr {
+  main .wrapper .right .na_bo {
     display: block;
     width: 75px;
-    border: 1px solid #82ca9c;
+    height: 2px;
+    background-color: #82ca9c;
     margin-bottom: 40px;
   }
 }
@@ -365,8 +366,8 @@ main .wrapper .right form {
 }
 
 main .wrapper .right form p {
-  font-size: 0.9em;
-  font-weight: 400;
+  font-size: 1em;
+  font-weight: 500;
   text-align: left;
   letter-spacing: 0.04em;
   margin-top: 25px;
@@ -398,8 +399,8 @@ main .wrapper .right .price {
 
 main .wrapper .right .price p {
   float: left;
-  font-size: 0.9em;
-  font-weight: 400;
+  font-size: 1em;
+  font-weight: 500;
   text-align: left;
   letter-spacing: 0.04em;
 }
@@ -407,14 +408,22 @@ main .wrapper .right .price p {
 main .wrapper .right .price .won {
   width: 60%;
   float: right;
+  font-size: 1.1em;
   font-weight: 500;
 }
 
 main .wrapper .right .hr_2 {
-  width: 100%;
-  border: 0.5px solid #cecece;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .right .hr_2 {
+    display: block;
+    width: 100%;
+    border: 0.5px solid #cecece;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
 }
 
 main .wrapper .right .point {
@@ -430,8 +439,8 @@ main .wrapper .right .point {
 }
 
 main .wrapper .right .point p {
-  font-size: 0.9em;
-  font-weight: 400;
+  font-size: 1em;
+  font-weight: 500;
   text-align: left;
   letter-spacing: 0.04em;
 }
@@ -447,6 +456,7 @@ main .wrapper .right .point .acc_box .acc {
 main .wrapper .right .point .acc_box .acc_p {
   width: 60%;
   float: right;
+  font-size: 1.1em;
   font-weight: 500;
 }
 
@@ -458,6 +468,7 @@ main .wrapper .right .point .simon_pay_box .simon_pay_p {
   width: 60%;
   height: 25px;
   float: right;
+  font-size: 1.1em;
   font-weight: 500;
   text-decoration: line-through;
   color: #cecece;
@@ -466,7 +477,7 @@ main .wrapper .right .point .simon_pay_box .simon_pay_p {
 main .wrapper .right .point .simon_pay_box .simon_pay_p_sale {
   width: 60%;
   float: right;
-  font-size: 0.7em;
+  font-size: 0.9em;
   font-weight: 500;
   line-height: 20px;
 }
@@ -477,7 +488,7 @@ main .wrapper .right .point .simon_pay_box .simon_pay_p_sale .red {
 }
 
 main .wrapper .right .point .simon_pay_box .simon_pay_p_sale .underscore {
-  font-size: 0.55em;
+  font-size: 0.75em;
   letter-spacing: 0.03em;
   text-decoration: underline;
 }
@@ -591,6 +602,7 @@ main .wrapper .left {
   main .wrapper .left {
     width: 90%;
     margin: 0 auto;
+    margin-top: 30px;
   }
 }
 
@@ -657,7 +669,7 @@ main .wrapper .left #description .description-text h1 {
 
 @media screen and (min-width: 1024px) {
   main .wrapper .left #description .description-text h1 {
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.01em;
@@ -674,9 +686,9 @@ main .wrapper .left #description .description-text h2 {
 
 @media screen and (min-width: 1024px) {
   main .wrapper .left #description .description-text h2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: 500;
-    letter-spacing: -0.02em;
+    letter-spacing: 0.01em;
   }
 }
 
@@ -698,10 +710,10 @@ main .wrapper .left #description .description-text p {
 
 @media screen and (min-width: 1024px) {
   main .wrapper .left #description .description-text p {
-    font-size: 0.75em;
+    font-size: 0.85em;
     font-weight: 400;
-    line-height: 1.4em;
-    letter-spacing: 0.02em;
+    line-height: 1.5em;
+    letter-spacing: 0.03em;
     margin-bottom: 20px;
   }
 }
@@ -724,7 +736,7 @@ main .wrapper .left #details h1 {
 
 @media screen and (min-width: 1024px) {
   main .wrapper .left #details h1 {
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.01em;
@@ -781,7 +793,7 @@ main .wrapper .left #details table th {
 @media screen and (min-width: 1024px) {
   main .wrapper .left #details table th {
     width: 20%;
-    font-size: 0.8em;
+    font-size: 0.85em;
     font-weight: 500;
     letter-spacing: 0.01em;
   }
@@ -801,7 +813,7 @@ main .wrapper .left #details table td {
 
 @media screen and (min-width: 1024px) {
   main .wrapper .left #details table td {
-    font-size: 0.7em;
+    font-size: 0.85em;
     font-weight: 400;
   }
 }
@@ -818,7 +830,7 @@ main .wrapper .left #details table p {
 
 @media screen and (min-width: 1024px) {
   main .wrapper .left #details table p {
-    line-height: 1.8em;
+    line-height: 1.9em;
   }
 }
 
@@ -842,7 +854,7 @@ main .wrapper .left .delivery_return h1 {
 
 @media screen and (min-width: 1024px) {
   main .wrapper .left .delivery_return h1 {
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.01em;
@@ -863,8 +875,8 @@ main .wrapper .left .delivery_return p {
 
 @media screen and (min-width: 1024px) {
   main .wrapper .left .delivery_return p {
-    font-size: 0.75em;
-    letter-spacing: -0.03em;
+    font-size: 1em;
+    letter-spacing: -0.01em;
   }
 }
 
@@ -882,9 +894,9 @@ main .wrapper .left .delivery_return li {
 
 @media screen and (min-width: 1024px) {
   main .wrapper .left .delivery_return li {
-    font-size: 0.7em;
-    letter-spacing: -0.01em;
-    line-height: 13px;
+    font-size: 0.9em;
+    letter-spacing: 0.01em;
+    line-height: 15.5px;
   }
 }
 
@@ -894,7 +906,7 @@ main .wrapper .left .delivery_return span {
 }
 
 main .wrapper .left .delivery_return .order {
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: 600;
   letter-spacing: 0.01em;
   line-height: 15px;

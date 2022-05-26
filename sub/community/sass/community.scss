@@ -178,7 +178,7 @@ header {
 
     
 h1{
-    text-indent: 1.6em;
+    text-indent: 10%;
     line-height: 2em;
     @include responsive(pc-size){
         text-indent: 0;
@@ -188,14 +188,14 @@ h1{
         left: 480px; top: 15%;   
     }
 }
-
+    
 .wrapper{   
     @include responsive(pc-size){
         display: flex;
         width: 100%;
     }
 }
-
+    
 .commu-btn{
     @include responsive(pc-size){
         position: fixed;
@@ -203,57 +203,120 @@ h1{
     }
     width: 100%;
     ul{
-        display: flex;
-        flex-wrap: wrap;
-        width: 80%;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        @include responsive(pc-size){
-            display: block;
-            width: 250px;
-            position: absolute;
-            left: 3%;
-        }
+        // display: flex;
+        // flex-wrap: wrap;
+        // width: 80%;
+        // margin: 0 auto;
+        // margin-bottom: 20px;
+        display:table; 
+        width:100%; 
+        table-layout:fixed; 
+        border-left:1px solid $bg-color;
+        position:relative;
+        background-color: $bg-color;
+        // @include responsive(pc-size){
+        //     display: block;
+        //     width: 250px;
+        //     position: absolute;
+        //     left: 3%;
+        // }
+
         li{
-            width: 50%;
-            text-align: center;
-            padding-top: 12px;
-            border: 1px solid $gray-color;
-            border-left: none;
-            &:nth-child(2n-1){
-                border-left: 1px solid $gray-color;
+            // width: 50%;
+            // text-align: center;
+            // padding: 12px;
+            // border: 1px solid $gray-color;
+            // border-left: none;
+            // &:nth-child(2n-1){
+            //     border-left: 1px solid $gray-color;
+            // }
+            // &:first-child{
+            //     background-color: $point-color;
+            //     color: $bg-color;
+            //     border: $point-color;
+            // }
+            // &:nth-child(3),
+            // &:nth-child(4),
+            // &:nth-child(5){
+            //     border-top: none;
+            // }
+            display:table-cell; 
+            height:50px
+            a{
+                display:block;
+                position:relative;
+                height:50px;
+                border-top:1px solid $gray-color;
+                border-bottom:1px solid $gray-color;
+                line-height:50px;
+                text-align:center;
+                background-color: $bg-color;
             }
-            &:first-child{
-                background-color: $point-color;
-                color: $bg-color;
-                border: $point-color;
+            a:after{
+                display:block;
+                position:relative;
+                height:50px;
+                border-top:1px solid $gray-color;
+                border-bottom:1px solid $gray-color;
+                line-height:50px;
+                text-align:center;
+                background-color: $bg-color;
             }
-            &:nth-child(3),
-            &:nth-child(4),
-            &:nth-child(5){
-                border-top: none;
-            }
-            
-            @include responsive(pc-size){
-                border: 1px solid $gray-color;
-                border-top: none;
-                width: 250px;
-                height: 50px;
-            }
+            // @include responsive(pc-size){
+            //     border: 1px solid $gray-color;
+            //     border-top: none;
+            //     width: 230px;
+
+            // }
+        }
+        li.on a,
+        li:hover a{
+            border-bottom-color: $point-color; 
+            border-top:1px solid $point-color;
+            z-index: 1;
+            background-color: $point-color;
+            color: $bg-color;
+        }
+        li.on a:after,
+        li:hover a:after{ 
+            content:''; 
+            display:block; 
+            position:absolute; 
+            top:0; right:0; bottom:-1px; width:1px; 
+            background: $point-color;
+        }
+        li.on a:before, 
+        li:hover a:before{ 
+            content:''; 
+            display:block; 
+            position:absolute; 
+            top:0; left:0; bottom:-1px; width:1px; 
+            background: $point-color;
         }
     }
 }
-
+.fake-width{
+    display: none;
+    @include responsive(pc-size){
+        display: inline-block;
+        font-size: 0;
+        width: 30%;
+        max-width: 410px;
+    
+    }
+}
 .commu-main{
     width: 80%;
     margin: 0 auto;
     @include responsive(pc-size){
+        display: inline-block;
         position: absolute;
         top: 30%;
         width: 60%;
-        margin-left: 410px;
+        // margin-left: min(30%,410px);
+
     }
-    
+        
 }
 
 .faq{

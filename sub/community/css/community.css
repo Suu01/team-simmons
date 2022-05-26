@@ -7,6 +7,13 @@
           box-sizing: border-box;
 }
 
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 body {
   font-family: "SCoreDream";
   background-color: #fefefc;
@@ -30,7 +37,7 @@ img {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 1.5em;
 }
 
 h2 {
@@ -251,7 +258,7 @@ header div.side-menu .s-menu li:last-child a img {
 }
 
 h1 {
-  text-indent: 1.6em;
+  text-indent: 10%;
   line-height: 2em;
 }
 
@@ -287,14 +294,12 @@ h1 {
 }
 
 .commu-btn ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-left: 1px solid #fefefc;
+  position: relative;
+  background-color: #fefefc;
 }
 
 @media screen and (min-width: 1024px) {
@@ -306,34 +311,87 @@ h1 {
   }
 }
 
-.commu-btn ul li {
-  width: 50%;
+.commu-btn ul .webtong_tab_type02 {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-left: 1px solid #e7e7e7;
+  position: relative;
+  background-color: #f1f1f1;
+}
+
+.commu-btn ul .webtong_tab_type02 li {
+  display: table-cell;
+  height: 50px;
+}
+
+.commu-btn ul .webtong_tab_type02 li a {
+  display: block;
+  position: relative;
+  height: 50px;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  line-height: 50px;
   text-align: center;
-  padding-top: 12px;
-  border: 1px solid #a5a5a5;
-  border-left: none;
+  background-color: #fff;
 }
 
-.commu-btn ul li:nth-child(2n-1) {
-  border-left: 1px solid #a5a5a5;
+.commu-btn ul .webtong_tab_type02 li a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  background: #e6e3df;
 }
 
-.commu-btn ul li:first-child {
-  background-color: #82ca9c;
-  color: #fefefc;
-  border: #82ca9c;
+.commu-btn ul .webtong_tab_type02 li.on a, .commu-btn ul .webtong_tab_type02 li:hover a {
+  border-bottom-color: #f34b53;
+  border-top: 1px solid #f34b53;
+  z-index: 1;
+  background-color: #fd7c82;
+  color: #fff;
 }
 
-.commu-btn ul li:nth-child(3), .commu-btn ul li:nth-child(4), .commu-btn ul li:nth-child(5) {
-  border-top: none;
+.commu-btn ul .webtong_tab_type02 li.on a:after, .commu-btn ul .webtong_tab_type02 li:hover a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -1px;
+  width: 1px;
+  background: #f34b53;
+}
+
+.commu-btn ul .webtong_tab_type02 li.on a:before, .commu-btn ul .webtong_tab_type02 li:hover a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -1px;
+  width: 1px;
+  background: #f34b53;
+}
+
+.commu-btn ul li {
+  display: table-cell;
+  height: 50px;
+}
+
+.fake-width {
+  display: none;
 }
 
 @media screen and (min-width: 1024px) {
-  .commu-btn ul li {
-    border: 1px solid #a5a5a5;
-    border-top: none;
-    width: 250px;
-    height: 50px;
+  .fake-width {
+    display: inline-block;
+    font-size: 0;
+    width: 30%;
+    max-width: 410px;
   }
 }
 
@@ -344,10 +402,10 @@ h1 {
 
 @media screen and (min-width: 1024px) {
   .commu-main {
+    display: inline-block;
     position: absolute;
     top: 30%;
     width: 60%;
-    margin-left: 410px;
   }
 }
 

@@ -1,5 +1,8 @@
 @import url('https://webfontworld.github.io/SCoreDream/SCoreDream.css');
 @import url('https://webfontworld.github.io/cafe24/Cafe24Danjunghae.css');
+@import url('https://fonts.googleapis.com/css2?family=Ramaraja&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+
 
 * {
     padding: 0;
@@ -9,6 +12,7 @@
 
 body {
     font-family: $main-font;
+    word-break: keep-all;
     background-color: $bg-color;
     width: $width-wide;
     margin: 0 auto;
@@ -18,7 +22,7 @@ body {
 a {
     display: block;
     text-decoration: none;
-    color: $bg-color;
+    color: $font-color;
 }
 
 ul, ol {
@@ -29,7 +33,7 @@ ul, ol {
 
 img {
     display: block;
-    // vertical-align: bottom;
+    vertical-align: bottom;
 }
 
 h1 {

@@ -255,7 +255,7 @@ main {
                 @include responsive(pc-size) {
                     display: block;
                     width: 75px;
-                    height: 1.5px;
+                    height: 2px;
                     background-color: $point-color;
                     margin-bottom: 40px;
                 }
@@ -486,6 +486,8 @@ main {
             @include responsive(tablet-size) {
                 width: 90%;
                 margin: 0 auto;
+            margin-top: 30px;
+
             }
             @include responsive(pc-size) {
                 width: 65%;

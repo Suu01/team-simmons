@@ -239,7 +239,7 @@ main {
                 }
                 @include responsive(pc-size) {
                     font: {
-                        size: 1.3em;
+                        size: 1.8em;
                         weight: 400;
                     }
                     text-align: left;
@@ -254,8 +254,8 @@ main {
 
                 @include responsive(pc-size) {
                     display: block;
-                    width: 120px;
-                    height: 1.5px;
+                    width: 75px;
+                    height: 2px;
                     background-color: $point-color;
                     margin-bottom: 40px;
                 }
@@ -303,6 +303,7 @@ main {
                     width: 60%;
                     float: right;
                     font: {
+                        size: 1.1em;
                         weight: 500;
                     }
                 }
@@ -312,6 +313,7 @@ main {
                 display: none;
 
                 @include responsive(pc-size) {
+                    display: block;
                     width: 100%;
                     border: 0.5px solid $gray-color;
                     margin-top: 25px;
@@ -343,6 +345,7 @@ main {
                         width: 60%;
                         float: right;
                         font: {
+                            size: 1.1em;
                             weight: 500;
                         }
                     }
@@ -358,6 +361,7 @@ main {
                         height: 25px;
                         float: right;
                         font: {
+                            size: 1.1em;
                             weight: 500;
                         }
                         text-decoration: line-through;
@@ -368,7 +372,7 @@ main {
                         width: 60%;
                         float: right;
                         font: {
-                            size: 0.7em;
+                            size: 0.9em;
                             weight: 500;
                         }
                         line-height: 20px;
@@ -380,7 +384,7 @@ main {
 
                         .underscore {
                             font: {
-                                size: 0.55em;
+                                size: 0.75em;
                             }
                             letter-spacing: 0.03em;
                             text-decoration: underline;
@@ -392,9 +396,13 @@ main {
             .icon {
                 text-align: center;
                 width: 100%;
-                background-color: pink;
-                // display: flex;
-                // justify-content: space-between;
+                // background-color: pink;
+                display: flex;
+                justify-content: space-between;
+
+                @include responsive(pc-size) {
+                    // text-align: left;
+                }
 
                 button {
                     width: 70%;
@@ -418,7 +426,6 @@ main {
                             size: 1.1em;
                         }
                     }
-                    
                     @include responsive(pc-size) {
                         width: 100%;
                         max-width: 100%;
@@ -479,6 +486,7 @@ main {
             @include responsive(tablet-size) {
                 width: 90%;
                 margin: 0 auto;
+                margin-top: 30px;
             }
             @include responsive(pc-size) {
                 width: 65%;
@@ -543,10 +551,10 @@ main {
 
                         @include responsive(pc-size) {
                             font: {
-                                size: 1.2em;
+                                size: 1.4em;
                                 weight: 500;
                             }
-                            letter-spacing: -0.02em;
+                            letter-spacing: 0.01em;
                         }
                     }
 
@@ -568,11 +576,11 @@ main {
                         }
                         @include responsive(pc-size) {
                             font: {
-                                size: 0.75em;
+                                size: 0.85em;
                                 weight: 400;
                             }
-                            line-height: 1.4em;
-                            letter-spacing: 0.02em;
+                            line-height: 1.5em;
+                            letter-spacing: 0.03em;
                             margin-bottom: 20px;
                         }
                     }
@@ -588,8 +596,9 @@ main {
                     .small {
                         font: {
                             size: 0.3em;
-                            weight: 300;
+                            weight: 400;
                         }
+                        color: $gray-color;
                         line-height: 3.8em;
                         letter-spacing: -0.03em;
                         margin-bottom: 15px;
@@ -603,9 +612,9 @@ main {
                         }
                         @include responsive(pc-size) {
                             font: {
-                                size: 0.4em;
+                                size: 0.8em;
                             }
-                            line-height: 3em;
+                            line-height: 1.7em;
                             letter-spacing: -0.02em;
                             margin-bottom: 20px;
                         }
@@ -667,7 +676,7 @@ main {
                         @include responsive(pc-size) {
                             width: 20%;
                             font: {
-                                size: 0.8em;
+                                size: 0.85em;
                                 weight: 500;
                             }
                             letter-spacing: 0.01em;
@@ -688,7 +697,7 @@ main {
                         }
                         @include responsive(pc-size) {
                             font: {
-                                size: 0.7em;
+                                size: 0.85em;
                                 weight: 400;
                             }
                         }
@@ -701,7 +710,7 @@ main {
                             line-height: 2em;
                         }
                         @include responsive(pc-size) {
-                            line-height: 1.8em;
+                            line-height: 1.9em;
                         }
                     }
 
@@ -738,9 +747,9 @@ main {
 
                     @include responsive(pc-size) {
                         font: {
-                            size: 0.75em;
+                            size: 1em;
                         }
-                        letter-spacing: -0.03em;
+                        letter-spacing: -0.01em;
                     }
                 }
 
@@ -759,10 +768,10 @@ main {
 
                     @include responsive(pc-size) {
                         font: {
-                            size: 0.7em;
+                            size: 0.9em;
                         }
-                        letter-spacing: -0.01em;
-                        line-height: 13px;
+                        letter-spacing: 0.01em;
+                        line-height: 15.5px;
                     }
                 }
 
@@ -773,7 +782,7 @@ main {
 
                 .order {
                     font: {
-                        size: 0.7em;
+                        size: 0.8em;
                         weight: 600;
                     }
                     letter-spacing: 0.01em;

@@ -355,21 +355,22 @@ main .search-menu {
     display: -ms-flexbox;
     display: flex;
     padding-left: 230px;
-    margin-left: 80px;
+    margin-left: 180px;
     list-style: none;
     text-decoration: none;
+    width: 20px;
+    height: auto;
   }
 }
 
 @media screen and (min-width: 768px) and (min-width: 1024px) {
   main .search-menu .wrapper .search-list .search .search-cont {
     position: relative;
-    background-color: aquamarine;
     padding-left: 50px;
-    margin-left: 150px;
+    margin-left: -105px;
     padding-bottom: 85px;
     margin-top: -90px;
-    width: 15px;
+    width: 5px;
     height: 165px;
   }
 }
@@ -416,10 +417,12 @@ main .search-menu {
     display: -ms-flexbox;
     display: flex;
     width: 1200px;
-    margin-left: -10px;
+    margin-left: -110px;
+    margin-top: 150px;
     margin: 0 auto;
     padding: 0 auto;
-    letter-spacing: -27px;
+    letter-spacing: 7px;
+    height: 7px;
     background-color: aquamarine;
   }
 }
@@ -428,8 +431,9 @@ main .search-menu {
   main .search-menu .wrapper .search-list .hashtag ul li {
     display: inline-block;
     list-style: none;
+    text-decoration: none;
     font-family: 'S-CoreDream';
-    font-size: 10px;
+    font-size: 7px;
   }
 }
 

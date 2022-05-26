@@ -247,7 +247,7 @@ main {
 
             .title-fir {
                 font-size: 1.5em;
-                font-family: $title-font;
+                font-family: $main-font;
                 font-weight: 500;
                 //display: flex;
                 margin: 0 auto;
@@ -294,57 +294,6 @@ main {
                 }
             }
         }
-
-        nav.content-menu {
-            display: block;
-            padding-top: 2px;
-            margin: 0 auto;
-            text-align: center;
-
-            @include responsive(tablet-size) {
-                padding-top: 88px;
-                margin: 0 auto;
-                width: $width-half;
-            }
-
-            @include responsive(pc-size) {
-                padding-top: 88px;
-                margin: 0 auto;
-                width: 50%;
-            }
-
-            ul {
-                display: flex;
-                width: 800px;
-                margin: 32px auto 34px;
-                font-size: 30px;
-                        
-                li {
-                    &:first-child a{
-                        border-right: 0;
-                        border-bottom: 0;
-                      }
-
-                    a {
-                        color: #333333;
-                        width: 200px;
-                        text-align: center;
-                        border: 1px solid #666666;
-                        padding: 10px;
-        
-                        &:hover {
-                            color: $point-color;
-                            border-left: 2px solid $point-color;
-                            border-top: 2px solid $point-color;
-                            border-right: 2px solid $point-color;
-                            font-size: 29px;
-                        }
-                    }
-                }
-            
-            }
-        }
-
         
         .loginform {
             
@@ -405,8 +354,8 @@ main {
                     width: 328px;
                     height: 46px;
                     background-color: $point-color;
-                    border-radius: 30px;
-                    border-color: white;
+                    border-radius: 10px;
+                    
                     //background-color: aqua;
                     padding-left: 15%;
                     margin-top: 35px;

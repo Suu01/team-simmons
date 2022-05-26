@@ -275,8 +275,6 @@ main {
                             font-size: 1.5em;
                             font-weight: 500;
                             // background-color: aqua;
-
-
                             @include responsive(pc-size) {
                                 display: none;
                             }
@@ -286,21 +284,24 @@ main {
                             // background-color: aquamarine;
                             // position: absolute;
                             padding-left: 230px;
-                            margin-left: 80px;
+                            margin-left: 180px;
                             list-style: none;   
-                            text-decoration: none;  
+                            text-decoration: none; 
+                            width: 20px;
+                            height: auto;
+                            
+                            
                             
                             @include responsive(pc-size) {
                                 position: relative;
-                                background-color: aquamarine;
+                                // background-color: aquamarine;
                                 padding-left: 50px;
-                                margin-left: 150px;
+                                margin-left:-105px;
                                 padding-bottom: 85px;
                                 margin-top: -90px;
-                                width: 15px;
+                                width: 5px;
                                 height: 165px;
-                                
-  
+
                             }
                         }    
 
@@ -332,7 +333,10 @@ main {
                         ul {
                             font-size: 11px;
                             padding-top: 80px;
-                            background-color: #d9efe1;
+                            // list-style: none;
+                            // text-decoration: none;
+                            
+                            // background-color: #d9efe1;
 
                             @include responsive(pc-size) {
                                 display: flex;
@@ -342,16 +346,21 @@ main {
                                 margin-top: 150px;
                                 margin: 0 auto;
                                 padding: 0 auto;
-                                letter-spacing: -27px;
+                                letter-spacing: 7px;
+                                height: 7px;
                                 background-color: aquamarine;
                             }
                            
-                            
                             li {
                                 display: inline-block;
                                 list-style: none;
+                                text-decoration: none;
+                                // background-color: aqua;
+
+
+
                                 font-family: 'S-CoreDream';
-                                font-size: 10px;
+                                font-size: 7px;
                                 
                                 @include responsive(tablet-size) {
                                     display: inline-block;

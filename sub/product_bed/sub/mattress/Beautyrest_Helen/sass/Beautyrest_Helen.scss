@@ -254,7 +254,7 @@ main {
 
                 @include responsive(pc-size) {
                     display: block;
-                    width: 75px;
+                    width: 120px;
                     height: 1.5px;
                     background-color: $point-color;
                     margin-bottom: 40px;
@@ -393,12 +393,8 @@ main {
                 text-align: center;
                 width: 100%;
                 // background-color: pink;
-                display: flex;
-                justify-content: space-between;
-
-                @include responsive(pc-size) {
-                    // text-align: left;
-                }
+                // display: flex;
+                // justify-content: space-between;
 
                 button {
                     width: 70%;
@@ -422,6 +418,7 @@ main {
                             size: 1.1em;
                         }
                     }
+                    
                     @include responsive(pc-size) {
                         width: 100%;
                         max-width: 100%;
@@ -494,10 +491,14 @@ main {
                 }
             }
 
-            #description {
+            #emotion_science,
+            #spring,
+            #layering {
                 width: 100%;
 
-                .description-text {
+                .emotion_science-text,
+                .spring-text,
+                .layering-text {
                     margin-top: 30px;
                     margin-bottom: 60px;
 
@@ -578,6 +579,36 @@ main {
 
                     img {
                         width: 100%;
+                    }
+                }
+            }
+
+            #spring {
+                .spring-text {
+                    .small {
+                        font: {
+                            size: 0.3em;
+                            weight: 300;
+                        }
+                        line-height: 3.8em;
+                        letter-spacing: -0.03em;
+                        margin-bottom: 15px;
+
+                        @include responsive(tablet-size) {
+                            font: {
+                                size: 0.4em;
+                            }
+                            line-height: 3em;
+                            letter-spacing: -0.02em;
+                        }
+                        @include responsive(pc-size) {
+                            font: {
+                                size: 0.4em;
+                            }
+                            line-height: 3em;
+                            letter-spacing: -0.02em;
+                            margin-bottom: 20px;
+                        }
                     }
                 }
             }

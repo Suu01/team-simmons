@@ -255,7 +255,7 @@ main {
                 @include responsive(pc-size) {
                     display: block;
                     width: 75px;
-                    height: 1.5px;
+                    height: 2px;
                     background-color: $point-color;
                     margin-bottom: 40px;
                 }

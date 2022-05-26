@@ -125,21 +125,23 @@ header {
 }
 
 header h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 @media screen and (min-width: 1024px) {
   header h1 {
-    position: static;
-    top: 0;
-    left: 0;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
   }
+}
+
+header nav {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 @media screen and (min-width: 1024px) {
@@ -197,6 +199,12 @@ header nav ul.gnb li a span {
   height: 10px;
   border-radius: 50%;
   background-color: #82ca9c;
+}
+
+header div.side-menu {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
 }
 
 @media screen and (min-width: 1024px) {
@@ -414,7 +422,10 @@ main div.gallery section.gallery-title div.sec1-txt p {
 
 @media screen and (min-width: 768px) {
   main div.gallery section.gallery-title div.sec1-txt p {
+    line-height: 1.5;
     font-size: 20px;
+    font-weight: 500;
+    color: #999;
   }
 }
 

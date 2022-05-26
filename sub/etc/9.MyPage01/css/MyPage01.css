@@ -1,6 +1,5 @@
 @import url("https://webfontworld.github.io/SCoreDream/SCoreDream.css");
 @import url("https://webfontworld.github.io/cafe24/Cafe24Danjunghae.css");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -339,94 +338,6 @@ main .title-cart {
   margin-left: 34px;
   padding-top: 33px;
   font-size: 3em;
-  /*
-            .confix_m {
-
-                display: flex;
-                background-color: aqua;
-                width: 100%;
-
-                @include responsive(tablet-size){
-                    display: none;    
-                }
-    
-                @include responsive(pc-size){
-                    display: none;        
-                }
-
-                width: 100%;
-
-                ul {
-                    display: flex;
-                    flex-wrap: wrap;
-                    width: 80%;
-                    margin: 0 auto;
-                    margin-bottom: 20px;
-
-                        
-                    @include responsive(tablet-size){
-                        display: none;    
-                    }
-        
-                    @include responsive(pc-size){
-                        display: none;        
-                    }
-                    
-                    li {
-                        width: 50%;
-                        text-align: center;
-                        padding-top: 12px;
-                        border: 1px solid $gray-color;
-                        border-left: none;
-                        &:nth-child(2n-1){
-                            border-left: 1px solid $gray-color;
-                            
-                        }
-                        
-                        &:first-child{
-                            background-color: $point-color;
-                            color: $bg-color;
-                            border: $point-color;
-                        }
-                        &:nth-child(3),
-                        &:nth-child(4){
-                            border-top: none;
-                        }
-                        
-                        &:first-child a{
-                            border-right: 0;
-                            border-bottom: 0;
-                        }
-                        
-                        a {
-                            color: #333333;
-                            width: 200px;
-                            text-align: center;
-                            border: 1px solid #666666;
-                            padding: 10px;
-                            font-size: 12px;
-                            
-                            &:hover {
-                                color: $point-color;
-                                border-left: 2px solid $point-color;
-                                border-top: 2px solid $point-color;
-                                border-right: 2px solid $point-color;
-                                font-size: 14px;
-                            }
-                        }
-                        
-                        @include responsive(tablet-size){
-                            display: none;
-                            
-                        }
-                        
-                        @include responsive(pc-size){
-                            display: none;        
-                        }
-                        
-                    }
-                }
-            }*/
 }
 
 main .title-cart .title {
@@ -437,14 +348,14 @@ main .title-cart .title {
 @media screen and (min-width: 1024px) {
   main .title-cart .title {
     display: block;
-    float: left;
+    padding-left: 767px;
     margin-top: 10px;
   }
 }
 
 main .title-cart .title .title-fir {
   font-size: 1.5em;
-  font-family: "Roboto", sans-serif;
+  font-family: "SCoreDream";
   font-weight: 500;
   margin: 0 auto;
   margin-top: 50px;
@@ -473,9 +384,9 @@ main .title-cart .title .title-sub {
     width: 1024px;
     font-size: 22px;
     font-family: "SCoreDream";
-    margin-top: -30px;
+    margin-top: -50px;
     margin-left: -320px;
-    padding-left: 279px;
+    padding-left: 630px;
     padding-top: 7px;
   }
 }
@@ -486,156 +397,152 @@ main .title-cart .title .title-sub {
     width: 1024px;
     font-size: 22px;
     font-family: "SCoreDream";
-    margin-top: -30px;
-    margin-left: -320px;
-    padding-left: 279px;
-    padding-top: 7px;
-    padding-left: 90px;
+    padding-left: 430px;
+    padding-top: 5px;
   }
 }
 
-main .title-cart .content-menu_m {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+main .confix {
   width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
 }
 
-main .title-cart .content-menu_m .confix_m {
-  font-size: 22px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  padding: 0 auto;
-  padding-top: 45px;
-  display: flex;
+main .confix .menu-tabs {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-left: 2px solid #82ca9c;
+  margin-bottom: 25px;
 }
 
 @media screen and (min-width: 1024px) {
-  main .title-cart .content-menu_m .confix_m {
-    display: none;
+  main .confix .menu-tabs {
+    width: 55%;
+    padding-top: 9px;
+    margin: 0 auto;
   }
 }
 
-main .title-cart .content-menu_m .confix_m li {
+main .confix .menu-tabs li {
+  display: table-cell;
+  float: left;
   width: 50%;
-  text-align: center;
-  padding-top: 12px;
+  height: 50px;
+  border-right: 2px solid #e1e1e1;
 }
 
-main .title-cart .content-menu_m .confix_m li a {
-  display: inline-block;
-  color: #333;
-  text-decoration: none;
-  width: 200px;
-  text-align: center;
-  border: 1px solid #9b9b9b;
-  border-right: 0;
-  padding: auto;
+@media screen and (min-width: 768px) {
+  main .confix .menu-tabs li {
+    width: 25%;
+  }
 }
 
-main .title-cart .content-menu_m .confix_m li:last-child a {
-  border-right: 1px solid #9b9b9b;
+@media screen and (min-width: 1024px) {
+  main .confix .menu-tabs li {
+    width: 25%;
+  }
 }
 
-main .title-cart .content-menu_m .confix_m lia:hover {
+main .confix .menu-tabs li:nth-child(n+3) {
+  margin-top: -2px;
+}
+
+@media screen and (min-width: 768px) {
+  main .confix .menu-tabs li:nth-child(n+3) {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .confix .menu-tabs li:nth-child(n+3) {
+    width: 25%;
+  }
+}
+
+main .confix .menu-tabs li:hover {
+  border-bottom: #82ca9c;
+  border-top: 2px solid #82ca9c;
+  z-index: 1;
+  background-color: #82ca9c;
   color: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@media screen and (min-width: 1024px) {
+  main .confix .menu-tabs li:hover {
+    color: #82ca9c;
+    border-top: #e1e1e1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main .confix .menu-tabs li:hover {
+    border-bottom-color: transparent;
+  }
+}
+
+main .confix .menu-tabs li:hover:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -2px;
+  width: 2px;
   background-color: #82ca9c;
 }
 
-@media screen and (min-width: 768px) {
-  main .title-cart .content-menu_m {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  main .title-cart .content-menu_m {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-main nav.content-menu {
-  width: 80%;
-  margin: 0 auto;
+main .confix .menu-tabs li:hover::before {
+  content: '';
   display: block;
-  padding-top: 17px;
-  text-align: center;
-  padding-left: 30px;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  width: 2px;
+  background-color: #82ca9c;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-@media screen and (min-width: 768px) {
-  main nav.content-menu {
-    position: absolute;
-    top: 30%;
-    width: 60%;
-    margin-left: 410px;
-    padding-top: 5px;
-    margin: 0 auto;
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  main nav.content-menu {
-    position: absolute;
-    top: 30%;
-    margin-left: 410px;
-    padding-top: 5px;
-    margin: 0 auto;
-    width: 80%;
-  }
-}
-
-main nav.content-menu ul {
-  display: none;
-  width: 800px;
-  margin: 32px auto 34px;
-  font-size: 22px;
-}
-
-@media screen and (min-width: 768px) {
-  main nav.content-menu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  main nav.content-menu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-main nav.content-menu ul li:first-child a {
-  border-right: 0;
-  border-bottom: 0;
-}
-
-main nav.content-menu ul li a {
-  color: #333333;
-  width: 200px;
-  text-align: center;
-  border: 1px solid #666666;
-  padding: 10px;
-}
-
-main nav.content-menu ul li a:hover {
-  color: #82ca9c;
-  border-left: 2px solid #82ca9c;
+main .confix .menu-tabs a {
+  display: block;
+  position: relative;
+  height: 50px;
   border-top: 2px solid #82ca9c;
+  border-bottom: 2px solid #82ca9c;
   border-right: 2px solid #82ca9c;
+  letter-spacing: 0.001em;
+  line-height: 50px;
+  text-align: center;
   font-size: 23px;
+  color: #333333;
+  text-align: center;
+}
+
+main .confix .menu-tabs a:hover {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  main .confix .menu-tabs a {
+    border-bottom: 2px solid #e1e1e1;
+  }
+}
+
+main .confix .menu-tabs a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 2px;
+  color: #e1e1e1;
 }
 
 main .notice-content {
@@ -662,6 +569,8 @@ main .notice-content {
   main .notice-content {
     padding-top: 508px;
     margin: 0 auto;
+    padding: 0 auto;
+    padding-left: 420px;
     width: 50%;
   }
 }
@@ -671,20 +580,55 @@ main .notice-content .notice {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 17%;
-  margin-top: -45px;
 }
 
 main .notice-content .notice-text {
+  margin: 0 auto;
   font-size: 17px;
   color: #666666;
-  padding-left: 15.5%;
-  margin-top: -145px;
+  -webkit-transform: translateY(-210px);
+          transform: translateY(-210px);
+  width: 100%;
+  padding: 0 auto;
+  padding-bottom: 30px;
 }
 
-main .notice-content button {
+@media screen and (min-width: 768px) {
+  main .notice-content .notice-text {
+    padding-left: -53.5%;
+    margin-top: 15px;
+    padding-top: 30px;
+    position: relative;
+    -webkit-transform: translateY(-25em);
+            transform: translateY(-25em);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .notice-content .notice-text {
+    padding-left: -53.5%;
+    margin-left: -145px;
+    margin-top: 15px;
+    padding-top: 30px;
+    position: relative;
+    -webkit-transform: translateY(-25em);
+            transform: translateY(-25em);
+  }
+}
+
+main .notice-content .notice-text .nt-text-alert {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+main .notice-content .notice-text button {
   cursor: pointer;
   margin: 0 auto;
   padding: 0 auto;
+  padding-left: 30px;
   display: block;
   text-align: center;
   width: 328px;
@@ -692,17 +636,23 @@ main .notice-content button {
   background-color: #82ca9c;
   border-radius: 10px;
   border-color: white;
-  padding-left: 12%;
-  margin-top: 35px;
-  margin-left: 40px;
   font-size: 25px;
 }
 
-main .notice-content button a {
+main .notice-content .notice-text button a {
   color: #fefefe;
   font-size: 1em;
   font-family: "SCoreDream";
-  margin-right: 50px;
-  width: 80%;
+  width: 50%;
+  margin-left: 57px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .notice-content .notice-text button a {
+    color: #fefefe;
+    font-size: 1em;
+    font-family: "SCoreDream";
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=MyPage01.css.map */

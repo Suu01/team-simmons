@@ -266,8 +266,8 @@ main {
                                 left: -2px;
                                 bottom: -2px;
                                 width: 2px;
-                                // background-color: $point-color;
-                                // box-sizing: inherit;
+                                background-color: $point-color;
+                                box-sizing: inherit;
 
                                 transition: all 0.5s;
                             }
@@ -290,9 +290,9 @@ main {
                         background-color: $bg-color;
                         color: $font-color;
 
-                        // @include responsive(tablet-size) {
-                        //     border-bottom: 2px solid #e1e1e1;
-                        // }
+                        @include responsive(tablet-size) {
+                            border-bottom: 2px solid #e1e1e1;
+                        }
 
                         &:after {
                             content: '';

@@ -422,7 +422,10 @@ main div.gallery section.gallery-title div.sec1-txt p {
 
 @media screen and (min-width: 768px) {
   main div.gallery section.gallery-title div.sec1-txt p {
+    line-height: 1.5;
     font-size: 20px;
+    font-weight: 500;
+    color: #999;
   }
 }
 

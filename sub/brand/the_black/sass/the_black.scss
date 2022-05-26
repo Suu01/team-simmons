@@ -214,11 +214,12 @@ main {
             }
             @include responsive(pc-size) {
                 font: {
-                    size: 8em;
+                    size: 9.4vw;
                     weight: 600;
                 }
                 text-shadow: 5px 6px 2px #000;
                 letter-spacing: 0.07em;
+                line-height: 18vh;
             }
         }
     }

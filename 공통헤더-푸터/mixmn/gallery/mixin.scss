@@ -1,7 +1,20 @@
+@mixin h2($h2_size) {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $bg-color;
+    font-size: 28px;
+    // tablet : 50px, pc : 70px
+    letter-spacing: 2px;
+    font-family: $font;
+    text-align: center;
+}
+
 @mixin title_p($title_P_size:14px) {
     line-height: 1.5;
     font-size: $title_P_size;
-    // tablet에서 20px
     font-weight: 500;
     color: #999;
 }

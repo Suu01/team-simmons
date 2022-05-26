@@ -486,6 +486,7 @@ main {
             @include responsive(tablet-size) {
                 width: 90%;
                 margin: 0 auto;
+                margin-top: 30px;
             }
             @include responsive(pc-size) {
                 width: 65%;

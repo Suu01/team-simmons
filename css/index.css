@@ -283,6 +283,8 @@ main section.main-section video {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 100%;
+    height: 100vh;
   }
 }
 
@@ -295,14 +297,9 @@ main div.f-sec-flex section.section2 {
 
 @media screen and (min-width: 1024px) {
   main div.f-sec-flex section.section2 {
-    width: auto;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  main div.f-sec-flex section.section2 {
-    padding: 0 100px;
-    margin: 120px 0;
+    margin: 0;
+    width: 60%;
+    padding: 5%;
   }
 }
 
@@ -327,7 +324,7 @@ main div.f-sec-flex section.section2 .sec2-txt p {
 
 @media screen and (min-width: 1024px) {
   main div.f-sec-flex section.section2 .sec2-txt p {
-    font-size: 20px;
+    font-size: 1.3vw;
   }
 }
 
@@ -344,7 +341,7 @@ main div.f-sec-flex section.section2 .sec2-img {
 
 @media screen and (min-width: 1024px) {
   main div.f-sec-flex section.section2 .sec2-img {
-    margin: 35px 0;
+    margin: 8% 0;
   }
 }
 
@@ -356,7 +353,7 @@ main div.f-sec-flex section.section2 .sec2-img .img {
 
 @media screen and (min-width: 1024px) {
   main div.f-sec-flex section.section2 .sec2-img .img {
-    width: 500px;
+    width: 60%;
   }
 }
 
@@ -383,8 +380,8 @@ main div.f-sec-flex div.event {
 
 @media screen and (min-width: 1024px) {
   main div.f-sec-flex div.event {
-    padding: 165px 40px 240px 40px;
-    width: 800px;
+    padding: 10% 30px;
+    width: 40%;
   }
 }
 
@@ -398,8 +395,8 @@ main div.f-sec-flex div.event h2 {
 
 @media screen and (min-width: 1024px) {
   main div.f-sec-flex div.event h2 {
-    font-size: 60px;
-    letter-spacing: 4px;
+    font-size: 2.7vw;
+    letter-spacing: 0.3vw;
   }
 }
 
@@ -410,7 +407,7 @@ main div.f-sec-flex div.event .more {
 
 @media screen and (min-width: 1024px) {
   main div.f-sec-flex div.event .more {
-    margin: 40px 0;
+    margin: 9% 0;
   }
 }
 
@@ -423,8 +420,8 @@ main div.f-sec-flex div.event .more .box {
 
 @media screen and (min-width: 1024px) {
   main div.f-sec-flex div.event .more .box {
-    width: 250px;
-    padding: 5px 0;
+    width: 46%;
+    padding: 2% 0;
   }
 }
 
@@ -436,7 +433,7 @@ main div.f-sec-flex div.event .more .box p {
 
 @media screen and (min-width: 1024px) {
   main div.f-sec-flex div.event .more .box p {
-    font-size: 30px;
+    font-size: 1.9vw;
   }
 }
 
@@ -457,19 +454,13 @@ main div.f-sec-flex div.event .rl-icon div {
 
 @media screen and (min-width: 1024px) {
   main div.f-sec-flex div.event .rl-icon div {
-    width: auto;
-    margin-left: 25px;
+    width: 16%;
+    margin-left: 5%;
   }
 }
 
 main div.f-sec-flex div.event .rl-icon div a {
   width: 100%;
-}
-
-@media screen and (min-width: 1024px) {
-  main div.f-sec-flex div.event .rl-icon div a {
-    width: 100px;
-  }
 }
 
 main div.f-sec-flex div.event .rl-icon div a img {
@@ -493,7 +484,7 @@ main div.f-sec-flex div.event .ev-img {
 
 @media screen and (min-width: 1024px) {
   main div.f-sec-flex div.event .ev-img {
-    margin-top: 50px;
+    margin-top: 15%;
   }
 }
 
@@ -514,6 +505,8 @@ main div.f-sec-flex div.event .ev-img div a img {
 @media screen and (min-width: 1024px) {
   main div.popup-wrap {
     position: relative;
+    width: 100%;
+    height: 100vh;
   }
 }
 
@@ -542,7 +535,7 @@ main div.popup-wrap section.section3 div.bg img {
 
 @media screen and (min-width: 1024px) {
   main div.popup-wrap section.section3 div.bg img {
-    height: 100%;
+    height: 100vh;
   }
 }
 
@@ -560,9 +553,9 @@ main div.popup-wrap div.popup-des {
     position: absolute;
     top: 0;
     right: 0;
-    width: 800px;
+    width: 50%;
     height: 100%;
-    padding: 165px 100px;
+    padding: 8% 40px;
   }
 }
 
@@ -581,7 +574,7 @@ main div.popup-wrap div.popup-des .title div div {
 
 @media screen and (min-width: 1024px) {
   main div.popup-wrap div.popup-des .title div div {
-    width: 243px;
+    width: 33%;
   }
 }
 
@@ -600,9 +593,9 @@ main div.popup-wrap div.popup-des .title h2 {
 
 @media screen and (min-width: 1024px) {
   main div.popup-wrap div.popup-des .title h2 {
-    font-size: 70px;
-    letter-spacing: 10px;
-    margin: 80px 0 35px 0;
+    font-size: 3.6vw;
+    letter-spacing: 0.7vw;
+    margin: 13% 0 5% 0;
     text-align: right;
   }
 }
@@ -616,10 +609,10 @@ main div.popup-wrap div.popup-des .title h3 {
 
 @media screen and (min-width: 1024px) {
   main div.popup-wrap div.popup-des .title h3 {
-    font-size: 32px;
+    font-size: 2.4vw;
     text-align: right;
-    letter-spacing: 3px;
-    margin-bottom: 70px;
+    letter-spacing: 0.3vw;
+    margin-bottom: 13%;
   }
 }
 
@@ -643,9 +636,9 @@ main div.popup-wrap div.popup-des .tit-des p {
 @media screen and (min-width: 1024px) {
   main div.popup-wrap div.popup-des .tit-des p {
     text-align: right;
-    font-size: 28px;
-    letter-spacing: 3px;
-    font-weight: 600;
+    font-size: 2.1vw;
+    letter-spacing: 0.2vw;
+    font-weight: 500;
   }
 }
 
@@ -660,7 +653,7 @@ main div.popup-wrap div.popup-des .popup-loc div.map-wrap {
 
 @media screen and (min-width: 1024px) {
   main div.popup-wrap div.popup-des .popup-loc div.map-wrap {
-    margin: 100px 0 35px 0;
+    margin: 15% 0 5% 0;
   }
 }
 
@@ -672,7 +665,7 @@ main div.popup-wrap div.popup-des .popup-loc div.map-wrap img {
 
 @media screen and (min-width: 1024px) {
   main div.popup-wrap div.popup-des .popup-loc div.map-wrap img {
-    width: 100px;
+    width: 14%;
   }
 }
 
@@ -687,7 +680,7 @@ main div.popup-wrap div.popup-des .popup-loc div.log-wrap div {
 
 @media screen and (min-width: 1024px) {
   main div.popup-wrap div.popup-des .popup-loc div.log-wrap div {
-    width: 260px;
+    width: 35%;
   }
 }
 
@@ -705,9 +698,9 @@ main div.popup-wrap div.popup-des .popup-loc h3 {
 
 @media screen and (min-width: 1024px) {
   main div.popup-wrap div.popup-des .popup-loc h3 {
-    font-size: 30px;
-    letter-spacing: 3px;
-    margin: 20px 0 35px 0;
+    font-size: 2vw;
+    letter-spacing: 0.2vw;
+    margin: 4% 0;
   }
 }
 
@@ -722,13 +715,14 @@ main div.popup-wrap div.popup-des div.loc-btn {
 
 main div.popup-wrap div.popup-des div.loc-btn div.loc-box {
   margin: auto;
-  width: 41%;
+  width: 40%;
   border: 4px solid #abd4bb;
 }
 
 @media screen and (min-width: 1024px) {
   main div.popup-wrap div.popup-des div.loc-btn div.loc-box {
-    width: 200px;
+    width: 30%;
+    padding: 0.8% 0 0.4% 0;
   }
 }
 
@@ -742,9 +736,8 @@ main div.popup-wrap div.popup-des div.loc-btn div.loc-box p {
 
 @media screen and (min-width: 1024px) {
   main div.popup-wrap div.popup-des div.loc-btn div.loc-box p {
-    font-size: 40px;
+    font-size: 2.4vw;
     letter-spacing: 0;
-    padding: 8px;
   }
 }
 
@@ -753,6 +746,8 @@ main div.popup-wrap div.popup-des div.loc-btn div.loc-box p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
+    height: 100vh;
   }
 }
 
@@ -763,7 +758,6 @@ main div.f-wrap section.section4 {
 @media screen and (min-width: 1024px) {
   main div.f-wrap section.section4 {
     width: 70%;
-    height: 100vh;
   }
 }
 
@@ -816,10 +810,25 @@ main div.f-wrap section.section4 ul li div.pd-txt h3 {
   margin-bottom: 2.4%;
 }
 
+@media screen and (min-width: 1024px) {
+  main div.f-wrap section.section4 ul li div.pd-txt h3 {
+    font-size: 2.3vw;
+    letter-spacing: 0.2vw;
+    margin-bottom: 2.5%;
+  }
+}
+
 main div.f-wrap section.section4 ul li div.pd-txt p {
   font-weight: 400;
   font-size: 3.2vw;
   letter-spacing: 0.7px;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.f-wrap section.section4 ul li div.pd-txt p {
+    font-size: 1.2vw;
+    letter-spacing: 0.2;
+  }
 }
 
 main div.f-wrap section.section4 ul li a {
@@ -829,6 +838,12 @@ main div.f-wrap section.section4 ul li a {
 main div.f-wrap section.section4 ul li a img {
   width: 100%;
   height: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.f-wrap section.section4 ul li a img {
+    height: 50vh;
+  }
 }
 
 main div.f-wrap section.section4 ul li:hover {
@@ -850,13 +865,19 @@ main div.f-wrap footer {
 @media screen and (min-width: 1024px) {
   main div.f-wrap footer {
     width: 30%;
-    height: 100%;
+    padding: 10% 30px;
   }
 }
 
 main div.f-wrap footer div.footer-logo {
   width: 45%;
   height: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.f-wrap footer div.footer-logo {
+    width: 48%;
+  }
 }
 
 main div.f-wrap footer div.footer-logo h2 a img {
@@ -871,6 +892,12 @@ main div.f-wrap footer div.f-top {
   margin-top: 20.4%;
 }
 
+@media screen and (min-width: 1024px) {
+  main div.f-wrap footer div.f-top {
+    margin-top: 15%;
+  }
+}
+
 main div.f-wrap footer div.f-top div {
   margin-right: 5%;
 }
@@ -878,6 +905,12 @@ main div.f-wrap footer div.f-top div {
 main div.f-wrap footer div.f-top div a {
   font-size: 3.4vw;
   color: #fefefc;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.f-wrap footer div.f-top div a {
+    font-size: 1.3vw;
+  }
 }
 
 main div.f-wrap footer div.sns-icon {
@@ -898,10 +931,22 @@ main div.f-wrap footer div.sns-icon ul {
   margin: 9% 0;
 }
 
+@media screen and (min-width: 1024px) {
+  main div.f-wrap footer div.sns-icon ul {
+    margin: 10% 0;
+  }
+}
+
 main div.f-wrap footer div.sns-icon ul li {
   width: 5.5%;
   height: auto;
   margin-right: 7%;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.f-wrap footer div.sns-icon ul li {
+    margin-right: 9%;
+  }
 }
 
 main div.f-wrap footer div.sns-icon ul li a {
@@ -951,6 +996,13 @@ main div.f-wrap footer div.f-des ul li {
   margin-bottom: 5%;
 }
 
+@media screen and (min-width: 1024px) {
+  main div.f-wrap footer div.f-des ul li {
+    font-size: 1vw;
+    margin-bottom: 6%;
+  }
+}
+
 main div.f-wrap footer div.f-des ul li:last-child {
   margin-bottom: 0;
 }
@@ -971,6 +1023,12 @@ main div.f-wrap footer div.f-des ul li:nth-child(5) a {
 main div.f-wrap footer div.kcp {
   width: 100%;
   margin: 11.3% 0;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.f-wrap footer div.kcp {
+    margin: 10% 0;
+  }
 }
 
 main div.f-wrap footer div.kcp .k-icon {
@@ -996,6 +1054,12 @@ main div.f-wrap footer div.kcp .k-des p {
   color: #fefefc;
 }
 
+@media screen and (min-width: 1024px) {
+  main div.f-wrap footer div.kcp .k-des p {
+    font-size: 0.9vw;
+  }
+}
+
 main div.f-wrap footer div.copyright {
   text-align: center;
 }
@@ -1003,5 +1067,11 @@ main div.f-wrap footer div.copyright {
 main div.f-wrap footer div.copyright p {
   font-size: 2.6vw;
   color: #fefefc;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.f-wrap footer div.copyright p {
+    font-size: 0.7vw;
+  }
 }
 /*# sourceMappingURL=index.css.map */

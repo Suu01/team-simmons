@@ -348,7 +348,7 @@ main .title-cart .title {
 @media screen and (min-width: 1024px) {
   main .title-cart .title {
     display: block;
-    padding-left: 767px;
+    padding-left: 697px;
     margin-top: 10px;
   }
 }
@@ -570,7 +570,7 @@ main .notice-content {
     padding-top: 508px;
     margin: 0 auto;
     padding: 0 auto;
-    padding-left: 420px;
+    padding-left: 315px;
     width: 50%;
   }
 }

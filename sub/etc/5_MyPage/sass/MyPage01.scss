@@ -239,7 +239,7 @@ main {
 
                 @include responsive(pc-size) {
                     display: block;
-                    padding-left: 767px;
+                    padding-left: 697px;
                     margin-top: 10px;
                 }
 
@@ -452,10 +452,10 @@ main {
             }
             @include responsive(pc-size) {
                 padding-top: 508px;
-                //background-color: aquamarine;
+                // background-color: antiquewhite;
                 margin: 0 auto;
                 padding: 0 auto;
-                padding-left: 420px;
+                padding-left: 315px;
                 width: 50%;
 
             }

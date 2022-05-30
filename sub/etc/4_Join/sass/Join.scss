@@ -227,7 +227,7 @@ main {
         position: relative;
         margin: 0 0;
         padding: 0 0;
-        margin-top: 86px;
+        margin-top: 36px;
         margin-left: 34px;
         
         padding-top: 33px;
@@ -246,8 +246,8 @@ main {
             }
 
             .title-fir {
-                font-size: 90px;
-                font-family: $title-font;
+                font-size: 1.5em;
+                font-family: $main-font;
                 font-weight: 500;
                 //display: flex;
                 margin: 0 auto;
@@ -295,54 +295,126 @@ main {
             }
         }
         .form_area {
+            margin: 0 auto;
+            padding: 0 auto;
+
+            @include resposive(pc-size) {
+                margin: 0 auto;
+                padding: 0 auto;
+            }
 
             .wrap_email {
+                margin: 0 auto;
+                padding: 0 auto;
 
-                .inp_lab {
-
-                }
-
-                .inp_text {
+                .join_text {
+                    // background-color: #333;
+                    input {
+                        // background-color: aqua;
+                        width: 427px;
+                        height: 46px;
+                        border-radius: 10px;
+                    }
 
                 }
             }
 
             .wrap_pw {
-
+                margin: 0 auto;
+                padding: 0 auto;
                 .inp_text {
+                    // background-color: antiquewhite;
 
+                    input {
+                        // background-color: aqua;
+                        width: 427px;
+                        height: 46px;
+                        border-radius: 10px;
+                    }
                 }
             }
 
             .wrap_repw {
-
+                margin: 0 auto;
+                padding: 0 auto;
                 .inp_text {
-
+                    // background-color: antiquewhite;  
+                }
+                input {
+                    // background-color: aqua;
+                    width: 427px;
+                    height: 46px;
+                    border-radius: 10px;
+                    // border-color: #b6b6b6;
+                    
                 }
             }
 
-            .wrap_name {
-                .inp_lab {
+            .name-gender {
+                display: flex;
+                // background-color: aqua;
 
+                .wrap_name {
+                    margin: 0 auto;
+                    padding: 0 auto;
+                    // background-color: #333;
+                    margin-left: 7px;
+                    .name_lab {
+                        // background-color: blanchedalmond;
+                        font-size: 17px;
+                        
+                        padding-left: 9px;
+                        padding-top: 2px;
+                        margin-top: 10px;
+                    }
+                    .name_text {
+                        
+                        input {
+                            // background-color: aqua;
+                            width: 227px;
+                            height: 46px;
+                            border-radius: 10px;
+                            // padding-top: 35px;
+                            // border-color: #b6b6b6;
+ 
+                        }
+                        #join_name {
+                            padding-top: 35px;
+                            // background-color: antiquewhite;
+                        }
+                    }
+    
                 }
-                .inp_text {
-
+                .wrap_gender {
+                    margin: 0 auto;
+                    padding: 0 auto;
+                    .join_gender {
+                        // background-color: blanchedalmond;
+                        font-size: 17px;
+                        width: 47px;
+                        font-size: 17px;
+                        padding-left: 9px;
+                        padding-top: 2px;
+                        margin-top: 10px;
+                    }
+    
+                    .join_text {
+                        // background-color: burlywood;
+                        // width: 157px;
+                        // height: 46px;
+                    }
                 }
-
             }
-            .wrap_gender {
-                .inp_lab {
 
-                }
 
-                .inp_text {
-
-                }
-            }
             .info#info_birth {
                 display: flex;
+                // background-color: beige
+                font-size: 17px;
+                
 
                 select {
+                    
                     margin-left: 7px;
                     &:first-child {
                         margin-left: 0px;
@@ -351,7 +423,7 @@ main {
                         width: 10px;
                     }
                     &::-webkit-scrollbar-thumb {
-                        background-color: #b6b6b6;
+                        // background-color: #b6b6b6;
                         border-radius: 3px;
                     }
                     &::-webkit-scrollbar-track {
@@ -361,32 +433,88 @@ main {
                 }
             }
 
+            
+            .wrap_phonenum {
+                margin: 0 auto;
+                padding: 0 auto;
+                padding-top: 5px;
+                
+                // background-color: aqua;
+                
+
+                .join_pho {
+                    // background-color: #333;
+                    label {
+                        font-size: 17px;
+                    }
+                    input {
+                        // background-color: aqua;
+                        
+                        width: 427px;
+                        height: 46px;
+                        border-radius: 10px;
+                    }
+
+                }
+            }
+
 
             .wrap_join_term {
-                border-color: 1px solid #333;
-                width: 500px;
-                height: 900px;
-                background-color: aquamarine;
+                display: flex;
+                // border-color: 1px solid #333;
+                // background-color: aquamarine;
+                font-size: 17px;
 
                 .all_terms {
                     ul {
                         li {
+                            font-size: 17px;
                             list-style: none;
                             display: flex;
                             justify-content: space-between;
+
+                            // input {
+                            //     background-color: #333;
+                            //     padding-left: 300px;
+                            // }
                         }
                     }
                 }
             }
         }
         .form_button {
-            .login {
-                button {
-                    display: flex;
-                    width: 400px;
-                    height: 50px;
+
+            margin: 0 auto;
+            padding: 0 auto;
+            width: 78%;
+            padding-top: 38px;
+
+            button {
+                .submit {
+
+                    cursor: pointer;
+                    margin: 0 auto;
+                    padding: 0 auto;
+                    display: block;
+                    text-align: center;
+                    width: 328px;
+                    height: 46px;
                     background-color: $point-color;
-                    border-radius: 30px;
+                    border-radius: 10px;
+                    border-color: white;
+                    padding-left: 10%;
+                    margin-top: 35px;
+                    margin-left: -2px;
+                    font-size: 25px;
+
+                    a {
+                        color: #fefefe;
+                        font-size: 1em;
+                        font-family: $main-font;
+                        margin-right: 50px;
+                        width: 80%;
+                        
+                    }
 
                 }
             }

@@ -354,12 +354,12 @@ main .search-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    background-color: aquamarine;
     padding-left: 230px;
     margin-left: 180px;
     list-style: none;
     text-decoration: none;
     width: 20px;
-    height: auto;
   }
 }
 
@@ -408,6 +408,8 @@ main .search-menu {
   main .search-menu .wrapper .search-list .hashtag ul {
     font-size: 11px;
     padding-top: 80px;
+    list-style: none;
+    text-decoration: none;
   }
 }
 
@@ -432,6 +434,7 @@ main .search-menu {
     display: inline-block;
     list-style: none;
     text-decoration: none;
+    background-color: aqua;
     font-family: 'S-CoreDream';
     font-size: 7px;
   }
@@ -475,4 +478,4 @@ footer {
 footer .logo-coptright-security {
   background-color: #82ca9c;
 }
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=search.css.map */

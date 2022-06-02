@@ -290,21 +290,15 @@ main nav .wrapper {
   width: 100%;
 }
 
-@media screen and (min-width: 1024px) {
-  main nav .wrapper {
-    width: 1024px;
-    margin: 0 auto;
-  }
-}
-
 @media screen and (min-width: 768px) {
   main nav .wrapper {
+    width: 100%;
     width: 1024px;
     margin: 0 auto;
   }
 }
 
-main nav .wrapper .gnb {
+main nav .wrapper .top-menu-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,13 +313,13 @@ main nav .wrapper .gnb {
   margin-left: 30px;
 }
 
-main nav .wrapper .gnb li {
+main nav .wrapper .top-menu-right li {
   display: inline-block;
   padding-top: 112px;
   padding-right: 58px;
 }
 
-main nav .wrapper .gnb li a {
+main nav .wrapper .top-menu-right li a {
   font-size: 1em;
   font-family: "SCoreDream";
 }
@@ -333,9 +327,8 @@ main nav .wrapper .gnb li a {
 main .title-cart {
   position: relative;
   margin: 0 0;
-  padding: 0 0;
+  padding: 0 20px;
   margin-top: 36px;
-  margin-left: 34px;
   padding-top: 33px;
   font-size: 3em;
 }
@@ -412,7 +405,6 @@ main .confix .menu-tabs {
   display: table;
   width: 100%;
   table-layout: fixed;
-  border-left: 2px solid #82ca9c;
   margin-bottom: 25px;
 }
 
@@ -429,7 +421,10 @@ main .confix .menu-tabs li {
   float: left;
   width: 50%;
   height: 50px;
-  border-right: 2px solid #e1e1e1;
+}
+
+main .confix .menu-tabs li:nth-child(odd) > a {
+  border-left: 2px solid #82ca9c;
 }
 
 @media screen and (min-width: 768px) {
@@ -441,6 +436,9 @@ main .confix .menu-tabs li {
 @media screen and (min-width: 1024px) {
   main .confix .menu-tabs li {
     width: 25%;
+  }
+  main .confix .menu-tabs li:nth-child(3) > a {
+    border-left: 2px solid #fff;
   }
 }
 

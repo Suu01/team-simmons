@@ -189,17 +189,13 @@ main {
         .wrapper {
             width: 100%;
 
-            @include responsive(pc-size) {
-                width: 1024px;
-                margin: 0 auto;
-            }
-
             @include responsive(tablet-size) {
+                width: 100%;
                 width: 1024px;
                 margin: 0 auto;
             }
 
-            .gnb {
+            .top-menu-right {
                 display: flex;
                 justify-content: flex-end;
                 list-style: none;
@@ -226,9 +222,9 @@ main {
     .title-cart{
         position: relative;
         margin: 0 0;
-        padding: 0 0;
+        padding: 0 20px;
         margin-top: 36px;
-        margin-left: 34px;
+        // margin-left: 34px;
         
         padding-top: 33px;
         font-size: 3em;
@@ -302,7 +298,8 @@ main {
             display: table;
             width: 100%;
             table-layout: fixed;
-            border-left: 2px solid $point-color;
+            
+            // border-left: 2px solid $point-color; //표에서 튀어나옴
             // position: relative;
             margin-bottom: 25px;
 
@@ -319,7 +316,11 @@ main {
                 float: left;
                 width: 50%;
                 height: 50px;
-                border-right: 2px solid #e1e1e1;
+                // border-right: 2px solid #e1e1e1;
+
+                &:nth-child(odd) > a {
+                    border-left: 2px solid $point-color;
+                }
 
                 @include responsive(tablet-size) {
                     width: 25%;
@@ -327,6 +328,11 @@ main {
 
                 @include responsive(pc-size) {
                     width: 25%;
+
+                    &:nth-child(3) > a {
+                        border-left: 2px solid #fff;
+                    }
+
                 }
 
                 &:nth-child(n+3) {

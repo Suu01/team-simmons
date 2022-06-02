@@ -44,7 +44,7 @@ header {
     }
 
     h1 {
-        background-color: aqua;
+        // background-color: aqua;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -251,8 +251,9 @@ main {
                     font-family: $main-font;
                     font-weight: 500;
                     //display: flex;
-                    margin: 0 auto;
-                    //padding: 0 auto;
+                    // margin: 0 auto;
+                    // padding: 0 auto;
+                    padding-right: 230px;
                     margin-top: 50px;
 
                     @include responsive(pc-size) {
@@ -264,22 +265,23 @@ main {
                         margin-top: -90px;
                         padding-top: 5px;
                         font-size: 90px;
-                        //background-color: aqua;
+                        // background-color: aqua;
+                        
                         
                     }
 
                 }
                 .title-sub {
                     display: none;
-                    //background-color: aquamarine;                        
+                    // background-color: aquamarine;                        
                     @include responsive(tablet-size) {
                         display: block;
                         width: 1024px;
                         font-size: 22px;
                         font-family: $main-font;
-                        margin-top: -30px;
-                        margin-left: -320px;
-                        padding-left: 279px;
+                        margin-top: -50px;
+                        margin-left: -230px;
+                        padding-left: 450px;
                         padding-top: 7px;
                     }
 
@@ -288,10 +290,12 @@ main {
                         width: 1024px;
                         font-size: 22px;
                         font-family: $main-font;
+                        // background-color: aqua;
                         margin-top: -30px;
-                        margin-left: -320px;
-                        padding-left: 279px;
-                        padding-top: 7px;
+                        margin-left: -230px;
+                        padding-left: 9px;
+                        margin-left: 5px;
+                        // padding-top: 7px;
                     }
                 }
             }
@@ -355,51 +359,61 @@ main {
             align-items: center;
             
             @include responsive(tablet-size) {
-                padding-top: 88px;
+                padding-top: 38px;
+                padding-left: 20px;
+
                 margin: 0 auto;
                 padding: 0 auto;
                 width: 50%;
             }
             @include responsive(pc-size) {
                 padding-top: 38px;
-                //background-color: aquamarine;
+                padding-left: -5px;
+                margin-left: 50px;
+                background-color: aquamarine;
                 margin: 0 auto;
-                width: 50%;
+                padding: 0 auto;
+                // width: 50%;
 
             }
             .notice {
                 align-items: center;
                 //background-color: aqua;
-                padding-left: 17%;
+                padding-left: 23%;
                 margin-top: -45px;
             }
             .notice-text {
                 font-size: 23px;
                 color: #666666;
-                //background-color: aqua;
-                padding-left: 14%;
+                // background-color: aqua;
+                text-align: center;
+                padding-left: 7%;
                 margin-top: -55px;
             }
 
             button {
                 cursor: pointer;
-                margin: 0;
-                padding: 0;
-
+                margin: 0 auto;
+                padding: 0 auto;
+                margin-top: 45px;
+                
                 display: block;
                 text-align: center;
                 width: 328px;
                 height: 46px;
                 background-color: $point-color;
+                border-color: #fff;
                 border-radius: 10px;
                 font-size: 17px;
-
+                
                 a {
+                    
                     color: #fefefe;
                     font-size: 1em;
                     font-family: $main-font;
+                    padding-left: 11px;
                     margin-right: 50px;
-                    width: 80%;
+                    width: 100%;
                     
                 }
 

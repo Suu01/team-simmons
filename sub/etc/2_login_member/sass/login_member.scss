@@ -416,111 +416,63 @@ main {
         }
 
             .find-login {
-                
                 display: none;
-
                 margin-top: 20px;
                 font-size: 16px;
                 text-align: center;
 
                 @include responsive(tablet-size) {
-                    display: inline-block;
-                    background-color: aqua;
-                    width: 380px;
-                    height: 50px;
-                    padding-top: -430px;
-
+                    display: none;
                 }
+
                 @include responsive(pc-size) {
-                    display: block;
-                    //display: flex;
-                    width: 380px;
-                    height: 50px;
-                    margin: 0 auto;
-                    padding: 0 auto;
-                    
-                    
-
-                    background-color: aquamarine;
-                    // margin-bottom: 500px;
-                    // margin-top: 400px;
-
-                    margin: 0 auto;
-                    padding: 0 auto;
-                
-                    align-content: center;
-
-                }
-
-                #log .login-id ul {
-                    cursor: pointer;
-                    color: #333333;
-                    display: flex; /**/
-                }
-    
-                .find-login section
-                .login-id li a:hover {
-                    color: $point-color;
-                }
-    
-                .login-id ul li {
                     display: flex;
-                    justify-content: space-between;
-                  
-                    margin: 0;
-                    padding: 0;
-                    display: block;
-                    margin-block-start: 1em;
-                    margin-block-end: 1em;
-                    margin-inline-start: 0px;
-                    margin-inline-end: 0px;
-                    &:hover {
-                        color: $point-color;
+                    
+                    // padding-left: 10px;
+                    // padding-top: 20px;
+                    margin-left: -625px;
+                    padding-left: -100px;
+                    
+                }
+
+                #log {
+                    .login-id {
+                        
+                        @include responsive(pc-size) {
+                        
+                        // background-color: blanchedalmond;
+                        padding-top: 20px;
+                        margin-top: 450px;
+                      
+                            ul {
+                                cursor: pointer;
+                                color: #333333;
+                                display: flex; 
+                                
+                                li {
+                                    &:hover {
+                                        color: $point-color;
+                                    }
+
+                                    border-right: 1px solid #333333;
+                                    padding-right: 30px;
+                                    margin-left: 14.5px;
+                                    justify-content: space-between;
+                    
+                                    &:last-child {
+                                        border-right: 0; 
+                                    }
+
+                                }
+
+
+                            }
+                        }
                     }
-
-                }
-    
-                .find-login
-                .login-align li {
-                    display: flex;
-                    margin: 0;
-                    padding: 0;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
                 
-                .login-id {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-    
-                .login-id ul li {
-                    border-right: 1px solid #333333;
-                    padding-right: 25px;
-                    margin-left: 14.5px;
-                    justify-content: space-between;
-                }
-    
-                .login-id ul li:last-child {
-                    border-right: 0;
-                }
-                
-                .login-id ul li a:hover{
-                    color: $point-color;
                 }
 
-                
             }
-
-
-
-
-            
-        
-        
-
+    
     }
-
- 
 }

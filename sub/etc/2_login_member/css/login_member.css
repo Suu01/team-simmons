@@ -524,104 +524,45 @@ main .title-login .find-login {
 
 @media screen and (min-width: 768px) {
   main .title-login .find-login {
-    display: inline-block;
-    background-color: aqua;
-    width: 380px;
-    height: 50px;
-    padding-top: -430px;
+    display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
   main .title-login .find-login {
-    display: block;
-    width: 380px;
-    height: 50px;
-    margin: 0 auto;
-    padding: 0 auto;
-    background-color: aquamarine;
-    margin: 0 auto;
-    padding: 0 auto;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -625px;
+    padding-left: -100px;
   }
 }
 
-main .title-login .find-login #log .login-id ul {
-  cursor: pointer;
-  color: #333333;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /**/
-}
-
-main .title-login .find-login .find-login section
-.login-id li a:hover {
-  color: #82ca9c;
-}
-
-main .title-login .find-login .login-id ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  display: block;
-  -webkit-margin-before: 1em;
-          margin-block-start: 1em;
-  -webkit-margin-after: 1em;
-          margin-block-end: 1em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
-}
-
-main .title-login .find-login .login-id ul li:hover {
-  color: #82ca9c;
-}
-
-main .title-login .find-login .find-login
-.login-align li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-main .title-login .find-login .login-id {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main .title-login .find-login .login-id ul li {
-  border-right: 1px solid #333333;
-  padding-right: 25px;
-  margin-left: 14.5px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-main .title-login .find-login .login-id ul li:last-child {
-  border-right: 0;
-}
-
-main .title-login .find-login .login-id ul li a:hover {
-  color: #82ca9c;
+@media screen and (min-width: 1024px) {
+  main .title-login .find-login #log .login-id {
+    padding-top: 20px;
+    margin-top: 450px;
+  }
+  main .title-login .find-login #log .login-id ul {
+    cursor: pointer;
+    color: #333333;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .title-login .find-login #log .login-id ul li {
+    border-right: 1px solid #333333;
+    padding-right: 30px;
+    margin-left: 14.5px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .title-login .find-login #log .login-id ul li:hover {
+    color: #82ca9c;
+  }
+  main .title-login .find-login #log .login-id ul li:last-child {
+    border-right: 0;
+  }
 }
 /*# sourceMappingURL=login_member.css.map */

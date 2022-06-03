@@ -203,26 +203,30 @@ h1{
     }
     width: 100%;
     ul{
-        // display: flex;
-        // flex-wrap: wrap;
-        // width: 80%;
-        // margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
         // margin-bottom: 20px;
-        display:table; 
-        width:100%; 
-        table-layout:fixed; 
-        border-left:1px solid $bg-color;
+        // display:table; 
+        // width:100%; 
+        // table-layout:fixed; 
+        border-left:1px solid $gray-color;
         position:relative;
         background-color: $bg-color;
-        // @include responsive(pc-size){
-        //     display: block;
-        //     width: 250px;
-        //     position: absolute;
-        //     left: 3%;
-        // }
+        @include responsive(pc-size){
+            display: block;
+            width: 250px;
+            position: absolute;
+            left: 3%;
+        }
+    
+
+
 
         li{
-            // width: 50%;
+            width: 49%;
+            border-right:1px solid $gray-color ;
             // text-align: center;
             // padding: 12px;
             // border: 1px solid $gray-color;
@@ -240,8 +244,17 @@ h1{
             // &:nth-child(5){
             //     border-top: none;
             // }
+            
             display:table-cell; 
-            height:50px
+            height:50px;
+            @include responsive(pc-size){
+                // border: 1px solid $gray-color;
+                // border-top: none;
+                // width: 230px;
+                display: block;
+                width: 100%;
+
+            }
             a{
                 display:block;
                 position:relative;
@@ -251,47 +264,43 @@ h1{
                 line-height:50px;
                 text-align:center;
                 background-color: $bg-color;
+                &:after{
+                    display:block;
+                    position:relative;
+                    height:50px;
+                    border-top:1px solid $gray-color;
+                    border-bottom:1px solid $gray-color;
+                    line-height:50px;
+                    text-align:center;
+                    background-color: $bg-color;
+                }
             }
-            a:after{
-                display:block;
-                position:relative;
-                height:50px;
-                border-top:1px solid $gray-color;
-                border-bottom:1px solid $gray-color;
-                line-height:50px;
-                text-align:center;
-                background-color: $bg-color;
-            }
-            // @include responsive(pc-size){
-            //     border: 1px solid $gray-color;
-            //     border-top: none;
-            //     width: 230px;
 
-            // }
-        }
-        li.on a,
-        li:hover a{
-            border-bottom-color: $point-color; 
-            border-top:1px solid $point-color;
-            z-index: 1;
-            background-color: $point-color;
-            color: $bg-color;
-        }
-        li.on a:after,
-        li:hover a:after{ 
-            content:''; 
-            display:block; 
-            position:absolute; 
-            top:0; right:0; bottom:-1px; width:1px; 
-            background: $point-color;
-        }
-        li.on a:before, 
-        li:hover a:before{ 
-            content:''; 
-            display:block; 
-            position:absolute; 
-            top:0; left:0; bottom:-1px; width:1px; 
-            background: $point-color;
+            &:hover{
+                a{
+                    border-bottom-color: $point-color; 
+                    border-top:1px solid $point-color;
+                    z-index: 1;
+                    background-color: $point-color;
+                    color: $bg-color;
+                    transition: all 0.5s;
+
+                    &:after{
+                        content:''; 
+                        display:block; 
+                        position:absolute; 
+                        top:0; right:0; bottom:-1px; width:1px; 
+                        background: $point-color;
+                    }
+                    &:before{
+                        content:''; 
+                        display:block; 
+                        position:absolute; 
+                        top:0; left:0; bottom:-1px; width:1px; 
+                        background: $point-color;
+                    }
+                }
+            }
         }
     }
 }
@@ -323,22 +332,67 @@ h1{
     // display: none;
     .faq-btn{
         ul{
-            display: flex;
-            margin-bottom: 50px;
+            // display: flex;
+            // margin-bottom: 50px;
+            display:table; 
+            width:100%; 
+            table-layout:fixed; 
+            border-left:1px solid $gray-color;
             li{
                 display: none;
+
                 @include responsive(pc-size){
-                    display: block;
-                    width: 16.5%;
-                    height: 45px;
-                    text-align: center;
-                    padding-top: 10px;
-                    border: 1px solid black;
-                    border-bottom: 3px solid $point-color;
-                    border-left: none;
-                    &:first-child{
-                        border: 3px solid $point-color;
-                        border-bottom: none;
+                    // display: block;
+                    // width: 16.5%;
+                    // height: 45px;
+                    // text-align: center;
+                    // padding-top: 10px;
+                    // border: 1px solid black;
+                    // border-bottom: 3px solid $point-color;
+                    // border-left: none;
+                    // &:first-child{
+                    //     border: 3px solid $point-color;
+                    //     border-bottom: none;
+                    // }
+                    display:table-cell; 
+                    height:50px;
+                    a{
+                        // transition: all 0.5s;
+                        display:block;
+                        position:relative;
+                        height:50px;
+                        border-top:1px solid $gray-color;
+                        border-right:1px solid $gray-color;
+                        border-bottom:2px solid $point-color;
+                        line-height:50px;
+                        text-align:center;
+                    }
+                    &:hover{
+                        a{
+                            border-bottom-color:transparent; 
+                            border-top: 2px solid $point-color;
+                            border-right: 2px solid $point-color;
+                            border-left: 2px solid $point-color;
+
+                            // a{
+                            //     &:after{
+                            //         content:''; 
+                            //         display:block; 
+                            //         position:absolute; 
+                            //         top:0; right:0; bottom:-1px; 
+                            //         width:2px; 
+                            //         background: $point-color;
+                            //     }
+                            //     &:before{
+                            //         content:''; 
+                            //         display:block; 
+                            //         position:absolute; 
+                            //         top:0; left:0; bottom:-1px; 
+                            //         width:2px; 
+                            //         background: $point-color;
+                            //     }
+                            // }
+                        }
                     }
                 }
             }
@@ -390,7 +444,6 @@ h1{
                 display: inline-block;
                 width: 250px;
                 height: 35px;
-                
             }
             
             label{
@@ -400,7 +453,7 @@ h1{
             a{
                 background-color: $point-color;
                 padding: 5px 25px;
-                color: white;
+                color: $bg-color;
                 display: inline-block;
             }
             @include responsive(pc-size){
@@ -428,7 +481,7 @@ h1{
                 a{
                     background-color: $point-color;
                     padding: 5px 25px;
-                    color: white;
+                    color: $bg-color;
                     display: inline-block;
                 }
         }

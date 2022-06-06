@@ -266,7 +266,7 @@ main div.menu-sub a:focus {
   color: #999;
 }
 
-main div.menu-sub ul {
+main div.menu-sub ul.myMenu {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -275,29 +275,35 @@ main div.menu-sub ul {
   text-align: left;
 }
 
-main div.menu-sub ul .menu-top {
+main div.menu-sub ul.myMenu .menu-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main div.menu-sub ul .menu-top a {
+main div.menu-sub ul.myMenu .menu-top a {
   font-size: 22px;
   margin-right: 20px;
   margin-bottom: 20px;
   color: #333333;
 }
 
-main div.menu-sub ul .menu-top a:hover {
+main div.menu-sub ul.myMenu .menu-top a:hover {
   color: #999;
 }
 
-main div.menu-sub ul .menu-top a:focus {
+main div.menu-sub ul.myMenu .menu-top a:focus {
   color: #999;
 }
 
-main div.menu-sub ul li {
+main div.menu-sub ul.myMenu li {
   margin-bottom: 10px;
+}
+
+main div.menu-sub ul.myMenu li ul li a {
+  font-weight: 400;
+  font-size: 20px;
+  text-indent: 30px;
 }
 
 main section.main-section {

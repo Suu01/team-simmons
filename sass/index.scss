@@ -161,7 +161,7 @@ main {
             }
         }
 
-        ul {
+        ul.myMenu {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -189,6 +189,16 @@ main {
 
             li {
                 margin-bottom: 10px;
+
+                ul {
+                    li {
+                        a {
+                            font-weight: 400;
+                            font-size: 20px;
+                            text-indent: 30px;
+                        }
+                    }
+                }
             }
         }
     }

@@ -228,34 +228,76 @@ main {
 }
 
 main div.menu-sub {
+  display: none;
+  position: relative;
   width: 100%;
   height: 100vh;
   position: fixed;
   left: 0;
   top: 0;
-  padding: 40px;
+  padding: 0 40px;
   margin: 0 auto;
   z-index: 10;
-  background-color: #fefefc;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+main div.menu-sub a.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
 
 main div.menu-sub a {
   color: #333333;
+  padding: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 36px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-main div.menu-sub .menu-top {
+main div.menu-sub a:hover {
+  color: #999;
+}
+
+main div.menu-sub a:focus {
+  color: #999;
+}
+
+main div.menu-sub ul {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  text-align: left;
+}
+
+main div.menu-sub ul .menu-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main div.menu-sub .menu-top p {
-  margin-right: 8%;
+main div.menu-sub ul .menu-top a {
+  font-size: 22px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  color: #333333;
 }
 
-main div.menu-sub .menu-top p a {
-  font-size: 16px;
-  color: #333333;
+main div.menu-sub ul .menu-top a:hover {
+  color: #999;
+}
+
+main div.menu-sub ul .menu-top a:focus {
+  color: #999;
+}
+
+main div.menu-sub ul li {
+  margin-bottom: 10px;
 }
 
 main section.main-section {

@@ -139,18 +139,14 @@ main {
 
         @include responsive(pc-size) {
             margin-left: 80px;
-            width: 400px;
+            width: 450px;
         }
 
         a.closebtn {
             position: absolute;
             top: 20px;
-            right: 45px;
+            right: 25px;
             font-size: 60px;
-
-            @include responsive(pc-size) {
-                right: 30px;
-            }
         }
 
         a {

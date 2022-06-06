@@ -242,21 +242,15 @@ main div.menu-sub {
 @media screen and (min-width: 1024px) {
   main div.menu-sub {
     margin-left: 80px;
-    width: 400px;
+    width: 450px;
   }
 }
 
 main div.menu-sub a.closebtn {
   position: absolute;
   top: 20px;
-  right: 45px;
+  right: 25px;
   font-size: 60px;
-}
-
-@media screen and (min-width: 1024px) {
-  main div.menu-sub a.closebtn {
-    right: 30px;
-  }
 }
 
 main div.menu-sub a {

@@ -205,8 +205,6 @@ header div.side-menu .s-menu li {
 
 header div.side-menu .s-menu li:first-child {
   font-size: 18px;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
   margin-top: 0;
 }
 
@@ -241,11 +239,24 @@ main div.menu-sub {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
+@media screen and (min-width: 1024px) {
+  main div.menu-sub {
+    margin-left: 80px;
+    width: 400px;
+  }
+}
+
 main div.menu-sub a.closebtn {
   position: absolute;
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.menu-sub a.closebtn {
+    right: 30px;
+  }
 }
 
 main div.menu-sub a {

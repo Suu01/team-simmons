@@ -95,7 +95,7 @@ header {
     
                     &:first-child {
                         font-size: 18px;
-                        transform: rotate(-90deg);
+                        // transform: rotate(-90deg);
                         margin-top: 0;
 
                         a {
@@ -137,11 +137,20 @@ main {
         z-index: 10;
         background-color: rgba(256,256,256, 0.9);
 
+        @include responsive(pc-size) {
+            margin-left: 80px;
+            width: 400px;
+        }
+
         a.closebtn {
             position: absolute;
             top: 20px;
             right: 45px;
             font-size: 60px;
+
+            @include responsive(pc-size) {
+                right: 30px;
+            }
         }
 
         a {

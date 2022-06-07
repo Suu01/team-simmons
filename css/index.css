@@ -286,12 +286,6 @@ main div.menu-sub ul.myMenu .menu-top {
   display: flex;
 }
 
-@media screen and (min-width: 1024px) {
-  main div.menu-sub ul.myMenu .menu-top {
-    display: none;
-  }
-}
-
 main div.menu-sub ul.myMenu .menu-top a {
   font-size: 22px;
   margin-right: 20px;

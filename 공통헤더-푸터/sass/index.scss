@@ -3,13 +3,14 @@
 @import "mixin.scss";
 
 body {
-    padding-top: 60px;
+    -ms-overflow-style: none;
 
     @include responsive(pc-size) {
         padding-left: 80px;
-        padding-top: 0;
     }
 }
+
+::-webkit-scrollbar { display: none; }
 
 // header-area
 header {
@@ -40,20 +41,19 @@ header {
         order: 2;
 
         @include responsive(pc-size) {
-            order: 0;
+            order: 1;
         }
+
     }
 
     nav {
         order: 1;
-        // background-color: aquamarine;
 
         @include responsive(pc-size) {
-            height: 30%;
+            order: 2;
         }
 
         ul.gnb {
-
             @include responsive(pc-size) {
                 display: flex;
                 height: 100%;
@@ -63,33 +63,11 @@ header {
             }
 
             li {
-                display: none;
-    
-                @include responsive(pc-size) {
-                    display: block;
-                }
-    
-                &:first-child {
-                    display: block;
+                display: block;
 
-                    img {
-                        width: 100%;
-                        height: auto;
-                    }
-    
-                    @include responsive(pc-size) {
-                        display: none;
-                    }
-                }
-    
-                a {
-                    span {
-                        width: 10px;
-                        height: 10px;
-                        border-radius: 50%;
-                        // margin-top: 70px;
-                        background-color: $point-color;
-                    }
+                img {
+                    width: 100%;
+                    height: auto;
                 }
             }
         }
@@ -97,55 +75,138 @@ header {
 
     div.side-menu {
         order: 3;
-        // background-color: pink;
 
-        @include responsive(pc-size) {
-            // height: 18%;
-        }
+        .s-menu {         
+            @include responsive(pc-size) {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
 
-            .s-menu {
-                
+            li {
+                display: none;
+
                 @include responsive(pc-size) {
-                    display: flex;
-                    height: 100%;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: space-between;
+                    display: block;
+                    margin-top: 35px;
                 }
 
-                li {
-                    display: none;
-    
-                    @include responsive(pc-size) {
-                        display: block;
-                        margin-top: 35px;
-                    }
-    
-                    &:first-child {
-                        font-size: 18px;
-                        transform: rotate(-90deg);
-                        margin-top: 0;
-                        // background-color: orange;
+                &:first-child {
+                    font-size: 18px;
+                    // transform: rotate(-90deg);
+                    margin-top: 0;
 
-                        a {
-                            color: $font-color;
-                        }
+                    a {
+                        color: $font-color;
                     }
-        
-                    &:last-child {
-                        display: block;
-        
-                        a {
-                            img {
-                                width: 25px;
-                                height: 25px;
-                            }
+                }
+    
+                &:last-child {
+                    display: block;
+    
+                    a {
+                        img {
+                            width: 25px;
+                            height: 25px;
                         }
                     }
                 }
             }
         }
     }
+}
+
+main {
+    width: $width-wide;
+
+    div.menu-sub {
+        // 햄버거 버튼 클릭했을 때, header의 z-index값 음수로 적용하기
+        // 햄버거버튼, 장바구니 아이콘, 닫기버튼 수정
+        display: none;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        padding: 0 40px;
+        margin: 0 auto;
+        z-index: 10;
+        background-color: rgba(256,256,256, 0.9);
+
+        @include responsive(pc-size) {
+            margin-left: 80px;
+            width: 450px;
+        }
+
+        a.closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 60px;
+        }
+
+        a {
+            color: $font-color;
+            padding: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 36px;
+            transition: 0.3s;
+
+            &:hover {
+                color: #999;
+            }
+
+            &:focus {
+                color: #999;
+            }
+        }
+
+        ul.myMenu {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            text-align: left;
+
+            .menu-top {
+                display: flex;
+
+                a {
+                    font-size: 22px;
+                    margin-right: 20px;
+                    margin-bottom: 20px;
+                    color: $font-color;
+
+                    &:hover {
+                        color: #999;
+                    }
+        
+                    &:focus {
+                        color: #999;
+                    }
+                }
+            }
+
+            li {
+                margin-bottom: 10px;
+
+                ul {
+                    li {
+                        a {
+                            font-weight: 400;
+                            font-size: 20px;
+                            text-indent: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 footer {
     padding: 16.5% 20px 10% 20px;
@@ -157,9 +218,18 @@ footer {
         padding: 16.5% 30px;
     }
 
+    @include responsive(pc-size) {
+        width: 30%;
+        padding: 10% 30px;
+    }
+
     div.footer-logo {
         width: 45%;
         height: auto;
+
+        @include responsive(pc-size) {
+            width: 48%;
+        }
 
         h2 {
             a {
@@ -177,6 +247,10 @@ footer {
         // margin-top: 90px;
         // background-color: pink;
 
+        @include responsive(pc-size) {
+            margin-top: 15%;
+        }
+
         div {
             margin-right: 5%;
 
@@ -184,6 +258,10 @@ footer {
                 font-size: 3.4vw;
                 // font-size: 17px;
                 color: $bg-color;
+
+                @include responsive(pc-size) {
+                    font-size: 1.3vw;
+                }
             }
         }
         // div.f-top-fir {
@@ -207,11 +285,20 @@ footer {
             margin: 9% 0;
             // margin: 30px 0;
 
+            @include responsive(pc-size) {
+                margin: 10% 0;
+            }
+
             li {
                 width: 5.5%;
                 height: auto;
                 margin-right: 7%;
                 // background-color: skyblue;
+
+                @include responsive(pc-size) {
+                    margin-right: 9%;
+                }
+
                 a {
                     width: $width-wide;
 
@@ -233,6 +320,7 @@ footer {
                 width: 13%;
                 margin-left: 3.4%;
                 // margin-left: 15px;
+
                 a {
                     width: $width-wide;
 
@@ -257,6 +345,11 @@ footer {
                 color: $bg-color;
                 margin-bottom: 5%;
                 // margin-bottom: 20px;
+
+                @include responsive(pc-size) {
+                    font-size: 1vw;
+                    margin-bottom: 6%;
+                }
 
                 &:last-child {
                     margin-bottom: 0;
@@ -284,6 +377,10 @@ footer {
         margin: 11.3% 0;
         // margin: 50px 0;
 
+        @include responsive(pc-size) {
+            margin: 10% 0;
+        }
+
         .k-icon {
             width: 15%;
             margin: auto;
@@ -307,6 +404,10 @@ footer {
                 // font-size: 14px;
                 line-height: 2;
                 color: $bg-color;
+
+                @include responsive(pc-size) {
+                    font-size: 0.9vw;
+                }
             }
         }
     }
@@ -318,6 +419,10 @@ footer {
             font-size: 2.6vw;
             // font-size: 13px;
             color: $bg-color;
+
+            @include responsive(pc-size) {
+                font-size: 0.7vw;
+            }
         }
     }
 }

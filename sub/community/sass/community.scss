@@ -207,13 +207,9 @@ h1{
         flex-wrap: wrap;
         width: 80%;
         margin: 0 auto;
-        // margin-bottom: 20px;
-        // display:table; 
-        // width:100%; 
-        // table-layout:fixed; 
         border-left:1px solid $gray-color;
         position:relative;
-        background-color: $bg-color;
+        // background-color: $bg-color;
         @include responsive(pc-size){
             display: block;
             width: 250px;
@@ -227,30 +223,9 @@ h1{
         li{
             width: 49%;
             border-right:1px solid $gray-color ;
-            // text-align: center;
-            // padding: 12px;
-            // border: 1px solid $gray-color;
-            // border-left: none;
-            // &:nth-child(2n-1){
-            //     border-left: 1px solid $gray-color;
-            // }
-            // &:first-child{
-            //     background-color: $point-color;
-            //     color: $bg-color;
-            //     border: $point-color;
-            // }
-            // &:nth-child(3),
-            // &:nth-child(4),
-            // &:nth-child(5){
-            //     border-top: none;
-            // }
-            
             display:table-cell; 
             height:50px;
             @include responsive(pc-size){
-                // border: 1px solid $gray-color;
-                // border-top: none;
-                // width: 230px;
                 display: block;
                 width: 100%;
 
@@ -275,6 +250,7 @@ h1{
                     background-color: $bg-color;
                 }
             }
+
 
             &:hover{
                 a{
@@ -304,6 +280,39 @@ h1{
         }
     }
 }
+
+.on{
+    a{
+        transition: all 0.5s;
+        border-bottom-color: $point-color; 
+        border-top:1px solid $point-color;
+        z-index: 1;
+        background-color: $point-color;
+        color: $bg-color;
+        transition: all 0.5s;
+          
+        
+        
+        // &:after{
+        //     content:''; 
+        //     display:block; 
+        //     position:absolute; 
+        //     top:0; right:0; bottom:-1px; width:1px; 
+        //     background: $point-color;
+        // }
+        // &:before{
+        //     content:'FAQ';
+        //     color: $bg-color; 
+        //     display:block; 
+        //     position:absolute; 
+        //     top:0; left:0; bottom:-1px; 
+        //     width:100%; 
+        //     background: $point-color;
+        // }
+    }
+
+}
+
 .fake-width{
     display: none;
     @include responsive(pc-size){
@@ -328,8 +337,7 @@ h1{
         
 }
 
-.faq{
-    // display: none;
+#faq{
     .faq-btn{
         ul{
             // display: flex;
@@ -492,8 +500,8 @@ h1{
     }
 }
 
-.qna{
-    // display: none;
+#qna{
+    display: none;
     margin-top: 10px;
     margin-bottom: 100px;
     hr{
@@ -521,8 +529,8 @@ h1{
     }
 }
 
-.tel{
-    // display: none;
+#telph{
+    display: none;
     fieldset{
         border: none;
         margin-bottom: 50px;
@@ -658,8 +666,8 @@ h1{
     }
 }
 
-.asp{
-    // display: none;
+#asp{
+    display: none;
     .as-pro{
         position: relative;
         h3{
@@ -901,8 +909,8 @@ h1{
     }
 }
 
-.commu-notice{
-    // display: none;
+#notice{
+    display: none;
     position: relative;
     fieldset{
         border: none;

@@ -3,16 +3,14 @@
 @import "mixin.scss";
 
 body {
-    padding-top: 60px;
-    // -ms-overflow-style: none;
+    -ms-overflow-style: none;
 
     @include responsive(pc-size) {
         padding-left: 80px;
-        padding-top: 0;
     }
 }
 
-// ::-webkit-scrollbar { display: none; }
+::-webkit-scrollbar { display: none; }
 
 // header-area
 header {
@@ -97,7 +95,7 @@ header {
     
                     &:first-child {
                         font-size: 18px;
-                        transform: rotate(-90deg);
+                        // transform: rotate(-90deg);
                         margin-top: 0;
 
                         a {
@@ -124,15 +122,102 @@ header {
 main {
     width: $width-wide;
 
+    div.menu-sub {
+        // 햄버거 버튼 클릭했을 때, header의 z-index값 음수로 적용하기
+        // 햄버거버튼, 장바구니 아이콘, 닫기버튼 수정
+        display: none;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        padding: 0 40px;
+        margin: 0 auto;
+        z-index: 10;
+        background-color: rgba(256,256,256, 0.9);
+
+        @include responsive(pc-size) {
+            margin-left: 80px;
+            width: 450px;
+        }
+
+        a.closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 60px;
+        }
+
+        a {
+            color: $font-color;
+            padding: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 36px;
+            transition: 0.3s;
+
+            &:hover {
+                color: #999;
+            }
+
+            &:focus {
+                color: #999;
+            }
+        }
+
+        ul.myMenu {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            text-align: left;
+
+            .menu-top {
+                display: flex;
+
+                a {
+                    font-size: 22px;
+                    margin-right: 20px;
+                    margin-bottom: 20px;
+                    color: $font-color;
+
+                    &:hover {
+                        color: #999;
+                    }
+        
+                    &:focus {
+                        color: #999;
+                    }
+                }
+            }
+
+            li {
+                margin-bottom: 10px;
+
+                ul {
+                    li {
+                        a {
+                            font-weight: 400;
+                            font-size: 20px;
+                            text-indent: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     // main-section
     section.main-section {
-        // background-color: pink;
         width: 100%;
         height: auto;
+        padding-top: 60px;
 
         @include responsive(pc-size) {
             width: 100%;
             height: 100vh;
+            padding-top: 0;
         }
 
         h2 {

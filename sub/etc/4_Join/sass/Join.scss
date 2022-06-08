@@ -60,7 +60,7 @@ header {
         //background-color: aquamarine;
         @include responsive(pc-size) {
             height: 30%;
-        }
+        } 
 
         ul.gnb {
 
@@ -183,7 +183,6 @@ main {
 
         @include responsive(pc-size) {
             display: block;
-
         }
 
         .wrapper {
@@ -323,10 +322,7 @@ main {
                 margin: 0 auto;
                 padding: 0 auto;
                 .inp_text {
-                    // background-color: antiquewhite;
-
                     input {
-                        // background-color: aqua;
                         width: 427px;
                         height: 46px;
                         border-radius: 10px;
@@ -337,6 +333,7 @@ main {
             .wrap_repw {
                 margin: 0 auto;
                 padding: 0 auto;
+
                 .inp_text {
                     // background-color: antiquewhite;  
                 }
@@ -345,22 +342,20 @@ main {
                     width: 427px;
                     height: 46px;
                     border-radius: 10px;
-                    // border-color: #b6b6b6;
                     
                 }
             }
 
             .name-gender {
-                display: flex;
-                // background-color: aqua;
+                display: flex; 
 
                 .wrap_name {
                     margin: 0 auto;
                     padding: 0 auto;
-                    // background-color: #333;
+                    
                     margin-left: 7px;
+
                     .name_lab {
-                        // background-color: blanchedalmond;
                         font-size: 17px;
                         
                         padding-left: 9px;
@@ -370,26 +365,24 @@ main {
                     .name_text {
                         
                         input {
-                            // background-color: aqua;
                             width: 227px;
                             height: 46px;
                             border-radius: 10px;
-                            // padding-top: 35px;
-                            // border-color: #b6b6b6;
- 
                         }
+
                         #join_name {
                             padding-top: 35px;
-                            // background-color: antiquewhite;
+                            
                         }
                     }
-    
                 }
+
                 .wrap_gender {
                     margin: 0 auto;
                     padding: 0 auto;
+
                     .join_gender {
-                        // background-color: blanchedalmond;
+
                         font-size: 17px;
                         width: 47px;
                         font-size: 17px;
@@ -400,8 +393,7 @@ main {
     
                     .join_text {
                         // background-color: burlywood;
-                        // width: 157px;
-                        // height: 46px;
+
                     }
                 }
             }
@@ -409,7 +401,6 @@ main {
 
             .info#info_birth {
                 display: flex;
-                // background-color: beige
                 font-size: 17px;
                 
 
@@ -423,11 +414,9 @@ main {
                         width: 10px;
                     }
                     &::-webkit-scrollbar-thumb {
-                        // background-color: #b6b6b6;
                         border-radius: 3px;
                     }
                     &::-webkit-scrollbar-track {
-                        background-color: #ebe9e9;
                         border-radius: 6px;
                     }
                 }
@@ -438,17 +427,12 @@ main {
                 margin: 0 auto;
                 padding: 0 auto;
                 padding-top: 5px;
-                
-                // background-color: aqua;
-                
 
                 .join_pho {
-                    // background-color: #333;
                     label {
                         font-size: 17px;
                     }
                     input {
-                        // background-color: aqua;
                         
                         width: 427px;
                         height: 46px;
@@ -462,7 +446,7 @@ main {
             .wrap_join_term {
                 display: flex;
                 // border-color: 1px solid #333;
-                // background-color: aquamarine;
+                
                 font-size: 17px;
 
                 .all_terms {
@@ -482,6 +466,7 @@ main {
                 }
             }
         }
+
         .form_button {
 
             margin: 0 auto;

@@ -436,31 +436,6 @@ main {
                 }
             }
         }
-
-        section.gallery-slide {
-            width: $width-wide;
-            margin: 200px 0 20px 0;
-            padding: 0 20px;
-
-            @include responsive(tablet-size) {
-                margin: 300px 0 20px 0;
-            }
-
-            div.g-wrapper {
-                margin: 0 auto;
-                width: 1320px;
-                max-width: 100%;
-
-                .slide-img-wrap {
-                    width: $width-wide;
-    
-                    img {
-                        width: 100%;
-                        height: auto;
-                    }
-                }
-            }
-        }
     }
 
     div.gallery-search {

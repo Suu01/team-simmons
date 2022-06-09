@@ -303,6 +303,7 @@ h1 {
   margin: 0 auto;
   border-left: 1px solid #a5a5a5;
   position: relative;
+  background-color: #fefefc;
 }
 
 @media screen and (min-width: 1024px) {
@@ -316,9 +317,16 @@ h1 {
 
 .commu-btn ul li {
   width: 49%;
+  border-top: 1px solid #a5a5a5;
   border-right: 1px solid #a5a5a5;
   display: table-cell;
   height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.commu-btn ul li:nth-child(4), .commu-btn ul li:last-child {
+  border-bottom: 1px solid #a5a5a5;
 }
 
 @media screen and (min-width: 1024px) {
@@ -326,71 +334,22 @@ h1 {
     display: block;
     width: 100%;
   }
+  .commu-btn ul li:nth-child(4) {
+    border-bottom: none;
+  }
 }
 
-.commu-btn ul li a {
-  display: block;
-  position: relative;
-  height: 50px;
-  border-top: 1px solid #a5a5a5;
-  border-bottom: 1px solid #a5a5a5;
-  line-height: 50px;
-  text-align: center;
-  background-color: #fefefc;
-}
-
-.commu-btn ul li a:after {
-  display: block;
-  position: relative;
-  height: 50px;
-  border-top: 1px solid #a5a5a5;
-  border-bottom: 1px solid #a5a5a5;
-  line-height: 50px;
-  text-align: center;
-  background-color: #fefefc;
-}
-
-.commu-btn ul li:hover a {
-  border-bottom-color: #82ca9c;
-  border-top: 1px solid #82ca9c;
-  z-index: 1;
+.commu-btn ul li:hover {
   background-color: #82ca9c;
   color: #fefefc;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
-.commu-btn ul li:hover a:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: -1px;
-  width: 1px;
-  background: #82ca9c;
-}
-
-.commu-btn ul li:hover a:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: -1px;
-  width: 1px;
-  background: #82ca9c;
-}
-
-.on a {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  border-bottom-color: #82ca9c;
-  border-top: 1px solid #82ca9c;
-  z-index: 1;
+.mouseon {
   background-color: #82ca9c;
   color: #fefefc;
-  transition: all 0.5s;
 }
 
 .fake-width {
@@ -422,9 +381,9 @@ h1 {
 
 #faq .faq-btn ul {
   display: table;
+  border-collapse: collapse;
   width: 100%;
   table-layout: fixed;
-  border-left: 1px solid #a5a5a5;
 }
 
 #faq .faq-btn ul li {
@@ -435,22 +394,15 @@ h1 {
   #faq .faq-btn ul li {
     display: table-cell;
     height: 50px;
-  }
-  #faq .faq-btn ul li a {
-    display: block;
-    position: relative;
     height: 50px;
-    border-top: 1px solid #a5a5a5;
-    border-right: 1px solid #a5a5a5;
+    border: 1px solid #a5a5a5;
     border-bottom: 2px solid #82ca9c;
     line-height: 50px;
     text-align: center;
   }
-  #faq .faq-btn ul li:hover a {
+  #faq .faq-btn ul li:hover {
+    border: 2px solid #82ca9c;
     border-bottom-color: transparent;
-    border-top: 2px solid #82ca9c;
-    border-right: 2px solid #82ca9c;
-    border-left: 2px solid #82ca9c;
   }
 }
 
@@ -564,6 +516,11 @@ h1 {
 
 #faq .faq-product {
   display: none;
+}
+
+.mouseover {
+  border: 2px solid #82ca9c;
+  border-bottom-color: transparent;
 }
 
 #qna {

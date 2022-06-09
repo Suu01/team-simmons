@@ -209,7 +209,7 @@ h1{
         margin: 0 auto;
         border-left:1px solid $gray-color;
         position:relative;
-        // background-color: $bg-color;
+        background-color: $bg-color;
         @include responsive(pc-size){
             display: block;
             width: 250px;
@@ -222,95 +222,36 @@ h1{
 
         li{
             width: 49%;
-            border-right:1px solid $gray-color ;
+            border-top: 1px solid $gray-color;
+            border-right:1px solid $gray-color;
             display:table-cell; 
             height:50px;
+            line-height:50px;
+            text-align:center;
+            &:nth-child(4),
+            &:last-child{
+                border-bottom: 1px solid $gray-color;
+            }
             @include responsive(pc-size){
                 display: block;
                 width: 100%;
-
-            }
-            a{
-                display:block;
-                position:relative;
-                height:50px;
-                border-top:1px solid $gray-color;
-                border-bottom:1px solid $gray-color;
-                line-height:50px;
-                text-align:center;
-                background-color: $bg-color;
-                &:after{
-                    display:block;
-                    position:relative;
-                    height:50px;
-                    border-top:1px solid $gray-color;
-                    border-bottom:1px solid $gray-color;
-                    line-height:50px;
-                    text-align:center;
-                    background-color: $bg-color;
+                &:nth-child(4){
+                    border-bottom: none;
                 }
             }
-
-
             &:hover{
-                a{
-                    border-bottom-color: $point-color; 
-                    border-top:1px solid $point-color;
-                    z-index: 1;
-                    background-color: $point-color;
-                    color: $bg-color;
-                    transition: all 0.5s;
-
-                    &:after{
-                        content:''; 
-                        display:block; 
-                        position:absolute; 
-                        top:0; right:0; bottom:-1px; width:1px; 
-                        background: $point-color;
-                    }
-                    &:before{
-                        content:''; 
-                        display:block; 
-                        position:absolute; 
-                        top:0; left:0; bottom:-1px; width:1px; 
-                        background: $point-color;
-                    }
-                }
+                background-color: $point-color;
+                color: $bg-color;
+                transition: all 0.5s;
+                cursor: pointer;
             }
         }
     }
 }
 
-.on{
-    a{
-        transition: all 0.5s;
-        border-bottom-color: $point-color; 
-        border-top:1px solid $point-color;
-        z-index: 1;
-        background-color: $point-color;
-        color: $bg-color;
-        transition: all 0.5s;
-          
-        
-        
-        // &:after{
-        //     content:''; 
-        //     display:block; 
-        //     position:absolute; 
-        //     top:0; right:0; bottom:-1px; width:1px; 
-        //     background: $point-color;
-        // }
-        // &:before{
-        //     content:'FAQ';
-        //     color: $bg-color; 
-        //     display:block; 
-        //     position:absolute; 
-        //     top:0; left:0; bottom:-1px; 
-        //     width:100%; 
-        //     background: $point-color;
-        // }
-    }
-
+.mouseon{
+    background-color: $point-color;
+    color: $bg-color;
 }
 
 .fake-width{
@@ -340,67 +281,24 @@ h1{
 #faq{
     .faq-btn{
         ul{
-            // display: flex;
-            // margin-bottom: 50px;
             display:table; 
+            border-collapse: collapse;
             width:100%; 
             table-layout:fixed; 
-            border-left:1px solid $gray-color;
             li{
                 display: none;
 
                 @include responsive(pc-size){
-                    // display: block;
-                    // width: 16.5%;
-                    // height: 45px;
-                    // text-align: center;
-                    // padding-top: 10px;
-                    // border: 1px solid black;
-                    // border-bottom: 3px solid $point-color;
-                    // border-left: none;
-                    // &:first-child{
-                    //     border: 3px solid $point-color;
-                    //     border-bottom: none;
-                    // }
                     display:table-cell; 
                     height:50px;
-                    a{
-                        // transition: all 0.5s;
-                        display:block;
-                        position:relative;
-                        height:50px;
-                        border-top:1px solid $gray-color;
-                        border-right:1px solid $gray-color;
-                        border-bottom:2px solid $point-color;
-                        line-height:50px;
-                        text-align:center;
-                    }
-                    &:hover{
-                        a{
-                            border-bottom-color:transparent; 
-                            border-top: 2px solid $point-color;
-                            border-right: 2px solid $point-color;
-                            border-left: 2px solid $point-color;
-
-                            // a{
-                            //     &:after{
-                            //         content:''; 
-                            //         display:block; 
-                            //         position:absolute; 
-                            //         top:0; right:0; bottom:-1px; 
-                            //         width:2px; 
-                            //         background: $point-color;
-                            //     }
-                            //     &:before{
-                            //         content:''; 
-                            //         display:block; 
-                            //         position:absolute; 
-                            //         top:0; left:0; bottom:-1px; 
-                            //         width:2px; 
-                            //         background: $point-color;
-                            //     }
-                            // }
-                        }
+                    height:50px;
+                    border:1px solid $gray-color;
+                    border-bottom:2px solid $point-color;
+                    line-height:50px;
+                    text-align:center;
+                    &:hover{                
+                        border: 2px solid $point-color;
+                        border-bottom-color:transparent; 
                     }
                 }
             }
@@ -498,6 +396,11 @@ h1{
     .faq-product{
         display: none;
     }
+}
+
+.mouseover{
+    border: 2px solid $point-color;
+    border-bottom-color:transparent; 
 }
 
 #qna{

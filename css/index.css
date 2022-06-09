@@ -63,12 +63,6 @@ body {
   -ms-overflow-style: none;
 }
 
-@media screen and (min-width: 1024px) {
-  body {
-    padding-left: 80px;
-  }
-}
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -413,6 +407,7 @@ main section.main-section video {
 main section.f-sec-flex section.section2 {
   position: relative;
   width: 100%;
+  height: 100%;
   text-align: center;
   margin: 12% 0;
 }
@@ -421,67 +416,79 @@ main section.f-sec-flex section.section2 {
   main section.f-sec-flex section.section2 {
     margin: 0;
     width: 60%;
-    padding: 5%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-sec-flex section.section2 h2 + .sec2-txt {
-    text-align: left;
+  main section.f-sec-flex section.section2 .section2-wrap {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin: 0;
   }
 }
 
-main section.f-sec-flex section.section2 h2 {
+main section.f-sec-flex section.section2 .section2-wrap h2 {
   display: none;
 }
 
-main section.f-sec-flex section.section2 .sec2-txt {
+main section.f-sec-flex section.section2 .section2-wrap .sec2-txt {
   width: 100%;
 }
 
-main section.f-sec-flex section.section2 .sec2-txt p {
+main section.f-sec-flex section.section2 .section2-wrap .sec2-txt p {
   font-size: 3vw;
   line-height: 1.8;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-sec-flex section.section2 .sec2-txt p {
+  main section.f-sec-flex section.section2 .section2-wrap .sec2-txt p {
     font-size: 1.3vw;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-sec-flex section.section2 .sec2-img + .sec2-txt {
-    text-align: right;
+  main section.f-sec-flex section.section2 .section2-wrap .sec2-1 {
+    padding-left: 5%;
+    text-align: left;
   }
 }
 
-main section.f-sec-flex section.section2 .sec2-img {
+main section.f-sec-flex section.section2 .section2-wrap .sec2-img {
   width: 100%;
   margin: 10% 0;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-sec-flex section.section2 .sec2-img {
-    margin: 8% 0;
+  main section.f-sec-flex section.section2 .section2-wrap .sec2-img {
+    margin: 4% 0;
   }
 }
 
-main section.f-sec-flex section.section2 .sec2-img .img {
+main section.f-sec-flex section.section2 .section2-wrap .sec2-img .img {
   margin: auto;
   width: 53%;
   height: auto;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-sec-flex section.section2 .sec2-img .img {
-    width: 60%;
+  main section.f-sec-flex section.section2 .section2-wrap .sec2-img .img {
+    width: 45%;
   }
 }
 
-main section.f-sec-flex section.section2 .sec2-img .img img {
+main section.f-sec-flex section.section2 .section2-wrap .sec2-img .img img {
   width: 100%;
   height: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  main section.f-sec-flex section.section2 .sec2-2 {
+    padding-right: 5%;
+    text-align: right;
+  }
 }
 
 main section.f-sec-flex div.event {

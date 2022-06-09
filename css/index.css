@@ -359,7 +359,7 @@ main {
 
 main section.main-section {
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 
 @media screen and (min-width: 1024px) {
@@ -377,7 +377,7 @@ main section.main-section h2 {
 main section.main-section video {
   padding-top: 60px;
   width: 100%;
-  height: 100vh;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -419,6 +419,10 @@ main section.f-sec-flex section.section2 {
   }
 }
 
+main section.f-sec-flex section.section2 .section2-wrap {
+  margin: auto;
+}
+
 @media screen and (min-width: 1024px) {
   main section.f-sec-flex section.section2 .section2-wrap {
     position: absolute;
@@ -445,7 +449,7 @@ main section.f-sec-flex section.section2 .section2-wrap .sec2-txt p {
 
 @media screen and (min-width: 1024px) {
   main section.f-sec-flex section.section2 .section2-wrap .sec2-txt p {
-    font-size: 1.3vw;
+    font-size: 1vw;
   }
 }
 
@@ -475,7 +479,7 @@ main section.f-sec-flex section.section2 .section2-wrap .sec2-img .img {
 
 @media screen and (min-width: 1024px) {
   main section.f-sec-flex section.section2 .section2-wrap .sec2-img .img {
-    width: 45%;
+    width: 40%;
   }
 }
 
@@ -684,7 +688,7 @@ main section.popup-wrap div.popup-des {
     top: 0;
     right: 0;
     width: 50%;
-    height: 100%;
+    height: 100vh;
     padding: 8% 40px;
   }
 }
@@ -714,7 +718,6 @@ main section.popup-wrap div.popup-des .title div div img {
 }
 
 main section.popup-wrap div.popup-des .title h2 {
-  width: 100%;
   font-size: 8.5vw;
   font-weight: 400;
   letter-spacing: 1.4vw;

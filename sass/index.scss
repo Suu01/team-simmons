@@ -16,7 +16,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: $width-wide;
+    width: 100%;
     height: 60px;
     padding: 0 15px;
     border-bottom: 1px solid #333;
@@ -72,46 +72,46 @@ header {
     div.side-menu {
         order: 3;
 
-            .s-menu {         
+        .s-menu {         
+            @include responsive(pc-size) {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            li {
+                display: none;
+
                 @include responsive(pc-size) {
-                    display: flex;
-                    height: 100%;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: space-between;
+                    display: block;
+                    margin-top: 35px;
                 }
 
-                li {
-                    display: none;
-    
-                    @include responsive(pc-size) {
-                        display: block;
-                        margin-top: 35px;
-                    }
-    
-                    &:first-child {
-                        font-size: 18px;
-                        // transform: rotate(-90deg);
-                        margin-top: 0;
+                &:first-child {
+                    font-size: 18px;
+                    // transform: rotate(-90deg);
+                    margin-top: 0;
 
-                        a {
-                            color: $font-color;
-                        }
+                    a {
+                        color: $font-color;
                     }
-        
-                    &:last-child {
-                        display: block;
-        
-                        a {
-                            img {
-                                width: 25px;
-                                height: 25px;
-                            }
+                }
+    
+                &:last-child {
+                    display: block;
+    
+                    a {
+                        img {
+                            width: 25px;
+                            height: 25px;
                         }
                     }
                 }
             }
         }
+    }
 
     div.menu-sub {
         display: none;
@@ -245,7 +245,7 @@ header {
             }
         }
     }
-    }
+}
 
 // main-area
 main {
@@ -254,7 +254,7 @@ main {
     // main-section
     section.main-section {
         width: 100%;
-        height: 100vh;
+        height: auto;
 
         @include responsive(pc-size) {
             width: 100%;
@@ -269,7 +269,7 @@ main {
         video {
             padding-top: 60px; // 헤더 높이만큼 동영상에 padding값 할당
             width: 100%;
-            height: 100vh;
+            height: auto;
             object-fit: cover;
 
             @include responsive(pc-size) {
@@ -280,6 +280,7 @@ main {
         }
     }
 
+    // pc버전 구조 수정
     // f-sec-flex
     section.f-sec-flex {
         @include responsive(pc-size) {
@@ -297,6 +298,7 @@ main {
             height: 100%;
             text-align: center;
             margin: 12% 0;
+            
 
             @include responsive(pc-size) {
                 margin: 0;
@@ -304,6 +306,8 @@ main {
             }
 
             .section2-wrap {
+                margin: auto;
+
                 @include responsive(pc-size) {
                     position: absolute;
                     width: 100%;
@@ -324,7 +328,7 @@ main {
                         line-height: 1.8;
     
                         @include responsive(pc-size) {
-                            font-size: 1.3vw;
+                            font-size: 1vw;
                         }
                     }
                 }
@@ -350,7 +354,7 @@ main {
                         height: auto;
     
                         @include responsive(pc-size) {
-                            width: 45%;
+                            width: 40%;
                         }
     
                         img {
@@ -491,6 +495,7 @@ main {
         }
     }
 
+    // pc버전 구조 수정
     // popup-wrap
     section.popup-wrap {
 
@@ -529,9 +534,8 @@ main {
 
         // popup-des
         div.popup-des {
-            width: $width-wide;
+            width: 100%;
             padding: 16.5% 0;
-            // padding: 80px 0;
             text-align: center;
             font-family: $sub-font;
             color: $font-sub-color;
@@ -542,7 +546,7 @@ main {
                 top: 0;
                 right: 0;
                 width: 50%;
-                height: 100%;
+                height: 100vh;
                 padding: 8% 40px;
             }
 
@@ -568,7 +572,7 @@ main {
                 }
 
                 h2 { 
-                    width: 100%;
+                    // width: 100%;
                     font-size: 8.5vw;
                     font-weight: 400;
                     letter-spacing: 1.4vw;
@@ -719,6 +723,7 @@ main {
         }
     }
 
+    // pc버전 구조 수정
     // f-wrap
     section.f-wrap {
         @include responsive(pc-size) {

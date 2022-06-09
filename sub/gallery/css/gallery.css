@@ -598,33 +598,6 @@ main div.gallery section.gallery-intro div.g div.g-img-wrap img {
   height: auto;
 }
 
-main div.gallery section.gallery-slide {
-  width: 100%;
-  margin: 200px 0 20px 0;
-  padding: 0 20px;
-}
-
-@media screen and (min-width: 768px) {
-  main div.gallery section.gallery-slide {
-    margin: 300px 0 20px 0;
-  }
-}
-
-main div.gallery section.gallery-slide div.g-wrapper {
-  margin: 0 auto;
-  width: 1320px;
-  max-width: 100%;
-}
-
-main div.gallery section.gallery-slide div.g-wrapper .slide-img-wrap {
-  width: 100%;
-}
-
-main div.gallery section.gallery-slide div.g-wrapper .slide-img-wrap img {
-  width: 100%;
-  height: auto;
-}
-
 main div.gallery-search {
   width: 100%;
   display: none;

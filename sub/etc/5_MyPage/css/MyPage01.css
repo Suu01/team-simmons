@@ -298,6 +298,13 @@ main nav .wrapper {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  main nav .wrapper {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
+
 main nav .wrapper .top-menu-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -582,12 +589,12 @@ main .notice-content .notice {
 
 main .notice-content .notice-text {
   margin: 0 auto;
+  padding: 0 auto;
   font-size: 17px;
   color: #666666;
   -webkit-transform: translateY(-210px);
           transform: translateY(-210px);
-  width: 100%;
-  padding: 0 auto;
+  width: 78%;
   padding-bottom: 30px;
 }
 

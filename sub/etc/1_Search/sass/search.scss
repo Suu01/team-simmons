@@ -181,51 +181,43 @@ header {
 main {
     width: 100%;
 
-
     nav {
-        flex: absolute;
-        height: 228px;
-        font-size: 15px;
-
-        @include responsive(tablet-size) {
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
+        display: none;
 
         @include responsive(pc-size) {
-            flex-direction: column;
+            display: block;
         }
 
         .wrapper {
             width: 100%;
+
 
             @include responsive(pc-size) {
                 width: 1024px;
                 margin: 0 auto;
             }
 
-            .main-top-menu {
+            .gnb {
                 display: flex;
-                margin-left: 830px;
-
+                justify-content: flex-end;
+                list-style: none;
+                flex-direction: row;
+                margin-left: 30px;
+    
                 li {
                     display: inline-block;
                     padding-top: 112px;
-                    padding-right: 38px;
-
-
+                    padding-right: 58px;
+    
                     a {
                         font-size: 1em;
-                        font-family: 'S-CoreDream-4Regular'; 
+                        font-family: $main-font;
                     }
                 }
             }
-
-            
-
         }
-
     }
+
 
     .search-menu {
         

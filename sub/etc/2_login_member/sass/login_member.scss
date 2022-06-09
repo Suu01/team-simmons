@@ -2,14 +2,6 @@
 @import "common.scss";
 @import "mixin.scss";
 
-// body {
-//     padding-top: 60px;
-
-//     @include responsive(pc-size) {
-//         padding-left: 80px;
-//         padding-top: 0;
-//     }
-// }
 body {
     @include responsive(pc-size) {
         margin: 0 auto;
@@ -17,8 +9,6 @@ body {
     }
 }
 
-
-// header-area
 header {
     position: fixed;
     top: 0;
@@ -37,21 +27,18 @@ header {
         width: 80px;
         height: 100%;
         flex-direction: column;
-        // align-items: baseline;
         padding: 60px 0;
         border-bottom: 0;
         border-right: 1px solid #333;
     }
 
     h1 {
-        // background-color: aqua;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
 
         @include responsive(pc-size) {
-            // height: 20%;
             position: static;
             top: 0;
             left: 0;
@@ -60,8 +47,6 @@ header {
     }
 
     nav {
-        // background-color: aquamarine;
-
         @include responsive(pc-size) {
             height: 30%;
         }
@@ -115,7 +100,6 @@ header {
                         width: 10px;
                         height: 10px;
                         border-radius: 50%;
-                        // margin-top: 70px;
                         background-color: $point-color;
                     }
                 }
@@ -124,7 +108,6 @@ header {
     }
 
     div.side-menu {
-        // background-color: pink;
 
         @include responsive(pc-size) {
             height: 20%;
@@ -149,7 +132,6 @@ header {
     
                     &:first-child {
                         font-size: 18px;
-                        // transform: rotate(-90deg);
                     }
         
                     &:last-child {
@@ -168,15 +150,15 @@ header {
     }
 
 
-//main-area
+
 main {
     width: $width-wide;
-    // height: 300px;
+
 
     @include responsive(tablet-size) {
         display: flex;
         flex-direction: row;
-        // flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
     @include responsive(pc-size) {
@@ -196,6 +178,11 @@ main {
         .wrapper {
             width: 100%;
 
+            @include responsive(tablet-size) {
+                width: 100%;
+                width: 1024px;
+                margin: 0 auto;
+            }
 
             @include responsive(pc-size) {
                 width: 1024px;
@@ -229,35 +216,19 @@ main {
     .title-login{
         position: relative;
         margin: 0 0;
-        padding: 0 0;
+        padding: 0 20px;
         margin-top: 36px;
-        margin-left: 34px;
         padding-top: 33px;
         font-size: 3em;
-
-        @include responsive(tablet-size) {
-            // background-color: antiquewhite;
-            margin: 0 auto;
-            padding: 0 auto;
-        }
-        @include responsive(pc-size) {
-            // background-color: aqua;
-            margin: 0 auto;
-            padding: 0 auto;
-        }
 
         .title {
             margin-top: 55px;
             padding: 0 auto;
 
-            @include responsive(tablet-size) {
-                // background-color: aqua;
-                margin: 0 auto;
-                padding: 0 auto;
-            }
 
             @include responsive(pc-size) {
                 display: block;
+                padding-left: 42px;
                 margin-top: 10px;
             }
 
@@ -265,9 +236,7 @@ main {
                 font-size: 1.5em;
                 font-family: $main-font;
                 font-weight: 500;
-                //display: flex;
                 margin: 0 auto;
-                //padding: 0 auto;
                 margin-top: 50px;
 
                 @include responsive(pc-size) {
@@ -279,25 +248,19 @@ main {
                     margin-top: -90px;
                     padding-top: 5px;
                     font-size: 90px;
-                    //background-color: aqua;
-                    
                 }
-
             }
             .title-sub {
-                display: none;
-                //background-color: aquamarine;                        
+                display: none;                       
                 @include responsive(tablet-size) {
-                    margin: 0 auto;
-                    padding: 0 auto;
                     display: block;
                     width: 1024px;
                     font-size: 22px;
                     font-family: $main-font;
-                    margin-top: -45px;
+                    margin-top: -50px;
                     margin-left: -320px;
                     padding-left: 510px;
-                    // padding-top: 5px;
+                    padding-top: 7px;
                 }
 
                 @include responsive(pc-size) {
@@ -305,23 +268,18 @@ main {
                     width: 1024px;
                     font-size: 22px;
                     font-family: $main-font;
-                    margin-top: -30px;
-                    margin-left: -320px;
-                    padding-left: 279px;
-                    
+                    padding-left: 275px;
+                    padding-top: 5px;
                 }
             }
         }
-        
         .loginform {        
             margin: 0 auto;
             padding: 0 auto;
             display: flex;
             align-content: center;
-            // margin-top: 42px;
         
             @include responsive(tablet-size) {
-                // background-color: aqua;
                 padding-top: 70px;
             }
 
@@ -351,25 +309,21 @@ main {
                     margin-right: auto;
                     overflow-x: hidden;
                     overflow-y: hidden;
-                    // background-color: aqua;
 
                     .inp_wrap{
                         padding-left: -150px;
 
                         .inp_lab {
-                            // background-color: antiquewhite;
                             margin-top: 27px;
                             padding-top: 10px;
                             font-size: 22px;
                         }
 
                         input {
-                            // background-color: antiquewhite;
                             width: 427px;
                             height: 46px;
                         }  
                         .loginform-id {
-                            // background-color: antiquewhite;
                             margin-top: 27px;
                             padding-top: 10px;
                             font-size: 22px;
@@ -381,7 +335,8 @@ main {
                     margin: 0 auto;
                     padding: 0 auto;
                     width: 78%;
-                    padding-top: 38px;
+                    padding-top: 64px;
+                    transform: translateY(-210px);
 
                     button {
                         cursor: pointer;
@@ -395,7 +350,7 @@ main {
                         border-radius: 10px;
                         border-color: white;
                         padding-left: 10%;
-                        margin-top: 35px;
+                        margin-top: 255px;
                         margin-left: -2px;
                         font-size: 25px;
                         
@@ -415,63 +370,68 @@ main {
 
         }
 
-            .find-login {
+        .find-login {
+            display: none;
+            margin-top: 20px;
+            font-size: 16px;
+            text-align: center;
+
+            @include responsive(tablet-size) {
                 display: none;
-                margin-top: 20px;
-                font-size: 16px;
-                text-align: center;
+            }
 
-                @include responsive(tablet-size) {
-                    display: none;
-                }
+            @include responsive(pc-size) {
+                display: flex;
+                position: relative;
+                margin-left: 80px;
+                padding-bottom: 80px;
+                padding-top: 100px;
+                
+            }
 
-                @include responsive(pc-size) {
-                    display: flex;
+            #log {
+                .login-id {
                     
-                    // padding-left: 10px;
-                    // padding-top: 20px;
-                    margin-left: -625px;
-                    padding-left: -100px;
+                    @include responsive(pc-size) {
+                    padding-top: 20px;
+                    padding-left: 70px;
+                    margin-top: 450px;
                     
-                }
-
-                #log {
-                    .login-id {
-                        
-                        @include responsive(pc-size) {
-                        // background-color: blanchedalmond;
-                        padding-top: 20px;
-                        margin-top: 450px;
-                      
-                            ul {
-                                cursor: pointer;
-                                color: #333333;
-                                display: flex; 
-                                
-                                li {
-                                    &:hover {
-                                        color: $point-color;
-                                    }
-
-                                    border-right: 1px solid #333333;
-                                    padding-right: 30px;
-                                    margin-left: 14.5px;
-                                    justify-content: space-between;
-                    
-                                    &:last-child {
-                                        border-right: 0; 
-                                    }
-
+                    .login-align {
+                            
+                            cursor: pointer;
+                            color: #333333;
+                            display: flex;
+                            justify-content: space-between;
+                            margin: 0 auto; 
+                            width: 100%;
+                            padding-left: 10px;
+                            margin-left: 30px;
+                            
+                            li {
+                                &:hover {
+                                    color: $point-color;
                                 }
 
+                                border-right: 1px solid #333333;
+                                padding-right: 30px;
+                                margin-left: 14.5px;
+                                justify-content: space-between;
+                
+                                &:last-child {
+                                    border-right: 0; 
+                                }
 
                             }
+
+
                         }
                     }
-                
                 }
-
+            
             }
+
+        }
     
     }
 }
